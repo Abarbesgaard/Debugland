@@ -304,7 +304,15 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
-        //Write a unit test for this method.
+        /// <summary>
+        /// Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();
+        /// </summary>
+        public static void Close()
+        {
+            Debug.Close();
+        }
+
+
          
 
 
