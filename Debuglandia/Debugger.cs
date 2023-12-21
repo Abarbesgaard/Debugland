@@ -304,7 +304,27 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
-        //Write a unit test for this method.
+        /// <summary>
+        /// Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();
+        /// </summary>
+        public static void Close()
+        {
+            Debug.Close();
+        }
+        /// <summary>
+        /// This method is used to write a fail message to the debug window.
+        /// </summary>
+        /// <param name="message">The message which is being written to the debug window.</param>
+        public static void Fail(string message, string secondMessage)
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes the message to the debug window.
+            Debug.Fail($"{(char)19} {message}",$"{(char)187} {secondMessage}");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;   
+        }
+
          
 
 
