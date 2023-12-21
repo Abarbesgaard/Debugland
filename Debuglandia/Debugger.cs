@@ -222,6 +222,21 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
+        /// <summary>
+        /// This Method is used to let you know that a Try Block has been initiated.
+        /// </summary>
+        public static void TryBlockInitiated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been initiated.
+            Debug.WriteLine($"{(char)18} Try Block Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+
+        }
+
+
 
 
     }
