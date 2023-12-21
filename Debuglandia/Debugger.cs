@@ -203,7 +203,104 @@ namespace Debuglandia
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the Variable has been declared.
-            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared");
+            Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+
+        /// <summary>
+        /// This Method is used to let you know that a Variable has been declared. It also writes the value of the variable.
+        /// </summary>
+        /// <param name="variableName">Name of the variable you declared</param>
+        /// <param name="variableValue">Value of the variable you declared</param>
+        [Conditional("DEBUG")]
+        public static void Variable(string variableName, string variableValue)
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the Variable has been declared.
+            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared with the value of {variableValue}");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Try Block has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void TryBlockInitiated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been initiated.
+            Debug.WriteLine($"{(char)31} Try Block Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Try Block has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void TryBlockTerminated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been terminated.
+            Debug.WriteLine($"{(char)30} Try Block Terminated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Catch Block has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void CatchBlockInitiated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been initiated.
+            Debug.WriteLine($"{(char)31} Catch Block Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Catch Block has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void CatchBlockTerminated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been terminated.
+            Debug.WriteLine($"{(char)30} Catch Block Terminated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Finally Block has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void FinallyBlockInitiated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been initiated.
+            Debug.WriteLine($"{(char)31} Finally Block Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Finally Block has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void FinallyBlockTerminated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been terminated.
+            Debug.WriteLine($"{(char)30} Finally Block Terminated");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
