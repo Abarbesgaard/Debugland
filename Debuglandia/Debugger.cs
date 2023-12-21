@@ -56,8 +56,12 @@ namespace Debuglandia
             Debug.IndentLevel = indentationLevelZero;
             // Terminates the Stopwatch object.
             watch.Stop();
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
             // Writes the lifespan of the method to the debug window.
             Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
             // Writes that the method has ended.
             Debug.WriteLine($"[/{methodName}]\n");
             // Creates an indentation level of 0.
