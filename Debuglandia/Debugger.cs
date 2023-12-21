@@ -304,6 +304,11 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
+        //Write a unit test for this method.
+         
+
+
+         
 
 
     }
