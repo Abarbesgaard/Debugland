@@ -8,8 +8,9 @@ namespace Testing
             Console.WriteLine("Hello, World!");
 
             Debugger debugger = new Debugger();
-
             debugger.MethodStart("Main");
+            debugger.Variable();
+            debugger.Variable(nameof(debugger));
             debugger.Message("Hello, World!");
             debugger.MessageImportant("Hello, World, this is important");
             debugger.MethodTimeTracker();
@@ -22,10 +23,7 @@ namespace Testing
 
             debugger.MethodStop("Main");
 
-            //for (int i = 0; i < 127; i++)
-            //{
-            //    Console.WriteLine($"{i} _ {(char)i}");
-            //}
+            
             Console.ReadLine();
         }
     }

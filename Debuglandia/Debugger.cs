@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 namespace Debuglandia
 {
     /// <summary>
-    /// Denne kasse skal bruges til at debugge klasser.
+    /// This Class is used for debuggin
     /// </summary>
     public class Debugger
     {
@@ -21,7 +21,7 @@ namespace Debuglandia
         /// <summary>
         /// Creates a new Stopwatch object.
         /// </summary>
-        Stopwatch watch = new Stopwatch();
+        Stopwatch watch = new();
         #endregion
 
 
@@ -184,6 +184,31 @@ namespace Debuglandia
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the SQL Command has terminated.
             Debug.WriteLine($"{(char)5} Command initialized");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that multiple Variables has been declared.
+        /// </summary>
+        public void Variable()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that Multiple Variables has been declared.
+            Debug.WriteLine($"{(char)15} Variable(s) Declared");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Variable has been declared.
+        /// </summary>
+        /// <param name="variableName">Name of the variable you declared</param>
+        public void Variable(string variableName)
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the Variable has been declared.
+            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
