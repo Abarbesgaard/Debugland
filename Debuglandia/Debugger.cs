@@ -208,6 +208,21 @@ namespace Debuglandia
             Debug.IndentLevel = indentationLevelZero;
         }
 
+        /// <summary>
+        /// This Method is used to let you know that a Variable has been declared. It also writes the value of the variable.
+        /// </summary>
+        /// <param name="variableName">Name of the variable you declared</param>
+        /// <param name="variableValue">Value of the variable you declared</param>
+        public static void Variable(string variableName, string variableValue)
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the Variable has been declared.
+            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared with the value of {variableValue}");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+
 
     }
 }
