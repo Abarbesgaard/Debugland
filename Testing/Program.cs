@@ -26,8 +26,12 @@ namespace Testing
             Debugger.SQLConnectionTerminating();
             Debugger.FinallyBlockTerminated();
             Debugger.MethodStop("Main");
-
+            Debugger.Fail("This is a fail message", "This is right");
             
+            for(int i = 0; i < 300; i++)
+            {
+                Console.WriteLine($"{i} _ {(char)i}");
+            }
             Console.ReadLine();
         }
     }

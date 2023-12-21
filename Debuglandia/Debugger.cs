@@ -320,7 +320,7 @@ namespace Debuglandia
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes the message to the debug window.
-            Debug.Fail($"{(char)8}{message}",$"{(char)7} {secondMessage}");
+            Debug.Fail($"{(char)19} {message}",$"{(char)187} {secondMessage}");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;   
         }
