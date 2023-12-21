@@ -7,18 +7,19 @@ namespace Testing
         {
             Console.WriteLine("Hello, World!");
 
-            Debugger debugger = new Debugger();
-            debugger.MethodStart("Main");
-            debugger.Variable();
-            debugger.Variable(nameof(debugger));
-            debugger.Message("Hello, World!");
-            debugger.MessageImportant("Hello, World, this is important");
-            debugger.SQLCommandInitialized("Test Command");
-            debugger.ReaderInitialised();
-            debugger.ReaderTerminating();
-            debugger.SQLCommandTerminating();
-            debugger.SQLConnectionTerminating();
-            debugger.MethodStop("Main");
+            
+            int a = 1;
+            Debugger.MethodStart("Main");
+            Debugger.Variable();
+            Debugger.Variable(nameof(a));
+            Debugger.Message("Hello, World!");
+            Debugger.MessageImportant("Hello, World, this is important");
+            Debugger.SQLCommandInitialized("Test Command");
+            Debugger.ReaderInitialised();
+            Debugger.ReaderTerminating();
+            Debugger.SQLCommandTerminating();
+            Debugger.SQLConnectionTerminating();
+            Debugger.MethodStop("Main");
 
             
             Console.ReadLine();
