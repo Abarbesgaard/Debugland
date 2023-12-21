@@ -230,7 +230,7 @@ namespace Debuglandia
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the try block has been initiated.
-            Debug.WriteLine($"{(char)25} Try Block Initiated");
+            Debug.WriteLine($"{(char)31} Try Block Initiated");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
 
@@ -243,11 +243,35 @@ namespace Debuglandia
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the try block has been terminated.
-            Debug.WriteLine($"{(char)5} Try Block Terminated");
+            Debug.WriteLine($"{(char)30} Try Block Terminated");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
+        /// <summary>
+        /// This Method is used to let you know that a Catch Block has been initiated.
+        /// </summary>
+        public static void CatchBlockInitiated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been initiated.
+            Debug.WriteLine($"{(char)31} Catch Block Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
 
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Catch Block has been terminated.
+        /// </summary>
+        public static void CatchBlockTerminated()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the try block has been terminated.
+            Debug.WriteLine($"{(char)30} Catch Block Terminated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
 
 
     }

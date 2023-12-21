@@ -15,8 +15,10 @@ namespace Testing
             Debugger.Message("Hello, World!");
             Debugger.MessageImportant("Hello, World, this is important");
             Debugger.SQLCommandInitialized("Test Command");
+            Debugger.TryBlockInitiated();
             Debugger.ReaderInitialised();
             Debugger.ReaderTerminating();
+            Debugger.TryBlockTerminated();
             Debugger.SQLCommandTerminating();
             Debugger.SQLConnectionTerminating();
             Debugger.MethodStop("Main");
