@@ -13,14 +13,11 @@ namespace Testing
             debugger.Variable(nameof(debugger));
             debugger.Message("Hello, World!");
             debugger.MessageImportant("Hello, World, this is important");
-            debugger.MethodTimeTracker();
             debugger.SQLCommandInitialized("Test Command");
             debugger.ReaderInitialised();
             debugger.ReaderTerminating();
             debugger.SQLCommandTerminating();
             debugger.SQLConnectionTerminating();
-            debugger.MethodTimeTrackerStop();
-
             debugger.MethodStop("Main");
 
             
