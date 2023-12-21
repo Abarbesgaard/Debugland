@@ -73,7 +73,7 @@ namespace Debuglandia
         /// </summary>
         /// <param name="message"> Beskeden som skal skrives til debug vinduet.</param>
         /// <returns>Returnere beskeden som er skrevet til debug vinduet.</returns>
-        public string Message(string message)
+        public void Message(string message)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -82,7 +82,6 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
             // Returns the message which is being written to the debug window.
-            return message;
         }
 
         /// <summary>
@@ -90,7 +89,7 @@ namespace Debuglandia
         /// </summary>
         /// <param name="message">The message which is being written to the debug window.</param>
         /// <returns>Returns the message which is being written to the debug window.</returns>
-        public string MessageImportant(string message)
+        public void MessageImportant(string message)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -99,7 +98,6 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
             // Returns the message which is being written to the debug window.
-            return message;
         }
 
         /// <summary>
@@ -107,7 +105,7 @@ namespace Debuglandia
         /// </summary>
         /// <param name="operation">The SQL Command which is being executed.</param>
         /// <returns>Returns a new Debugger object.</returns>
-        public Debugger SQLCommandInitialized(string operation)
+        public void SQLCommandInitialized(string operation)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -118,13 +116,13 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
             // Returns a new Debugger object.
-            return new Debugger();
+            
         }
         /// <summary>
         /// This Method shows that the SQL Reader has been initialized.
         /// </summary>
         /// <returns>Returns a new Debugger object.</returns>
-        public Debugger ReaderInitialised()
+        public void ReaderInitialised()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = 1;
@@ -132,7 +130,7 @@ namespace Debuglandia
             Debug.WriteLine($"{(char)5} Reader initialized");
             // Creates an indentation level of 0.
             Debug.IndentLevel = 0;
-            return this;
+            
         }
 
         /// <summary>
@@ -198,5 +196,7 @@ namespace Debuglandia
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
+
+
     }
 }
