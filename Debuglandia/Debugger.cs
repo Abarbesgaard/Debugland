@@ -7,21 +7,21 @@ namespace Debuglandia
     /// <summary>
     /// This class is used for debugging purposes.
     /// </summary>
-    public class Debugger
+    public static class Debugger
     {
         #region Properties
         /// <summary>
         /// Indicates the indentation level of the debug window, level 0.
         /// </summary>
-        private static int indentationLevelZero = 0;
+        private static readonly int indentationLevelZero = 0;
         /// <summary>
         /// Indicates the indentation level of the debug window, level 1.
         /// </summary>
-        private static int indentationLevelOne = 1;
+        private static readonly int indentationLevelOne = 1;
         /// <summary>
         /// Creates a new Stopwatch object.
         /// </summary>
-        Stopwatch watch = new();
+        private static readonly Stopwatch watch = new();
         #endregion
 
 
@@ -29,7 +29,8 @@ namespace Debuglandia
         /// This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
         /// </summary>
         /// <param name="methodName">Navnet på metoden som kalles. </param>
-        public void MethodStart(string Name)
+        [Conditional("DEBUG")]
+        public static void MethodStart(string Name)
         {
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
@@ -50,7 +51,8 @@ namespace Debuglandia
         /// This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
-        public void MethodStop(string methodName)
+        [Conditional("DEBUG")]
+        public static void MethodStop(string methodName)
         {
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
@@ -73,7 +75,8 @@ namespace Debuglandia
         /// </summary>
         /// <param name="message"> Beskeden som skal skrives til debug vinduet.</param>
         /// <returns>Returnere beskeden som er skrevet til debug vinduet.</returns>
-        public void Message(string message)
+        [Conditional("DEBUG")]
+        public static void Message(string message)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -89,7 +92,8 @@ namespace Debuglandia
         /// </summary>
         /// <param name="message">The message which is being written to the debug window.</param>
         /// <returns>Returns the message which is being written to the debug window.</returns>
-        public void MessageImportant(string message)
+        [Conditional("DEBUG")]
+        public static void MessageImportant(string message)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -105,7 +109,8 @@ namespace Debuglandia
         /// </summary>
         /// <param name="operation">The SQL Command which is being executed.</param>
         /// <returns>Returns a new Debugger object.</returns>
-        public void SQLCommandInitialized(string operation)
+        [Conditional("DEBUG")]
+        public static void SQLCommandInitialized(string operation)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -122,7 +127,8 @@ namespace Debuglandia
         /// This Method shows that the SQL Reader has been initialized.
         /// </summary>
         /// <returns>Returns a new Debugger object.</returns>
-        public void ReaderInitialised()
+        [Conditional("DEBUG")]
+        public static void ReaderInitialised()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = 1;
@@ -136,7 +142,8 @@ namespace Debuglandia
         /// <summary>
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated. 
         /// </summary>
-        public void ReaderTerminating()
+        [Conditional("DEBUG")]
+        public static void ReaderTerminating()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -149,7 +156,8 @@ namespace Debuglandia
         /// <summary>
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.
         /// </summary>
-        public void SQLConnectionTerminating()
+        [Conditional("DEBUG")]
+        public static void SQLConnectionTerminating()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -162,7 +170,8 @@ namespace Debuglandia
         /// <summary>
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.
         /// </summary>
-        public void SQLCommandTerminating()
+        [Conditional("DEBUG")]
+        public static void SQLCommandTerminating()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -174,7 +183,8 @@ namespace Debuglandia
         /// <summary>
         /// This Method is used to let you know that multiple Variables has been declared.
         /// </summary>
-        public void Variable()
+        [Conditional("DEBUG")]
+        public static void Variable()
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
@@ -187,7 +197,8 @@ namespace Debuglandia
         /// This Method is used to let you know that a Variable has been declared.
         /// </summary>
         /// <param name="variableName">Name of the variable you declared</param>
-        public void Variable(string variableName)
+        [Conditional("DEBUG")]
+        public static void Variable(string variableName)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
