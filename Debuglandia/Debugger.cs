@@ -315,12 +315,12 @@ namespace Debuglandia
         /// This method is used to write a fail message to the debug window.
         /// </summary>
         /// <param name="message">The message which is being written to the debug window.</param>
-        public static void Fail(string message)
+        public static void Fail(string message, string secondMessage)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes the message to the debug window.
-            Debug.Fail($"{(char)8}{message}");
+            Debug.Fail($"{(char)8}{message}",$"{(char)7} {secondMessage}");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;   
         }
