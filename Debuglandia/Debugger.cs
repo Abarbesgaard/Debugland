@@ -203,7 +203,7 @@ namespace Debuglandia
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the Variable has been declared.
-            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared");
+            Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }

@@ -21,8 +21,10 @@ namespace Testing
             Debugger.TryBlockTerminated();
             Debugger.CatchBlockInitiated();
             Debugger.CatchBlockTerminated();
+            Debugger.FinallyBlockInitiated();
             Debugger.SQLCommandTerminating();
             Debugger.SQLConnectionTerminating();
+            Debugger.FinallyBlockTerminated();
             Debugger.MethodStop("Main");
 
             
