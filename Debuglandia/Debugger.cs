@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 namespace Debuglandia
 {
     /// <summary>
-    /// Denne kasse skal bruges til at debugge klasser.
+    /// This class is used for debugging purposes.
     /// </summary>
     public class Debugger
     {
@@ -21,12 +21,12 @@ namespace Debuglandia
         /// <summary>
         /// Creates a new Stopwatch object.
         /// </summary>
-        Stopwatch watch = new Stopwatch();
+        Stopwatch watch = new();
         #endregion
 
 
         /// <summary>
-        /// This method indicates that the method has started and initiated.
+        /// This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
         /// </summary>
         /// <param name="methodName">Navnet på metoden som kalles. </param>
         public void MethodStart(string Name)
@@ -35,6 +35,8 @@ namespace Debuglandia
             Debug.IndentLevel = indentationLevelZero;
             // Writes the name of the method to the debug window.
             Debug.WriteLine($"[{Name}]");
+            // Begins the Stopwatch object.
+            watch.Start();
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the method has initialized.
@@ -45,13 +47,17 @@ namespace Debuglandia
 
 
         /// <summary>
-        /// This method indicates that the method has ended.
+        /// This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
         /// </summary>
-        /// <param name="methodName"></param>
+        /// <param name="methodName">The name of the method which is being called.</param>
         public void MethodStop(string methodName)
         {
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
+            // Terminates the Stopwatch object.
+            watch.Stop();
+            // Writes the lifespan of the method to the debug window.
+            Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
             // Writes that the method has ended.
             Debug.WriteLine($"[/{methodName}]\n");
             // Creates an indentation level of 0.
@@ -92,30 +98,6 @@ namespace Debuglandia
             return message;
         }
 
-
-        /// <summary>
-        /// This method is used to start the time tracking on a method.
-        /// </summary>
-        public void MethodTimeTracker()
-        {
-            // Initiates the Stopwatch object.
-            watch.Start();
-        }
-
-        /// <summary>
-        /// This method is used to stop the time tracking on a method. It will write the lifespan of the method to the debug window.
-        /// </summary>
-        public void MethodTimeTrackerStop()
-        {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = indentationLevelOne;
-            // terminates the Stopwatch object.
-            watch.Stop();
-            // Writes the lifespan of the method to the debug window.
-            Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = indentationLevelZero;
-        }
         /// <summary>
         /// This Method is used to debug SQL Commands, it will write the command to the debug window. This will initate the SQL Connection.
         /// </summary>
@@ -184,6 +166,31 @@ namespace Debuglandia
             Debug.IndentLevel = indentationLevelOne;
             // Writes that the SQL Command has terminated.
             Debug.WriteLine($"{(char)5} Command initialized");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that multiple Variables has been declared.
+        /// </summary>
+        public void Variable()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that Multiple Variables has been declared.
+            Debug.WriteLine($"{(char)15} Variable(s) Declared");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Variable has been declared.
+        /// </summary>
+        /// <param name="variableName">Name of the variable you declared</param>
+        public void Variable(string variableName)
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the Variable has been declared.
+            Debug.WriteLine($"{(char)6}The Variable {variableName} Declared");
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
