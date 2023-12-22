@@ -31,7 +31,7 @@ namespace Debugland
         /// <param name="methodName">Navnet på metoden som kalles. </param>
         [Conditional("DEBUG")]
         public static void MethodStart(string Name)
-        {
+        { 
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
             // Writes the name of the method to the debug window.
