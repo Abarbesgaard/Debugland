@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
+
 namespace Debugland
 {
     /// <summary>
@@ -121,7 +122,7 @@ namespace Debugland
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
             // Returns a new Debugger object.
-            
+
         }
         /// <summary>
         /// This Method shows that the SQL Reader has been initialized.
@@ -136,7 +137,7 @@ namespace Debugland
             Debug.WriteLine($"{(char)5} Reader initialized");
             // Creates an indentation level of 0.
             Debug.IndentLevel = 0;
-            
+
         }
 
         /// <summary>
@@ -320,16 +321,9 @@ namespace Debugland
             // Creates an indentation level of 1.
             Debug.IndentLevel = indentationLevelOne;
             // Writes the message to the debug window.
-            Debug.Fail($"{(char)19} {message}",$"{(char)187} {secondMessage}");
+            Debug.Fail($"{(char)19} {message}", $"{(char)187} {secondMessage}");
             // Creates an indentation level of 0.
-            Debug.IndentLevel = indentationLevelZero;   
+            Debug.IndentLevel = indentationLevelZero;
         }
-
-         
-
-
-         
-
-
     }
 }
