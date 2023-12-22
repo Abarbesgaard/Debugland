@@ -25,7 +25,7 @@ namespace Debugland
         private static readonly Stopwatch watch = new();
         #endregion
          
-
+         
         /// <summary>
         /// This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
         /// </summary>
