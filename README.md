@@ -1,4 +1,5 @@
-![GITHUBBANNER](https://github.com/Abarbesgaard/Debuglandia/assets/11796684/a6445d74-c2cc-44e2-927a-444959db813a)
+
+![GITHUBBANNER](https://github.com/Abarbesgaard/Debugland/assets/11796684/08ffb432-8eba-4236-976b-9110a2d06242)
 
 The Runtime Debugger project aims to enhance the debugging experience during runtime, making it more accessible and user-friendly. The project provides a versatile Debugger class, designed to be seamlessly integrated into your C# projects. Whether you're a developer working on a complex application or a student learning the ropes of programming, this tool can be invaluable in identifying and resolving issues on the fly.
 
