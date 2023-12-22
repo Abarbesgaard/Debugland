@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
-namespace Debuglandia
+namespace Debugland
 {
     /// <summary>
     /// This class is used for debugging purposes.
