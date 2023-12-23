@@ -17,4 +17,5 @@ Key Features:
 
 The layout looks like this
 
-![image](https://github.com/Abarbesgaard/Debuglandia/assets/11796684/01f05a8f-ba86-4e68-b0a9-fb6eb76a8865)
+![image](https://github.com/Abarbesgaard/Debugland/assets/11796684/02472a6f-d5ad-44cb-8147-6873887701ab)
+
