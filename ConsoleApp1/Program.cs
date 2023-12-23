@@ -8,6 +8,14 @@ namespace ConsoleApp1
         {
             Test test = new Test();
             test.Test1();
+
+            Console.WriteLine("Press any key to continue...");
+
+            test.Test2();
+
+            Console.WriteLine("Press any key to continue...");
+
+            test.Test3();
             Console.ReadLine();
 
         }
@@ -25,6 +33,8 @@ namespace ConsoleApp1
             Debugger.Variable("a", $"{a}");
             Test2();
             Debugger.MethodStop("Test1");
+            Console.WriteLine("---------");
+            
         }
 
         public void Test2()
@@ -39,7 +49,8 @@ namespace ConsoleApp1
                 Test3();
             }
             Debugger.IfStop();
-            Console.WriteLine("Test2");
+            Console.WriteLine("---------");
+            
             Debugger.MethodStop("Test2");
         }
 
