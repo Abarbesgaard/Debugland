@@ -13,7 +13,6 @@ namespace Debugland
         #region Properties
       
         private static readonly Stopwatch watch = new();
-
         
         #endregion
 
@@ -25,60 +24,24 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void MethodStart(string Name)
         {
-            if (Debug.IndentLevel == 0)
-            {
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-                // Writes the name of the method to the debug window.
-                Debug.WriteLine($"[{Name}]");
-                // Begins the Stopwatch object.
-                watch.Start();
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-                // Writes that the method has initialized.
-                Debug.WriteLine($"{(char)26} initialized");
+            // Store the initial Debug.IndentLevel
+            int initialIndentLevel = Debug.IndentLevel;
 
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-                // Writes the name of the method to the debug window.
-                Debug.WriteLine($"[{Name}]");
-                // Begins the Stopwatch object.
-                watch.Start();
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-                // Writes that the method has initialized.
-                Debug.WriteLine($"{(char)26} initialized");
-            }
-            else if(Debug.IndentLevel == 2)
-            {
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-                // Writes the name of the method to the debug window.
-                Debug.WriteLine($"[{Name}]");
-                // Begins the Stopwatch object.
-                watch.Start();
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 3;
-                // Writes that the method has initialized.
-                Debug.WriteLine($"{(char)26} initialized");
-            }
-            else if(Debug.IndentLevel == 3)
-            {
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 3;
-                // Writes the name of the method to the debug window.
-                Debug.WriteLine($"[{Name}]");
-                // Begins the Stopwatch object.
-                watch.Start();
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 4;
-                // Writes that the method has initialized.
-                Debug.WriteLine($"{(char)26} initialized");
+            // Writes the name of the method to the debug window for the initial level
+            Debug.WriteLine($"[{Name}]");
 
+            // Writes that the method has initialized for the initial level
+            Debug.WriteLine($"{(char)26} initialized");
+
+            // Enter the loop starting from 1 to initialIndentLevel (including 0)
+            for (int i = 1; i <= initialIndentLevel; i++)
+            {
+                // Adjusts the Debug.IndentLevel for each iteration
+                Debug.IndentLevel = i;
             }
+            // After the loop, reset Debug.IndentLevel to the initial value
+            Debug.IndentLevel = initialIndentLevel + 1; // Adjust the value as needed
+
         }
 
 
