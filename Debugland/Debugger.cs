@@ -325,5 +325,30 @@ namespace Debugland
             // Creates an indentation level of 0.
             Debug.IndentLevel = indentationLevelZero;
         }
+        /// <summary>
+        /// This Method is used to let you know that a If Statement has been initiated.
+        /// </summary>
+        public static void IfStart()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the If Statement has been initiated.
+            Debug.WriteLine($"{(char)29} If Statement Initiated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+        /// <summary>
+        /// This Method is used to let you know that a If Statement has been terminated.
+        /// </summary>
+        public static void IfEnd()
+        {
+            // Creates an indentation level of 1.
+            Debug.IndentLevel = indentationLevelOne;
+            // Writes that the If Statement has been terminated.
+            Debug.WriteLine($"{(char)29} If Statement Terminated");
+            // Creates an indentation level of 0.
+            Debug.IndentLevel = indentationLevelZero;
+        }
+         
     }
 }
