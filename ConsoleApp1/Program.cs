@@ -22,7 +22,13 @@ namespace ConsoleApp1
         {
             Debugger.MethodStart("Test1");
             Debugger.IfStart();
+            Debugger.TryBlockInitiated();
             Test2();
+            Debugger.TryBlockTerminated();
+            Debugger.CatchBlockInitiated();
+            Debugger.CatchBlockTerminated();
+            Debugger.FinallyBlockInitiated();
+            Debugger.FinallyBlockTerminated();
             Debugger.IfStop();
             Debugger.MethodStop("Test1");
 
@@ -41,6 +47,8 @@ namespace ConsoleApp1
         {
             Debugger.MethodStart("test3");
             Debugger.IfStart();
+            Debugger.Variable("_testInt", "9001");
+            Debugger.Message("test3 message");
             Test4();
             Debugger.IfStop();
             Debugger.MethodStop("test3");
