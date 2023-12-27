@@ -13,6 +13,7 @@ namespace Debugland
         #region Properties
 
         private static readonly Stopwatch watch = new();
+        private static Dictionary<string, Stopwatch> methodTimers = [];
 
         #endregion
 
@@ -26,7 +27,7 @@ namespace Debugland
         {
             // Store the initial Debug.IndentLevel
             int initialIndentLevel = Debug.IndentLevel;
-            watch.Start();
+            
             // Writes the name of the method to the debug window for the initial level
             Debug.WriteLine($"[{Name}]");
 
@@ -44,7 +45,6 @@ namespace Debugland
 
         }
 
-
         /// <summary>
         /// This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
         /// </summary>
@@ -52,11 +52,52 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void MethodStop(string methodName)
         {
-            watch.Stop();
+            
             Debug.IndentLevel += 0;
-            Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
+            
             Debug.Unindent();
             Debug.WriteLine($"[/{methodName}]\n");
+        }
+
+        public static void TimeStart(string methodName)
+        {
+            if (!methodTimers.ContainsKey(methodName))
+            {
+                methodTimers[methodName] = new Stopwatch();
+            }
+
+            // Check if the stopwatch is running; if not, start it
+            if (!methodTimers[methodName].IsRunning)
+            {
+                methodTimers[methodName].Start();
+            }
+            else
+            {
+                // Handle the case where Start() is called before a previous Stop()
+                Debug.WriteLine($"Error: Start() called for {methodName} while the timer is already running.");
+            }
+        }
+        public static void TimeStop(string methodName)
+        {
+            if (methodTimers.ContainsKey(methodName))
+            {
+                // Stop the stopwatch if it is running
+                if (methodTimers[methodName].IsRunning)
+                {
+                    methodTimers[methodName].Stop();
+                    Debug.WriteLine($"{(char)27}Elapsed time for {methodName}: {methodTimers[methodName].ElapsedMilliseconds} milliseconds");
+                }
+                else
+                {
+                    // Handle the case where Stop() is called without a corresponding Start()
+                    Debug.WriteLine($"Error: Stop() called for {methodName} without a prior Start()");
+                }
+            }
+            else
+            {
+                // Handle the case where TimeStart() was not called before TimeStop()
+                Debug.WriteLine($"Error: TimeStart() was not called for {methodName}");
+            }
         }
         /// <summary>
         /// This method is used to write a message to the debug window.
