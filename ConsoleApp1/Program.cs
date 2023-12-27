@@ -50,6 +50,8 @@ namespace ConsoleApp1
         {
             Debugger.MethodStart("test4");
             Debugger.IfStart();
+            Debugger.FinallyBlockInitiated();
+            Debugger.FinallyBlockTerminated();
             Debugger.IfStop();
             Debugger.MethodStop("test4");
         }

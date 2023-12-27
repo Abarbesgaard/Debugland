@@ -70,9 +70,6 @@ namespace Debugland
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)33}{message}");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel += 0;
-            // Returns the message which is being written to the debug window.
         }
 
         /// <summary>
@@ -84,12 +81,9 @@ namespace Debugland
         public static void MessageImportant(string message)
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)19}{message}");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
-            // Returns the message which is being written to the debug window.
         }
 
         /// <summary>
@@ -101,14 +95,9 @@ namespace Debugland
         public static void SQLCommandInitialized(string operation)
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes the SQL Command to the debug window.
-            string debugLine = $"{(char)1} SQL Command: {operation}";
-            // Writes the SQL Command to the debug window.
-            Debug.WriteLine(debugLine);
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
-            // Returns a new Debugger object.
+            Debug.WriteLine($"{(char)1} SQL Command: {operation}");
 
         }
         /// <summary>
@@ -118,12 +107,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void ReaderInitialised()
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes that the SQL Reader has been initialized.
             Debug.WriteLine($"{(char)5} Reader initialized");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
 
@@ -133,12 +119,10 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void ReaderTerminating()
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+           
+            Debug.IndentLevel += 0;
             // Writes that the SQL Reader has terminated.
             Debug.WriteLine($"{(char)5} Reader terminated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
         /// <summary>
@@ -148,11 +132,9 @@ namespace Debugland
         public static void SQLConnectionTerminating()
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes that the SQL Connection has terminated.
             Debug.WriteLine($"{(char)3} SQL Connection Terminated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
         /// <summary>
@@ -161,12 +143,10 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void SQLCommandTerminating()
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            // 
+            Debug.IndentLevel += 0;
             // Writes that the SQL Command has terminated.
             Debug.WriteLine($"{(char)5} Command initialized");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
         }
         /// <summary>
         /// This Method is used to let you know that multiple Variables has been declared.
@@ -174,42 +154,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable()
         {
-            if (Debug.IndentLevel == 0)
-            {
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-                // Writes that Multiple Variables has been declared.
-                Debug.WriteLine($"{(char)15} Variable(s) Declared");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-                // Writes that Multiple Variables has been declared.
-                Debug.WriteLine($"{(char)15} Variable(s) Declared");
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-            }
-            else if (Debug.IndentLevel == 2)
-            {
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-                // Writes that Multiple Variables has been declared.
-                Debug.WriteLine($"{(char)15} Variable(s) Declared");
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-            }
-            else if (Debug.IndentLevel == 3)
-            {
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-                // Writes that Multiple Variables has been declared.
-                Debug.WriteLine($"{(char)15} Variable(s) Declared");
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-            }
+            Debug.IndentLevel += 0;
+            Debug.WriteLine($"{(char)15} Variable(s) Declared");
+
         }
         /// <summary>
         /// This Method is used to let you know that a Variable has been declared.
@@ -218,42 +165,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable(string variableName)
         {
-            if (Debug.IndentLevel == 0)
-            {
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-            }
-            else if (Debug.IndentLevel == 2)
-            {
-                // Creates an indentation level of 2
-                Debug.IndentLevel = 2;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-            }
-            else if (Debug.IndentLevel == 3)
-            {
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-            }
+            Debug.IndentLevel += 0;
+            Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
+         
         }
 
         /// <summary>
@@ -264,38 +178,8 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable(string variableName, string variableValue)
         {
-            if (Debug.IndentLevel == 0)
-            {
-                Debug.IndentLevel = 0;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                Debug.IndentLevel = 1;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-            }
-            else if (Debug.IndentLevel == 2)
-            {
-                Debug.IndentLevel = 2;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-            }
-            else if (Debug.IndentLevel == 3)
-            {
-                Debug.IndentLevel = 3;
-                // Writes that the Variable has been declared.
-                Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-            }
+            Debug.IndentLevel += 0;
+            Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
         }
         /// <summary>
         /// This Method is used to let you know that a Try Block has been initiated.
@@ -304,11 +188,9 @@ namespace Debugland
         public static void TryBlockInitiated()
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Try Block Initiated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
         /// <summary>
@@ -318,11 +200,10 @@ namespace Debugland
         public static void TryBlockTerminated()
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
+
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Try Block Terminated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
         }
         /// <summary>
         /// This Method is used to let you know that a Catch Block has been initiated.
@@ -330,12 +211,10 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void CatchBlockInitiated()
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            // 
+            Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Catch Block Initiated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
         /// <summary>
@@ -344,12 +223,10 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void CatchBlockTerminated()
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            // 
+            Debug.IndentLevel += 0;
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Catch Block Terminated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
         }
         /// <summary>
         /// This Method is used to let you know that a Finally Block has been initiated.
@@ -358,11 +235,9 @@ namespace Debugland
         public static void FinallyBlockInitiated()
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Finally Block Initiated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
 
         }
         /// <summary>
@@ -372,11 +247,9 @@ namespace Debugland
         public static void FinallyBlockTerminated()
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Finally Block Terminated");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
         }
         /// <summary>
         /// Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();
@@ -391,12 +264,11 @@ namespace Debugland
         /// <param name="message">The message which is being written to the debug window.</param>
         public static void Fail(string message, string secondMessage)
         {
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            // Creates an indentation level of += 0.
+            Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.Fail($"{(char)19} {message}", $"{(char)187} {secondMessage}");
-            // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
+            
         }
         /// <summary>
         /// This Method is used to let you know that a If Statement has been initiated.
