@@ -52,100 +52,11 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void MethodStop(string methodName)
         {
-            int debugIndentLevel = Debug.IndentLevel;
             watch.Stop();
-            for (int i = 1; i <= debugIndentLevel; i++)
-            {
-                Debug.IndentLevel = i;
-            }
-
-            Debug.IndentLevel = 0;
-            // Terminates the Stopwatch object.
-            watch.Stop();
-            // Creates an indentation level of 1.
-            Debug.IndentLevel = debugIndentLevel;
-            // Writes the lifespan of the method to the debug window.
+            Debug.IndentLevel += 0;
             Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            // Creates an indentation level of 0.
             Debug.Unindent();
-            // Writes that the method has ended.
             Debug.WriteLine($"[/{methodName}]\n");
-            // Creates an indentation level of 0.
-            if (Debug.IndentLevel > 1)
-                Debug.IndentLevel = debugIndentLevel;
-            else
-                Debug.IndentLevel = debugIndentLevel -1;
-
-
-
-            //if (Debug.IndentLevel == 0)
-            //{
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 0;
-            //    // Terminates the Stopwatch object.
-            //    watch.Stop();
-            //    // Creates an indentation level of 1.
-            //    Debug.IndentLevel = 1;
-            //    // Writes the lifespan of the method to the debug window.
-            //    Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 0;
-            //    // Writes that the method has ended.
-            //    Debug.WriteLine($"[/{methodName}]\n");
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 0;
-            //}
-            //else if (Debug.IndentLevel == 1)
-            //{
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 0;
-            //    // Terminates the Stopwatch object.
-            //    watch.Stop();
-            //    // Creates an indentation level of 1.
-            //    Debug.IndentLevel = 1;
-            //    // Writes the lifespan of the method to the debug window.
-            //    Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 1;
-            //    // Writes that the method has ended.
-            //    Debug.WriteLine($"[/{methodName}]\n");
-            //    // Creates an indentation level of 0.
-            //    Debug.IndentLevel = 0;
-            //}
-            //else if (Debug.IndentLevel == 2)
-            //{
-            //    // Creates an indentation level of 1.
-            //    Debug.IndentLevel = 1;
-            //    // Terminates the Stopwatch object.
-            //    watch.Stop();
-            //    // Creates an indentation level of 2.
-            //    Debug.IndentLevel = 2;
-            //    // Writes the lifespan of the method to the debug window.
-            //    Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            //    // Creates an indentation level of 1.
-            //    Debug.IndentLevel = 1;
-            //    // Writes that the method has ended.
-            //    Debug.WriteLine($"[/{methodName}]\n");
-            //    // Creates an indentation level of 1.
-            //    Debug.IndentLevel = 1;
-            //}
-            //else if(  Debug.IndentLevel == 3)
-            //{
-            //    // Creates an indentation level of 2.
-            //    Debug.IndentLevel = 2;
-            //    // Terminates the Stopwatch object.
-            //    watch.Stop();
-            //    // Creates an indentation level of 3.
-            //    Debug.IndentLevel = 3;
-            //    // Writes the lifespan of the method to the debug window.
-            //    Debug.WriteLine($"{(char)27} Method Lifespan: {watch.ElapsedMilliseconds} ms");
-            //    // Creates an indentation level of 2.
-            //    Debug.IndentLevel = 2;
-            //    // Writes that the method has ended.
-            //    Debug.WriteLine($"[/{methodName}]\n");
-            //    // Creates an indentation level of 3.
-            //    Debug.IndentLevel = 2;
-            //}
         }
         /// <summary>
         /// This method is used to write a message to the debug window.
@@ -156,11 +67,11 @@ namespace Debugland
         public static void Message(string message)
         {
             // Creates an indentation level of 1.
-            Debug.IndentLevel = 1;
+            Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)33}{message}");
             // Creates an indentation level of 0.
-            Debug.IndentLevel = 0;
+            Debug.IndentLevel += 0;
             // Returns the message which is being written to the debug window.
         }
 
@@ -492,78 +403,20 @@ namespace Debugland
         /// </summary>
         public static void IfStart()
         {
-            if (Debug.IndentLevel == 0)
-            {
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 0;
-                // Writes that the If Statement has been initiated.
-                Debug.WriteLine($"{(char)29} If Statement Initiated");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 1;
-                // Writes that the If Statement has been initiated.
-                Debug.WriteLine($"{(char)29} If Statement Initiated");
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-            }
-            else if (Debug.IndentLevel == 2)
-            {
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 2;
-                // Writes that the If Statement has been initiated.
-                Debug.WriteLine($"{(char)29} If Statement Initiated");
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-            }
-
+            // Increase the IndentLevel by 0
+            Debug.IndentLevel += 0;
+            //Writes that the If Statement has been initiated
+            Debug.WriteLine($"{(char)29} If Statement Initiated");
         }
         /// <summary>
         /// This Method is used to let you know that a If Statement has been terminated.
         /// </summary>
         public static void IfStop()
         {
-            if (Debug.IndentLevel == 3)
-            {
-                // Creates an indentation level of 3.
-                Debug.IndentLevel = 3;
-                // Writes that the If Statement has been terminated.
-                Debug.WriteLine($"{(char)29} If Statement Terminated");
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-            }
-            else if (Debug.IndentLevel == 2)
-            {
-                // Creates an indentation level of 2.
-                Debug.IndentLevel = 2;
-                // Writes that the If Statement has been terminated.
-                Debug.WriteLine($"{(char)29} If Statement Terminated");
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-            }
-            else if (Debug.IndentLevel == 1)
-            {
-                // Creates an indentation level of 1.
-                Debug.IndentLevel = 1;
-                // Writes that the If Statement has been terminated.
-                Debug.WriteLine($"{(char)29} If Statement Terminated");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-            else if (Debug.IndentLevel == 0)
-            {
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 1;
-                // Writes that the If Statement has been terminated.
-                Debug.WriteLine($"{(char)29} If Statement Terminated");
-                // Creates an indentation level of 0.
-                Debug.IndentLevel = 0;
-            }
-
+            // Increase the IndentLevel by 0
+            Debug.IndentLevel += 0;
+            // After the loop, write the message to the debug window.
+            Debug.WriteLine($"{(char)29} If Statement Terminated");
         }
-
     }
 }

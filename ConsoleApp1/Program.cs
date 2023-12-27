@@ -9,13 +9,6 @@ namespace ConsoleApp1
             Test test = new Test();
             test.Test1();
 
-            Console.WriteLine("Press any key to continue...");
-
-            test.Test2();
-
-            Console.WriteLine("Press any key to continue...");
-
-            test.Test3();
             Console.ReadLine();
 
         }
@@ -28,39 +21,39 @@ namespace ConsoleApp1
         public void Test1()
         {
             Debugger.MethodStart("Test1");
-            
-            int a = 0;
-            Debugger.Variable("a", $"{a}");
-            Test2();
-            Debugger.MethodStop("Test1");
-            Console.WriteLine("---------");
-            
-        }
-
-        public void Test2()
-        {
-            Debugger.MethodStart("Test2");
-            int a = 2;
-
-            Debugger.Variable("a", $"{a}");
             Debugger.IfStart();
-            if (true)
-            {
-                Test3();
-            }
+            Test2();
             Debugger.IfStop();
-            Console.WriteLine("---------");
-            
-            Debugger.MethodStop("Test2");
+            Debugger.MethodStop("Test1");
+
         }
 
-        public void Test3()
+        void Test2()
         {
-            Debugger.MethodStart("Test3");
-            int a = 3;
-            Debugger.Variable("a", $"{a}");
-            Console.WriteLine($"Laust");
-            Debugger.MethodStop("Test3");
+            Debugger.MethodStart("test2");
+            Debugger.IfStart();
+            Test3();
+            Debugger.IfStop();
+            Debugger.MethodStop("test2");
         }
+
+        void Test3()
+        {
+            Debugger.MethodStart("test3");
+            Debugger.IfStart();
+            Test4();
+            Debugger.IfStop();
+            Debugger.MethodStop("test3");
+        }
+
+        void Test4()
+        {
+            Debugger.MethodStart("test4");
+            Debugger.IfStart();
+            Debugger.IfStop();
+            Debugger.MethodStop("test4");
+        }
+
+
     }
 }
