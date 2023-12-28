@@ -17,7 +17,7 @@ namespace Debugland
 
         #endregion
 
-
+        #region Method initated
         /// <summary>
         /// This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
         /// </summary>
@@ -42,7 +42,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)26} initiated");
 
         }
+        #endregion
 
+        #region Method terminated
         /// <summary>
         /// This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
         /// </summary>
@@ -57,10 +59,14 @@ namespace Debugland
             // Writes the name of the method to the debug window.
             Debug.WriteLine($"[/{methodName}]\n");
         }
+        #endregion
+
+        #region Time initiated
         /// <summary>
         /// This method is used to start the stopwatch and write the elapsed time to the debug window.
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
+        [Conditional("DEBUG")]
         public static void TimeInitiated(string methodName)
         {
             if (!methodTimers.ContainsKey(methodName))
@@ -79,11 +85,15 @@ namespace Debugland
                 Debug.WriteLine($"Error: Start() called for {methodName} while the timer is already running.");
             }
         }
+        #endregion
+
+        #region Time terminated
         /// <summary>
         /// This method is used to stop the stopwatch and write the elapsed time to the debug window.
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
-        public static void TimeInitated(string methodName)
+        [Conditional("DEBUG")]
+        public static void TimeTerminated(string methodName)
         {
             if (methodTimers.ContainsKey(methodName))
             {
@@ -105,6 +115,9 @@ namespace Debugland
                 Debug.WriteLine($"Error: TimeStart() was not called for {methodName}");
             }
         }
+        #endregion
+
+        #region Message
         /// <summary>
         /// This method is used to write a message to the debug window.
         /// </summary>
@@ -118,7 +131,9 @@ namespace Debugland
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)33}{message}");
         }
+        #endregion
 
+        #region Message important
         /// <summary>
         /// This method is used to write an important message to the debug window.
         /// </summary>
@@ -132,7 +147,9 @@ namespace Debugland
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)19}{message}");
         }
+        #endregion
 
+        #region SQL command initiated
         /// <summary>
         /// This Method is used to debug SQL Commands, it will write the command to the debug window. This will initate the SQL Connection.
         /// </summary>
@@ -147,6 +164,23 @@ namespace Debugland
             Debug.WriteLine($"{(char)1} SQL Command: {operation}");
 
         }
+        #endregion
+
+        #region SQL command terminated
+        /// <summary>
+        /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void SQLCommandTerminating()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes that the SQL Command has terminated.
+            Debug.WriteLine($"{(char)5} Command Terminated");
+        }
+        #endregion
+
+        #region Reader initiated
         /// <summary>
         /// This Method shows that the SQL Reader has been initiated.
         /// </summary>
@@ -159,7 +193,9 @@ namespace Debugland
             // Writes that the SQL Reader has been initiated.
             Debug.WriteLine($"{(char)5} Reader initiated");
         }
+        #endregion
 
+        #region Reader terminated
         /// <summary>
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated. 
         /// </summary>
@@ -172,6 +208,23 @@ namespace Debugland
             Debug.WriteLine($"{(char)5} Reader terminated");
 
         }
+        #endregion
+
+        #region SQL Connection initiated
+        /// <summary>
+        /// Connects to the SQL Server and the database. This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void SQLConnectionInitiated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes that the SQL Connection has been initiated.
+            Debug.WriteLine($"{(char)1} SQL Connection Initiated");
+        }
+        #endregion
+
+        #region SQL Connection Terminated
         /// <summary>
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.
         /// </summary>
@@ -184,17 +237,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)3} SQL Connection Terminated");
 
         }
-        /// <summary>
-        /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.
-        /// </summary>
-        [Conditional("DEBUG")]
-        public static void SQLCommandTerminating()
-        {
-            // Gets the initial IndentLevel
-            Debug.IndentLevel += 0;
-            // Writes that the SQL Command has terminated.
-            Debug.WriteLine($"{(char)5} Command Terminated");
-        }
+        #endregion       
+
+        #region Variable and overloads
         /// <summary>
         /// This Method is used to let you know that multiple Variables has been declared.
         /// </summary>
@@ -207,6 +252,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)15} Variable(s) Declared");
 
         }
+        
+
+
         /// <summary>
         /// This Method is used to let you know that a Variable has been declared.
         /// </summary>
@@ -234,6 +282,9 @@ namespace Debugland
             // Writes that the variable has been declared.
             Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
         }
+        #endregion
+
+        #region try block initiated
         /// <summary>
         /// This Method is used to let you know that a Try Block has been initiated.
         /// </summary>
@@ -246,6 +297,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)31} Try Block Initiated");
 
         }
+        #endregion
+
+        #region try block terminated
         /// <summary>
         /// This Method is used to let you know that a Try Block has been terminated.
         /// </summary>
@@ -258,6 +312,9 @@ namespace Debugland
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Try Block Terminated");
         }
+        #endregion
+
+        #region Catch block initiated
         /// <summary>
         /// This Method is used to let you know that a Catch Block has been initiated.
         /// </summary>
@@ -269,6 +326,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)31} Catch Block Initiated");
 
         }
+        #endregion
+
+        #region Catch block terminated
         /// <summary>
         /// This Method is used to let you know that a Catch Block has been terminated.
         /// </summary>
@@ -280,6 +340,9 @@ namespace Debugland
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Catch Block Terminated");
         }
+        #endregion
+
+        #region Finally block initiated
         /// <summary>
         /// This Method is used to let you know that a Finally Block has been initiated.
         /// </summary>
@@ -292,6 +355,9 @@ namespace Debugland
             Debug.WriteLine($"{(char)31} Finally Block Initiated");
 
         }
+        #endregion
+
+        #region Finally block terminated
         /// <summary>
         /// This Method is used to let you know that a Finally Block has been terminated.
         /// </summary>
@@ -303,17 +369,25 @@ namespace Debugland
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Finally Block Terminated");
         }
+        #endregion
+
+        #region Close
         /// <summary>
         /// Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();
         /// </summary>
+        [Conditional("DEBUG")]
         public static void Close()
         {
             Debug.Close();
         }
+        #endregion
+
+        #region fail
         /// <summary>
         /// This method is used to write a fail message to the debug window.
         /// </summary>
         /// <param name="message">The message which is being written to the debug window.</param>
+        [Conditional("DEBUG")]
         public static void Fail(string message, string secondMessage)
         {
             // Gets the initial IndentLevel
@@ -322,9 +396,13 @@ namespace Debugland
             Debug.Fail($"{(char)19} {message}", $"{(char)187} {secondMessage}");
             
         }
+        #endregion
+
+        #region If Statement initiated
         /// <summary>
         /// This Method is used to let you know that a If Statement has been initiated.
         /// </summary>
+        [Conditional("DEBUG")]
         public static void IfInitiated()
         {
             // Gets the initial IndentLevel
@@ -332,9 +410,13 @@ namespace Debugland
             //Writes that the If Statement has been initiated
             Debug.WriteLine($"{(char)29} If Statement Initiated");
         }
+        #endregion
+
+        #region If Statement terminated
         /// <summary>
         /// This Method is used to let you know that a If Statement has been terminated.
         /// </summary>
+        [Conditional("DEBUG")]
         public static void IfTerminated()
         {
             // Gets the initial IndentLevel
@@ -342,7 +424,13 @@ namespace Debugland
             // After the loop, write the message to the debug window.
             Debug.WriteLine($"{(char)29} If Statement Terminated");
         }
+        #endregion
 
+        #region Foreach initiated
+        /// <summary>
+        /// This Method is used to let you know that a for loop  has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
         public static void ForLoopInitiated()
         {
             // Gets the initial IndentLevel
@@ -350,6 +438,13 @@ namespace Debugland
             //Writes that the For Loop has been initiated
             Debug.WriteLine($"{(char)29} For-Loop Initiated");
         }
+        #endregion
+
+        #region For loop terminated
+        /// <summary>
+        /// This Method is used to let you know that a for loop  has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
         public static void ForLoopTerminated()
         {
             // Gets the initial IndentLevel
@@ -357,5 +452,6 @@ namespace Debugland
             //Writes that the For Loop has been terminated
             Debug.WriteLine($"{(char)29} For-Loop Terminated");
         }
+        #endregion
     }
 }
