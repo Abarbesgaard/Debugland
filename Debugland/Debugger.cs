@@ -23,7 +23,7 @@ namespace Debugland
         /// </summary>
         /// <param name="methodName">Navnet på metoden som kalles. </param>
         [Conditional("DEBUG")]
-        public static void MethodStart(string Name)
+        public static void MethodInitiated(string Name)
         {
             // Store the initial Debug.IndentLevel
             int initialIndentLevel = Debug.IndentLevel;
@@ -48,16 +48,20 @@ namespace Debugland
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
         [Conditional("DEBUG")]
-        public static void MethodStop(string methodName)
-        {            Debug.IndentLevel += 0;
+        public static void MethodTerminated(string methodName)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // unindents
             Debug.Unindent();
+            // Writes the name of the method to the debug window.
             Debug.WriteLine($"[/{methodName}]\n");
         }
         /// <summary>
         /// This method is used to start the stopwatch and write the elapsed time to the debug window.
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
-        public static void TimeStart(string methodName)
+        public static void TimeInitiated(string methodName)
         {
             if (!methodTimers.ContainsKey(methodName))
             {
@@ -79,7 +83,7 @@ namespace Debugland
         /// This method is used to stop the stopwatch and write the elapsed time to the debug window.
         /// </summary>
         /// <param name="methodName">The name of the method which is being called.</param>
-        public static void TimeStop(string methodName)
+        public static void TimeInitated(string methodName)
         {
             if (methodTimers.ContainsKey(methodName))
             {
@@ -109,7 +113,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Message(string message)
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)33}{message}");
@@ -123,7 +127,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void MessageImportant(string message)
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.WriteLine($"{(char)19}{message}");
@@ -137,7 +141,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void SQLCommandInitiated(string operation)
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the SQL Command to the debug window.
             Debug.WriteLine($"{(char)1} SQL Command: {operation}");
@@ -150,10 +154,10 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void ReaderInitiated()
         {
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the SQL Reader has been initiated.
             Debug.WriteLine($"{(char)5} Reader initiated");
-
         }
 
         /// <summary>
@@ -162,7 +166,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void ReaderTerminating()
         {
-           
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the SQL Reader has terminated.
             Debug.WriteLine($"{(char)5} Reader terminated");
@@ -174,7 +178,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void SQLConnectionTerminating()
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the SQL Connection has terminated.
             Debug.WriteLine($"{(char)3} SQL Connection Terminated");
@@ -186,7 +190,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void SQLCommandTerminating()
         {
-            // 
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the SQL Command has terminated.
             Debug.WriteLine($"{(char)5} Command Terminated");
@@ -197,7 +201,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable()
         {
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
+            // Writes that the variable(s) has been declared.
             Debug.WriteLine($"{(char)15} Variable(s) Declared");
 
         }
@@ -208,7 +214,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable(string variableName)
         {
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
+            // Writes that the variable has been declared.
             Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
          
         }
@@ -221,7 +229,9 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void Variable(string variableName, string variableValue)
         {
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
+            // Writes that the variable has been declared.
             Debug.WriteLine($"{(char)6}The Variable {variableName} declared with the value of {variableValue}");
         }
         /// <summary>
@@ -230,7 +240,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void TryBlockInitiated()
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Try Block Initiated");
@@ -242,7 +252,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void TryBlockTerminated()
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
 
             // Writes that the try block has been terminated.
@@ -254,8 +264,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void CatchBlockInitiated()
         {
-            // 
-            Debug.IndentLevel += 0;
+            // Gets the initial IndentLevel            Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Catch Block Initiated");
 
@@ -266,7 +275,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void CatchBlockTerminated()
         {
-            // 
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Catch Block Terminated");
@@ -277,7 +286,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void FinallyBlockInitiated()
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the try block has been initiated.
             Debug.WriteLine($"{(char)31} Finally Block Initiated");
@@ -289,7 +298,7 @@ namespace Debugland
         [Conditional("DEBUG")]
         public static void FinallyBlockTerminated()
         {
-            // Creates an indentation level of 1.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes that the try block has been terminated.
             Debug.WriteLine($"{(char)30} Finally Block Terminated");
@@ -307,7 +316,7 @@ namespace Debugland
         /// <param name="message">The message which is being written to the debug window.</param>
         public static void Fail(string message, string secondMessage)
         {
-            // Creates an indentation level of += 0.
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.Fail($"{(char)19} {message}", $"{(char)187} {secondMessage}");
@@ -316,9 +325,9 @@ namespace Debugland
         /// <summary>
         /// This Method is used to let you know that a If Statement has been initiated.
         /// </summary>
-        public static void IfStart()
+        public static void IfInitiated()
         {
-            // Increase the IndentLevel by 0
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             //Writes that the If Statement has been initiated
             Debug.WriteLine($"{(char)29} If Statement Initiated");
@@ -326,12 +335,27 @@ namespace Debugland
         /// <summary>
         /// This Method is used to let you know that a If Statement has been terminated.
         /// </summary>
-        public static void IfStop()
+        public static void IfTerminated()
         {
-            // Increase the IndentLevel by 0
+            // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // After the loop, write the message to the debug window.
             Debug.WriteLine($"{(char)29} If Statement Terminated");
+        }
+
+        public static void ForLoopInitiated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the For Loop has been initiated
+            Debug.WriteLine($"{(char)29} For-Loop Initiated");
+        }
+        public static void ForLoopTerminated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the For Loop has been terminated
+            Debug.WriteLine($"{(char)29} For-Loop Terminated");
         }
     }
 }
