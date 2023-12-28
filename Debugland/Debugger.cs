@@ -31,8 +31,6 @@ namespace Debugland
             // Writes the name of the method to the debug window for the initial level
             Debug.WriteLine($"[{Name}]");
 
-            // Writes that the method has initialized for the initial level
-
             // Enter the loop starting from 1 to initialIndentLevel (including 0)
             for (int i = 1; i <= initialIndentLevel; i++)
             {
@@ -41,7 +39,7 @@ namespace Debugland
             }
             // After the loop, reset Debug.IndentLevel to the initial value
             Debug.IndentLevel = initialIndentLevel + 1; // Adjust the value as needed
-            Debug.WriteLine($"{(char)26} initialized");
+            Debug.WriteLine($"{(char)26} initiated");
 
         }
 
@@ -51,14 +49,14 @@ namespace Debugland
         /// <param name="methodName">The name of the method which is being called.</param>
         [Conditional("DEBUG")]
         public static void MethodStop(string methodName)
-        {
-            
-            Debug.IndentLevel += 0;
-            
+        {            Debug.IndentLevel += 0;
             Debug.Unindent();
             Debug.WriteLine($"[/{methodName}]\n");
         }
-
+        /// <summary>
+        /// This method is used to start the stopwatch and write the elapsed time to the debug window.
+        /// </summary>
+        /// <param name="methodName">The name of the method which is being called.</param>
         public static void TimeStart(string methodName)
         {
             if (!methodTimers.ContainsKey(methodName))
@@ -77,6 +75,10 @@ namespace Debugland
                 Debug.WriteLine($"Error: Start() called for {methodName} while the timer is already running.");
             }
         }
+        /// <summary>
+        /// This method is used to stop the stopwatch and write the elapsed time to the debug window.
+        /// </summary>
+        /// <param name="methodName">The name of the method which is being called.</param>
         public static void TimeStop(string methodName)
         {
             if (methodTimers.ContainsKey(methodName))
@@ -85,7 +87,7 @@ namespace Debugland
                 if (methodTimers[methodName].IsRunning)
                 {
                     methodTimers[methodName].Stop();
-                    Debug.WriteLine($"{(char)27}Elapsed time for {methodName}: {methodTimers[methodName].ElapsedMilliseconds} milliseconds");
+                    Debug.WriteLine($"{(char)27} Elapsed time for {methodName}: {methodTimers[methodName].ElapsedMilliseconds} milliseconds");
                 }
                 else
                 {
@@ -133,7 +135,7 @@ namespace Debugland
         /// <param name="operation">The SQL Command which is being executed.</param>
         /// <returns>Returns a new Debugger object.</returns>
         [Conditional("DEBUG")]
-        public static void SQLCommandInitialized(string operation)
+        public static void SQLCommandInitiated(string operation)
         {
             // Creates an indentation level of 1.
             Debug.IndentLevel += 0;
@@ -142,15 +144,15 @@ namespace Debugland
 
         }
         /// <summary>
-        /// This Method shows that the SQL Reader has been initialized.
+        /// This Method shows that the SQL Reader has been initiated.
         /// </summary>
         /// <returns>Returns a new Debugger object.</returns>
         [Conditional("DEBUG")]
-        public static void ReaderInitialised()
+        public static void ReaderInitiated()
         {
             Debug.IndentLevel += 0;
-            // Writes that the SQL Reader has been initialized.
-            Debug.WriteLine($"{(char)5} Reader initialized");
+            // Writes that the SQL Reader has been initiated.
+            Debug.WriteLine($"{(char)5} Reader initiated");
 
         }
 
@@ -187,7 +189,7 @@ namespace Debugland
             // 
             Debug.IndentLevel += 0;
             // Writes that the SQL Command has terminated.
-            Debug.WriteLine($"{(char)5} Command initialized");
+            Debug.WriteLine($"{(char)5} Command Terminated");
         }
         /// <summary>
         /// This Method is used to let you know that multiple Variables has been declared.
