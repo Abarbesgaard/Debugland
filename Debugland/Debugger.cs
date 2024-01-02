@@ -13,7 +13,7 @@ namespace Debugland
         #region Properties
 
         private static readonly Stopwatch watch = new();
-        private static Dictionary<string, Stopwatch> methodTimers = []; 
+        private static Dictionary<string, Stopwatch> methodTimers = [];  
 
         #endregion 
 
