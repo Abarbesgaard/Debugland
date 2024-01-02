@@ -468,8 +468,25 @@ namespace Debugland
             // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
-            Debug.Assert(condition, message);
+            Debug.Assert(condition, $"{(char)20} {message}");
         }
         #endregion
+
+        #region MessageIf
+        /// <summary>
+        /// This method is used to write a message to the debug window if a condition is true.
+        /// </summary>
+        /// <param name="condition">The condition which is being checked.</param>
+        /// <param name="message">The message which is being written to the debug window.</param>
+        [Conditional("DEBUG")]
+        public static void MessageIf(bool condition, string message)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.WriteLineIf(condition, $"{(char)20} {message}");
+        }
+        #endregion
+
     }
 }
