@@ -1,9 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <NeutralLanguage>en-150</NeutralLanguage>
+    <PackageTags>Debug</PackageTags>
+    <PackageReleaseNotes>This is the first release of Debugland</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Abarbesgaard/Debugland</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Abarbesgaard/Debugland</PackageProjectUrl>
+    <Description>This is a wrapper for the debug class in C#</Description>
+    <Title>Debugland</Title>
+    <Authors>Andreas Barbesgaard</Authors>
+    <Company>Andreas Barbesgaard</Company>
+    <Copyright>2024</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
