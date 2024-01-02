@@ -1,22 +1,9 @@
-trigger:
-- Master
-
-pool:
-  vmImage: ubuntu-latest
-
-variables:
-- name: system.debug
-  value: true
-
 steps:
-- script: |
-    //Your build and test logic here
-
-    //Example: replace this with your actual build/test commands
-    dotnet build
-    dotnet test
-
-    git add .
-    git commit -m "Committing changes made during build"
-    git push origin HEAD:refs/heads/$(Build.SourceBranchName)
-  displayName: 'Build and Push changes'
+- task: DotNetCoreCLI@2
+  displayName: 'DotNet pack'
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.csproj'
+    versioningScheme: 'off'  # Du kan justere dette efter behov
+    includesource: true
+    includesymbols: true
