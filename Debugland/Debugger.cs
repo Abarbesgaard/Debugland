@@ -484,7 +484,7 @@ namespace Debugland
             // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
-            Debug.WriteLineIf(condition, message);
+            Debug.WriteLineIf(condition, $"{(char)20} {message}");
         }
         #endregion
 
