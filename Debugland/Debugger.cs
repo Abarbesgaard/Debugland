@@ -453,5 +453,23 @@ namespace Debugland
             Debug.WriteLine($"{(char)29} For-Loop Terminated");
         }
         #endregion
+
+
+        #region Assert
+
+        /// <summary>
+        /// This method is used to check if a condition is true. If the condition is false, the method will write a message to the debug window.
+        /// </summary>
+        /// <param name="condition">The condition which is being checked.</param>
+        /// <param name="message">The message which is being written to the debug window.</param>
+        [Conditional("DEBUG")]
+        public static void Let(bool condition, string message)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.Assert(condition, message);
+        }
+        #endregion
     }
 }
