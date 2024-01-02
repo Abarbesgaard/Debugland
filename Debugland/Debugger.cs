@@ -15,7 +15,7 @@ namespace Debugland
         private static readonly Stopwatch watch = new();
         private static Dictionary<string, Stopwatch> methodTimers = []; 
 
-        #endregion
+        #endregion 
 
         #region Method initated
         /// <summary>
