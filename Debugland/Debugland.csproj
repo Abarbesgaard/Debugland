@@ -17,9 +17,14 @@
     <Authors>Andreas Barbesgaard</Authors>
     <Company>Andreas Barbesgaard</Company>
     <Copyright>2024</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
