@@ -1,5 +1,6 @@
 
 ![GITHUBBANNER](https://github.com/Abarbesgaard/Debugland/assets/11796684/08ffb432-8eba-4236-976b-9110a2d06242)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z51HUTZ)
 
 The Debugland project aims to enhance the debugging experience during runtime, basically its aim is to make debugging more coherent and readable.
 
