@@ -7,17 +7,18 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <NeutralLanguage>en-150</NeutralLanguage>
     <PackageTags>Debug</PackageTags>
-    <PackageReleaseNotes>This is the first release of Debugland</PackageReleaseNotes>
+    <PackageReleaseNotes>A release of Debugland</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Abarbesgaard/Debugland</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/Abarbesgaard/Debugland</PackageProjectUrl>
-    <Description>This is a wrapper for the debug class in C#</Description>
+    <Description>Step into DebugLand – transform debugging chaos into a symphony of organized insights.</Description>
     <Title>Debugland</Title>
     <Authors>Andreas Barbesgaard</Authors>
     <Company>Andreas Barbesgaard</Company>
     <Copyright>2024</Copyright>
     <PackageIcon>icon.png</PackageIcon>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,5 +31,6 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
+  
 
 </Project>
