@@ -485,6 +485,51 @@ namespace Debugland
             // Writes the message to the debug window.
             Debug.WriteLineIf(condition, $"{(char)20} {message}");
         }
+
+        /// <summary>
+        /// This method is used to write a message to the debug window if a condition is true.
+        /// </summary>
+        /// <param name="condition">The conditional expression to evaluate. If the condition is true, the value is written to the trace listeners in the collection.</param>
+        /// <param name="value">An object whose name is sent to the Listeners.</param>
+        [Conditional("DEBUG")]
+        public static void MessageIf(bool condition, object value)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.WriteLineIf(condition, $"{(char)20} {value}");
+        }
+
+        /// <summary>
+        /// This method is used to write a message to the debug window if a condition is true.
+        /// </summary>
+        /// <param name="condition"> The condition which is being checked.</param>
+        /// <param name="value">An object whose name is sent to the Listeners.</param>
+        /// <param name="category">A category name used to organize the output.</param>
+        [Conditional("DEBUG")]
+        public static void MessageIf(bool condition, object value, string category)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.WriteLineIf(condition, $"{(char)20} {value}", $"{(char)15} {category}");
+        }
+
+        /// <summary>
+        /// This method is used to write a message to the debug window if a condition is true.
+        /// </summary>
+        /// <param name="condition">The conditional expression to evaluate. If the condition is true, the category name and message are written to the trace listeners in the collection.</param>
+        /// <param name="stringMessage"> A message to write.</param>
+        /// <param name="stringMessageOne">A category name used to organize the output</param>
+        [Conditional("DEBUG")]
+        public static void MessageIf(bool condition, string stringMessage, string category)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.WriteLineIf(condition, $"{(char)20} {stringMessage}", $"{(char)15} {category}");
+        }
+
         #endregion
 
     }
