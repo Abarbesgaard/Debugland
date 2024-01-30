@@ -382,7 +382,7 @@ namespace Debugland
         }
         #endregion
 
-        #region fail
+        #region Fail
         /// <summary>
         /// This method is used to write a fail message to the debug window.
         /// </summary>
@@ -452,6 +452,58 @@ namespace Debugland
             //Writes that the For Loop has been terminated
             Debug.WriteLine($"{(char)29} For-Loop Terminated");
         }
+        #endregion
+
+        #region While Loop initiated & Terminated
+        /// <summary>
+        /// This Method is used to let you know that a while loop has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void WhileLoopInitiated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the While Loop has been initiated
+            Debug.WriteLine($"{(char)29} While-Loop Initiated");
+        }
+        /// <summary>
+        /// This Method is used to let you know that a while loop has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void WhileLoopTerminated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the While Loop has been Terminated
+            Debug.WriteLine($"{(char)29} While-Loop Terminated");
+        }
+
+        #endregion
+
+        #region Do-While Loop
+        /// <summary>
+        /// This Method is used to let you know that a Do-while loop has been initiated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void DoWhileLoopInitiated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the Do-while Loop has been initiated
+            Debug.WriteLine($"{(char)29} DoWhile-Loop Initiated");
+        }
+        /// <summary>
+        /// This Method is used to let you know that a Do-while loop has been terminated.
+        /// </summary>
+        [Conditional("DEBUG")]
+        public static void DoWhileLoopTerminated()
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            //Writes that the Do-while Loop has been Terminated
+            Debug.WriteLine($"{(char)29} DoWhile-Loop Terminated");
+        }
+
         #endregion
 
         #region Assert
