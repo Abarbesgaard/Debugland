@@ -56,3 +56,28 @@ public void TestMethod()
     → initiated
   [/TestMethod]
 ```
+
+## TimeInitiated and terminated
+The purpose of this method is to track the time of a method
+```csharp
+//start by making a method with the debugger initiated and terminated
+public void TestMethod()
+{
+  //initiate the debugger with the name of this method
+  Debugger.MethodInitiated("TestMethod");
+  Debugger.TimeInitiated("TestMethod");
+
+  Method Logic ...
+
+  //Terminate the debugger for this method
+  Debugger.TimeTerminated
+  Debugger.MethodTerminated("TestMethod");
+}
+```
+### debug output display
+```
+  [TestMethod]
+    → initiated
+    ← Elapsed time for TestMethod: 15 milliseconds"
+  [/TestMethod]
+```
