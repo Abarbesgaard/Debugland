@@ -78,6 +78,6 @@ public void TestMethod()
 ```
   [TestMethod]
     → initiated
-    ← Elapsed time for TestMethod: 15 milliseconds"
+    ← Elapsed time for TestMethod: 15 milliseconds
   [/TestMethod]
 ```
