@@ -13,7 +13,9 @@
     }
   ],
   "build": {
+    
     "content": [
+      
       {
         "files": [
           "**/*.{md,yml}"
@@ -39,7 +41,9 @@
       "_appName": "Debugland",
       "_appTitle": "Debugland",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": true,
+      "_appLogoPath": "icon.svg"
+      
     }
   }
 }

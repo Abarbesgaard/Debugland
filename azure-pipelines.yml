@@ -1,9 +1,0 @@
-steps:
-- task: DotNetCoreCLI@2
-  displayName: 'DotNet pack'
-  inputs:
-    command: 'pack'
-    packagesToPack: '**/*.csproj'
-    versioningScheme: 'off'  # Du kan justere dette efter behov
-    includesource: true
-    includesymbols: true
