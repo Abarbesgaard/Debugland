@@ -9,7 +9,9 @@
           ]
         }
       ],
-      "dest": "_ref"
+      "dest": "..",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
     }
   ],
   "build": {

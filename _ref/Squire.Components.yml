@@ -17,6 +17,12 @@ items:
   assemblies:
   - Squire
 references:
+- uid: Squire.Components.Routes
+  commentId: T:Squire.Components.Routes
+  href: Squire.Components.Routes.html
+  name: Routes
+  nameWithType: Routes
+  fullName: Squire.Components.Routes
 - uid: Squire.Components._Imports
   commentId: T:Squire.Components._Imports
   href: Squire.Components._Imports.html
@@ -29,9 +35,3 @@ references:
   name: App
   nameWithType: App
   fullName: Squire.Components.App
-- uid: Squire.Components.Routes
-  commentId: T:Squire.Components.Routes
-  href: Squire.Components.Routes.html
-  name: Routes
-  nameWithType: Routes
-  fullName: Squire.Components.Routes

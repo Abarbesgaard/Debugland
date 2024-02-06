@@ -18,6 +18,12 @@ items:
   assemblies:
   - Debugland_blazor
 references:
+- uid: Debugland_blazor.Components.Pages.Counter
+  commentId: T:Debugland_blazor.Components.Pages.Counter
+  href: Debugland_blazor.Components.Pages.Counter.html
+  name: Counter
+  nameWithType: Counter
+  fullName: Debugland_blazor.Components.Pages.Counter
 - uid: Debugland_blazor.Components.Pages.Error
   commentId: T:Debugland_blazor.Components.Pages.Error
   href: Debugland_blazor.Components.Pages.Error.html
@@ -36,9 +42,3 @@ references:
   name: Home
   nameWithType: Home
   fullName: Debugland_blazor.Components.Pages.Home
-- uid: Debugland_blazor.Components.Pages.Counter
-  commentId: T:Debugland_blazor.Components.Pages.Counter
-  href: Debugland_blazor.Components.Pages.Counter.html
-  name: Counter
-  nameWithType: Counter
-  fullName: Debugland_blazor.Components.Pages.Counter

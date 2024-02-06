@@ -16,15 +16,15 @@ items:
   assemblies:
   - Debugland_blazor
 references:
-- uid: Debugland_blazor.Components.Layout.NavMenu
-  commentId: T:Debugland_blazor.Components.Layout.NavMenu
-  href: Debugland_blazor.Components.Layout.NavMenu.html
-  name: NavMenu
-  nameWithType: NavMenu
-  fullName: Debugland_blazor.Components.Layout.NavMenu
 - uid: Debugland_blazor.Components.Layout.MainLayout
   commentId: T:Debugland_blazor.Components.Layout.MainLayout
   href: Debugland_blazor.Components.Layout.MainLayout.html
   name: MainLayout
   nameWithType: MainLayout
   fullName: Debugland_blazor.Components.Layout.MainLayout
+- uid: Debugland_blazor.Components.Layout.NavMenu
+  commentId: T:Debugland_blazor.Components.Layout.NavMenu
+  href: Debugland_blazor.Components.Layout.NavMenu.html
+  name: NavMenu
+  nameWithType: NavMenu
+  fullName: Debugland_blazor.Components.Layout.NavMenu
