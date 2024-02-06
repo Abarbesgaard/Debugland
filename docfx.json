@@ -10,38 +10,42 @@
         }
       ],
       "dest": "_ref",
-            "disableGitFeatures": false,
-            "disableDefaultFilter": false,
-            "filter": "filterConfig.yml"
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
     "content": [
-        {
-            "files": [
-                "_ref/**.yml",
-                "_ref/index.md"
-            ]
-        },
-        {
-            "files": [
-                "Overview/toc.yml",
-                "Overview/**.md",
-                "Overview/**/toc.yml",
-                "toc.yml",
-                "*.md"
-            ]
-        }
+      {
+        "files": [
+          "_ref/**/*.yml",
+          "_ref/index.md"
+        ]
+      },
+      {
+        "files": [
+          "Overview/toc.yml",
+          "Overview/**/*.md",
+          "Overview/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
     ],
     "resource": [
-        {
-            "files": [ "images/**" ]
-        }
+      {
+        "files": [
+          "images/**"
+        ]
+      }
     ],
     "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [ "default" ],
+    "template": [
+      "default"
+    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
