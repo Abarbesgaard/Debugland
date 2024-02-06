@@ -1,14 +1,4 @@
 {
-  "Debugland/docs/getting-started.html": {
-    "href": "Debugland/docs/getting-started.html",
-    "title": "Getting Started | Debugland",
-    "keywords": "Getting Started"
-  },
-  "Debugland/docs/introduction.html": {
-    "href": "Debugland/docs/introduction.html",
-    "title": "Introduction | Debugland",
-    "keywords": "Introduction"
-  },
   "README.html": {
     "href": "README.html",
     "title": "Setup | Debugland",
@@ -41,8 +31,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the Debugland. | Debugland",
-    "keywords": "This is the Debugland. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "| Debugland",
+    "keywords": ""
   },
   "introduction.html": {
     "href": "introduction.html",

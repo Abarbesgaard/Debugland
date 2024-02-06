@@ -2,10 +2,6 @@
 _layout: landing
 ---
 
-# This is the **Debugland**.
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-
-## Quick Start Notes:
-
-1. Add images to the *images* folder if the file is referencing an image.
+![GITHUBBANNER](https://github.com/Abarbesgaard/Debugland/assets/11796684/08ffb432-8eba-4236-976b-9110a2d06242)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z51HUTZ)
