@@ -1,0 +1,1303 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Debugger | Debugland </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Debugger | Debugland ">
+      
+      <meta name="description" content="This class is used for debugging purposes.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Abarbesgaard/Debugland/new/master/apiSpec/new?filename=Debugland_Debugger.md&amp;value=---%0Auid%3A%20Debugland.Debugger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Debugland">
+            Debugland
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Debugland.Debugger">
+
+
+
+  <h1 id="Debugland_Debugger" data-uid="Debugland.Debugger" class="text-break">
+Class Debugger  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Debugland.html">Debugland</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Debugland - Backup.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class is used for debugging purposes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Debugger</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Debugger</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Debugland_Debugger_CatchBlockInitiated_" data-uid="Debugland.Debugger.CatchBlockInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_CatchBlockInitiated" data-uid="Debugland.Debugger.CatchBlockInitiated">
+  CatchBlockInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Catch Block has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void CatchBlockInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_CatchBlockTerminated_" data-uid="Debugland.Debugger.CatchBlockTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_CatchBlockTerminated" data-uid="Debugland.Debugger.CatchBlockTerminated">
+  CatchBlockTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Catch Block has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void CatchBlockTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Close_" data-uid="Debugland.Debugger.Close*"></a>
+
+  <h3 id="Debugland_Debugger_Close" data-uid="Debugland.Debugger.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_DoWhileLoopInitiated_" data-uid="Debugland.Debugger.DoWhileLoopInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_DoWhileLoopInitiated" data-uid="Debugland.Debugger.DoWhileLoopInitiated">
+  DoWhileLoopInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Do-while loop has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void DoWhileLoopInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_DoWhileLoopTerminated_" data-uid="Debugland.Debugger.DoWhileLoopTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_DoWhileLoopTerminated" data-uid="Debugland.Debugger.DoWhileLoopTerminated">
+  DoWhileLoopTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Do-while loop has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void DoWhileLoopTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Fail_" data-uid="Debugland.Debugger.Fail*"></a>
+
+  <h3 id="Debugland_Debugger_Fail_System_String_System_String_" data-uid="Debugland.Debugger.Fail(System.String,System.String)">
+  Fail(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a fail message to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Fail(string message, string secondMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message which is being written to the debug window.</p>
+</dd>
+    <dt><code>secondMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_FinallyBlockInitiated_" data-uid="Debugland.Debugger.FinallyBlockInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_FinallyBlockInitiated" data-uid="Debugland.Debugger.FinallyBlockInitiated">
+  FinallyBlockInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Finally Block has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void FinallyBlockInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_FinallyBlockTerminated_" data-uid="Debugland.Debugger.FinallyBlockTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_FinallyBlockTerminated" data-uid="Debugland.Debugger.FinallyBlockTerminated">
+  FinallyBlockTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Finally Block has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void FinallyBlockTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_ForLoopInitiated_" data-uid="Debugland.Debugger.ForLoopInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_ForLoopInitiated" data-uid="Debugland.Debugger.ForLoopInitiated">
+  ForLoopInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a for loop  has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void ForLoopInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_ForLoopTerminated_" data-uid="Debugland.Debugger.ForLoopTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_ForLoopTerminated" data-uid="Debugland.Debugger.ForLoopTerminated">
+  ForLoopTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a for loop  has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void ForLoopTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_IfInitiated_" data-uid="Debugland.Debugger.IfInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_IfInitiated" data-uid="Debugland.Debugger.IfInitiated">
+  IfInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a If Statement has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void IfInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_IfTerminated_" data-uid="Debugland.Debugger.IfTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_IfTerminated" data-uid="Debugland.Debugger.IfTerminated">
+  IfTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a If Statement has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void IfTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Let_" data-uid="Debugland.Debugger.Let*"></a>
+
+  <h3 id="Debugland_Debugger_Let_System_Boolean_System_String_" data-uid="Debugland.Debugger.Let(System.Boolean,System.String)">
+  Let(bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to check if a condition is true. If the condition is false, the method will write a message to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Let(bool condition, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition which is being checked.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message which is being written to the debug window.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Message_" data-uid="Debugland.Debugger.Message*"></a>
+
+  <h3 id="Debugland_Debugger_Message_System_String_" data-uid="Debugland.Debugger.Message(System.String)">
+  Message(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Message(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Beskeden som skal skrives til debug vinduet.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MessageIf_" data-uid="Debugland.Debugger.MessageIf*"></a>
+
+  <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_Object_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.Object)">
+  MessageIf(bool, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MessageIf(bool condition, object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The conditional expression to evaluate. If the condition is true, the value is written to the trace listeners in the collection.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An object whose name is sent to the Listeners.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MessageIf_" data-uid="Debugland.Debugger.MessageIf*"></a>
+
+  <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_Object_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.Object,System.String)">
+  MessageIf(bool, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MessageIf(bool condition, object value, string category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition which is being checked.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An object whose name is sent to the Listeners.</p>
+</dd>
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A category name used to organize the output.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MessageIf_" data-uid="Debugland.Debugger.MessageIf*"></a>
+
+  <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.String)">
+  MessageIf(bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MessageIf(bool condition, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The condition which is being checked.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message which is being written to the debug window.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MessageIf_" data-uid="Debugland.Debugger.MessageIf*"></a>
+
+  <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_String_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.String,System.String)">
+  MessageIf(bool, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MessageIf(bool condition, string stringMessage, string category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The conditional expression to evaluate. If the condition is true, the category name and message are written to the trace listeners in the collection.</p>
+</dd>
+    <dt><code>stringMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A message to write.</p>
+</dd>
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MessageImportant_" data-uid="Debugland.Debugger.MessageImportant*"></a>
+
+  <h3 id="Debugland_Debugger_MessageImportant_System_String_" data-uid="Debugland.Debugger.MessageImportant(System.String)">
+  MessageImportant(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to write an important message to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MessageImportant(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message which is being written to the debug window.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MethodInitiated_" data-uid="Debugland.Debugger.MethodInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_MethodInitiated_System_String_" data-uid="Debugland.Debugger.MethodInitiated(System.String)">
+  MethodInitiated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MethodInitiated(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_MethodTerminated_" data-uid="Debugland.Debugger.MethodTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_MethodTerminated_System_String_" data-uid="Debugland.Debugger.MethodTerminated(System.String)">
+  MethodTerminated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void MethodTerminated(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method which is being called.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_ReaderInitiated_" data-uid="Debugland.Debugger.ReaderInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_ReaderInitiated" data-uid="Debugland.Debugger.ReaderInitiated">
+  ReaderInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method shows that the SQL Reader has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void ReaderInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_ReaderTerminating_" data-uid="Debugland.Debugger.ReaderTerminating*"></a>
+
+  <h3 id="Debugland_Debugger_ReaderTerminating" data-uid="Debugland.Debugger.ReaderTerminating">
+  ReaderTerminating()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void ReaderTerminating()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_SQLCommandInitiated_" data-uid="Debugland.Debugger.SQLCommandInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_SQLCommandInitiated_System_String_" data-uid="Debugland.Debugger.SQLCommandInitiated(System.String)">
+  SQLCommandInitiated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to debug SQL Commands, it will write the command to the debug window. This will initate the SQL Connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void SQLCommandInitiated(string operation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SQL Command which is being executed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_SQLCommandTerminating_" data-uid="Debugland.Debugger.SQLCommandTerminating*"></a>
+
+  <h3 id="Debugland_Debugger_SQLCommandTerminating" data-uid="Debugland.Debugger.SQLCommandTerminating">
+  SQLCommandTerminating()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void SQLCommandTerminating()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_SQLConnectionInitiated_" data-uid="Debugland.Debugger.SQLConnectionInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_SQLConnectionInitiated" data-uid="Debugland.Debugger.SQLConnectionInitiated">
+  SQLConnectionInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connects to the SQL Server and the database. This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void SQLConnectionInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_SQLConnectionTerminating_" data-uid="Debugland.Debugger.SQLConnectionTerminating*"></a>
+
+  <h3 id="Debugland_Debugger_SQLConnectionTerminating" data-uid="Debugland.Debugger.SQLConnectionTerminating">
+  SQLConnectionTerminating()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void SQLConnectionTerminating()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_TimeInitiated_" data-uid="Debugland.Debugger.TimeInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_TimeInitiated_System_String_" data-uid="Debugland.Debugger.TimeInitiated(System.String)">
+  TimeInitiated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to start the stopwatch and write the elapsed time to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void TimeInitiated(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method which is being called.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_TimeTerminated_" data-uid="Debugland.Debugger.TimeTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_TimeTerminated_System_String_" data-uid="Debugland.Debugger.TimeTerminated(System.String)">
+  TimeTerminated(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to stop the stopwatch and write the elapsed time to the debug window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void TimeTerminated(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method which is being called.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_TryBlockInitiated_" data-uid="Debugland.Debugger.TryBlockInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_TryBlockInitiated" data-uid="Debugland.Debugger.TryBlockInitiated">
+  TryBlockInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Try Block has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void TryBlockInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_TryBlockTerminated_" data-uid="Debugland.Debugger.TryBlockTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_TryBlockTerminated" data-uid="Debugland.Debugger.TryBlockTerminated">
+  TryBlockTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Try Block has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void TryBlockTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Variable_" data-uid="Debugland.Debugger.Variable*"></a>
+
+  <h3 id="Debugland_Debugger_Variable" data-uid="Debugland.Debugger.Variable">
+  Variable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that multiple Variables has been declared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Variable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Variable_" data-uid="Debugland.Debugger.Variable*"></a>
+
+  <h3 id="Debugland_Debugger_Variable_System_String_" data-uid="Debugland.Debugger.Variable(System.String)">
+  Variable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Variable has been declared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Variable(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the variable you declared</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_Variable_" data-uid="Debugland.Debugger.Variable*"></a>
+
+  <h3 id="Debugland_Debugger_Variable_System_String_System_String_" data-uid="Debugland.Debugger.Variable(System.String,System.String)">
+  Variable(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a Variable has been declared. It also writes the value of the variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void Variable(string variableName, string variableValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the variable you declared</p>
+</dd>
+    <dt><code>variableValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value of the variable you declared</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_WhileLoopInitiated_" data-uid="Debugland.Debugger.WhileLoopInitiated*"></a>
+
+  <h3 id="Debugland_Debugger_WhileLoopInitiated" data-uid="Debugland.Debugger.WhileLoopInitiated">
+  WhileLoopInitiated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a while loop has been initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void WhileLoopInitiated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Debugland_Debugger_WhileLoopTerminated_" data-uid="Debugland.Debugger.WhileLoopTerminated*"></a>
+
+  <h3 id="Debugland_Debugger_WhileLoopTerminated" data-uid="Debugland.Debugger.WhileLoopTerminated">
+  WhileLoopTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This Method is used to let you know that a while loop has been terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void WhileLoopTerminated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

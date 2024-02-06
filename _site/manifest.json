@@ -12,10 +12,76 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Debugland/docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Debugland/docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Debugland/docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Debugland/docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Debugland/docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Debugland/docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "Debugland/docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
           "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Debugland.Debugger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Debugland.Debugger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Debugland.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Debugland.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
