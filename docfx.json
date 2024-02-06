@@ -3,32 +3,23 @@
     {
       "src": [
         {
-          "src": "..",
+          "src": "../Debugland",
           "files": [
             "**/*.csproj"
           ]
         }
       ],
-      "dest": "..",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "dest": "api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "_ref/**/*.yml",
-          "_ref/index.md"
-        ]
-      },
-      {
-        "files": [
-          "Overview/toc.yml",
-          "Overview/**/*.md",
-          "Overview/**/toc.yml",
-          "toc.yml",
-          "*.md"
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
         ]
       }
     ],
@@ -39,17 +30,16 @@
         ]
       }
     ],
-    "dest": "../docs",
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
+    "output": "_site",
     "template": [
-      "default"
+      "default",
+      "modern"
     ],
-    "postProcessors": [],
-    "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "globalMetadata": {
+      "_appName": "Debugland",
+      "_appTitle": "Debugland",
+      "_enableSearch": true,
+      "pdf": true
+    }
   }
 }
