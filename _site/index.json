@@ -1,0 +1,32 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "| _site",
+    "keywords": "In the dynamic world of software development, Debugland stands as a beacon, revolutionizing the debugging experience during runtime. Designed to bring clarity and readability to the often intricate process of troubleshooting, Debugland introduces a suite of features that seamlessly integrate into your development workflow. Whether it's monitoring the lifecycles of your methods, effortlessly debugging SQL commands, or illuminating variable declarations, Debugland empowers developers with insights that go beyond traditional debugging tools. Exception handling becomes a breeze as you track the initiation and termination of try, catch, and finally blocks, ensuring robust error management. Additionally, Debugland fosters effective communication within your code through user-friendly debug messages, allowing you to streamline the debugging process. Elevate your coding journey and transform the way you approach troubleshooting with Debugland � where every debug finds a clear and comprehensive solution. The layout looks like this"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started With DebugLand | _site",
+    "keywords": "Getting Started With DebugLand In the dynamic world of software development, Debugland stands as a beacon, revolutionizing the debugging experience during runtime. Designed to bring clarity and readability to the often intricate process of troubleshooting, Debugland introduces a suite of features that seamlessly integrate into your development workflow. To learn how to set it up please follow the next seciton Setup"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | _site",
+    "keywords": "Introduction"
+  },
+  "getting-started.html": {
+    "href": "getting-started.html",
+    "title": "Getting Started | _site",
+    "keywords": "Getting Started"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | _site",
+    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  },
+  "introduction.html": {
+    "href": "introduction.html",
+    "title": "Introduction | _site",
+    "keywords": "Introduction"
+  }
+}
