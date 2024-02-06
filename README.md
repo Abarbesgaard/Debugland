@@ -17,25 +17,9 @@ And you're good to go!
 The next section will show you how to use the methods that Debugland has.
 # Documentaiton
 
-## MethodInitiated()
-The Initiation method is crucial for starting every debug process. It plays a vital role in the overall layout, along with the Method Termination method.
+## MethodInitiated and MethodTerminated
+The Initiation and termination method is crucial for starting every debug process when using Debugland. It plays a vital role in the overall layout in the debug window.
 
-Example:
-```csharp
-//start by making a method
-public void TestMethod()
-{
-  //initiate the debugger with the name of this method
-  Debugger.MethodInitiated("TestMethod");
-}
-```
-### debug output display
-```
-  [TestMethod]
-    → initiated
-```
-## MethodTerminated
-The terminated method enables you to observe the entire process of the method. More importantly, it provides a comprehensive view of the method's scope during runtime.
 Example:
 ```csharp
 //start by making a method
@@ -57,14 +41,14 @@ public void TestMethod()
   [/TestMethod]
 ```
 
-## TimeInitiated and terminated
+## TimeInitiated and Timeterminated
 The purpose of this method is to track the time of a method
 ```csharp
 //start by making a method with the debugger initiated and terminated
 public void TestMethod()
 {
-  //initiate the debugger with the name of this method
   Debugger.MethodInitiated("TestMethod");
+  // Initiate the time tracking,
   Debugger.TimeInitiated("TestMethod");
 
   Method Logic ...
@@ -79,5 +63,64 @@ public void TestMethod()
   [TestMethod]
     → initiated
     ← Elapsed time for TestMethod: 15 milliseconds
+  [/TestMethod]
+```
+## Message and MessageImportant
+This simple method is for writing a message in  the debug window. Along with MessageImportant you can highten awareness along certain steps in your debugging
+```csharp
+//start by making a method with the debugger initiated and terminated
+public void TestMethod()
+{
+  Debugger.MethodInitiated("TestMethod");
+  // Write the message method anywhere in your methods.,
+  Debugger.Message("A message");
+  Debugger.MessageImportant("An Important Message");
+  Debugger.MethodTerminated("TestMethod");
+}
+```
+### debug output display
+```
+  [TestMethod]
+    → initiated
+    ! A message
+    ‼ An Important Message
+  [/TestMethod]
+```
+# Tracking SQL 
+Now this part contains multiple methods that works well together. But you can use them as you see fit.
+If you want to track sql stuff the following methods will enable this:
+- SQLCommandInitiated
+- SQLCommandTerminated
+- ReaderInitiated
+- ReaderTerminated
+- SQLConnectionInitiated
+- SQLConnectionTerminated
+  
+When they're all combined it will look like this:
+
+```csharp
+//start by making a method with the debugger initiated and terminated
+public void TestMethod()
+{
+  Debugger.MethodInitiated("TestMethod");
+  // Write the message method anywhere in your methods.,
+  Debugger.SQLConnectionInitiated();
+  Debugger.SQLCommandInitiated("A specific command");
+  Debugger.ReaderInitiated();
+  Debugger.ReaderTerminating();
+  Debugger.SQLCommandTerminating();
+  Debugger.SQLConnectionTerminating();
+}
+```
+### debug output display
+```
+  [TestMethod]
+    →initialized
+    ┌SQL Connection Initiated
+    ┌SQL Command: A specific command
+    |Reader initialized
+    |Reader executed
+    |Command Terminated
+    └SQL Connection Terminated
   [/TestMethod]
 ```
