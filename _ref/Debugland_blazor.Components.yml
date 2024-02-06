@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Debugland_blazor.Components
+  commentId: N:Debugland_blazor.Components
+  id: Debugland_blazor.Components
+  children:
+  - Debugland_blazor.Components.App
+  - Debugland_blazor.Components.Routes
+  - Debugland_blazor.Components._Imports
+  langs:
+  - csharp
+  - vb
+  name: Debugland_blazor.Components
+  nameWithType: Debugland_blazor.Components
+  fullName: Debugland_blazor.Components
+  type: Namespace
+  assemblies:
+  - Debugland_blazor
+references:
+- uid: Debugland_blazor.Components._Imports
+  commentId: T:Debugland_blazor.Components._Imports
+  href: Debugland_blazor.Components._Imports.html
+  name: _Imports
+  nameWithType: _Imports
+  fullName: Debugland_blazor.Components._Imports
+- uid: Debugland_blazor.Components.App
+  commentId: T:Debugland_blazor.Components.App
+  href: Debugland_blazor.Components.App.html
+  name: App
+  nameWithType: App
+  fullName: Debugland_blazor.Components.App
+- uid: Debugland_blazor.Components.Routes
+  commentId: T:Debugland_blazor.Components.Routes
+  href: Debugland_blazor.Components.Routes.html
+  name: Routes
+  nameWithType: Routes
+  fullName: Debugland_blazor.Components.Routes

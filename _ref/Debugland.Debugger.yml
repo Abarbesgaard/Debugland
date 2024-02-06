@@ -1,0 +1,2097 @@
+### YamlMime:ManagedReference
+items:
+- uid: Debugland.Debugger
+  commentId: T:Debugland.Debugger
+  id: Debugger
+  parent: Debugland
+  children:
+  - Debugland.Debugger.CatchBlockInitiated
+  - Debugland.Debugger.CatchBlockTerminated
+  - Debugland.Debugger.Close
+  - Debugland.Debugger.DoWhileLoopInitiated
+  - Debugland.Debugger.DoWhileLoopTerminated
+  - Debugland.Debugger.Fail(System.String,System.String)
+  - Debugland.Debugger.FinallyBlockInitiated
+  - Debugland.Debugger.FinallyBlockTerminated
+  - Debugland.Debugger.ForLoopInitiated
+  - Debugland.Debugger.ForLoopTerminated
+  - Debugland.Debugger.IfInitiated
+  - Debugland.Debugger.IfTerminated
+  - Debugland.Debugger.Let(System.Boolean,System.String)
+  - Debugland.Debugger.Message(System.String)
+  - Debugland.Debugger.MessageIf(System.Boolean,System.Object)
+  - Debugland.Debugger.MessageIf(System.Boolean,System.Object,System.String)
+  - Debugland.Debugger.MessageIf(System.Boolean,System.String)
+  - Debugland.Debugger.MessageIf(System.Boolean,System.String,System.String)
+  - Debugland.Debugger.MessageImportant(System.String)
+  - Debugland.Debugger.MethodInitiated(System.String)
+  - Debugland.Debugger.MethodTerminated(System.String)
+  - Debugland.Debugger.ReaderInitiated
+  - Debugland.Debugger.ReaderTerminating
+  - Debugland.Debugger.SQLCommandInitiated(System.String)
+  - Debugland.Debugger.SQLCommandTerminating
+  - Debugland.Debugger.SQLConnectionInitiated
+  - Debugland.Debugger.SQLConnectionTerminating
+  - Debugland.Debugger.TimeInitiated(System.String)
+  - Debugland.Debugger.TimeTerminated(System.String)
+  - Debugland.Debugger.TryBlockInitiated
+  - Debugland.Debugger.TryBlockTerminated
+  - Debugland.Debugger.Variable
+  - Debugland.Debugger.Variable(System.String)
+  - Debugland.Debugger.Variable(System.String,System.String)
+  - Debugland.Debugger.WhileLoopInitiated
+  - Debugland.Debugger.WhileLoopTerminated
+  langs:
+  - csharp
+  - vb
+  name: Debugger
+  nameWithType: Debugger
+  fullName: Debugland.Debugger
+  type: Class
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Debugger
+    path: Debugland/Debugger.cs
+    startLine: 10
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This class is used for debugging purposes.
+  example: []
+  syntax:
+    content: public static class Debugger
+    content.vb: Public Module Debugger
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Debugland.Debugger.MethodInitiated(System.String)
+  commentId: M:Debugland.Debugger.MethodInitiated(System.String)
+  id: MethodInitiated(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MethodInitiated(string)
+  nameWithType: Debugger.MethodInitiated(string)
+  fullName: Debugland.Debugger.MethodInitiated(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MethodInitiated
+    path: Debugland/Debugger.cs
+    startLine: 24
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MethodInitiated(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MethodInitiated(Name As String)
+  overload: Debugland.Debugger.MethodInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MethodInitiated(String)
+  fullName.vb: Debugland.Debugger.MethodInitiated(String)
+  name.vb: MethodInitiated(String)
+- uid: Debugland.Debugger.MethodTerminated(System.String)
+  commentId: M:Debugland.Debugger.MethodTerminated(System.String)
+  id: MethodTerminated(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MethodTerminated(string)
+  nameWithType: Debugger.MethodTerminated(string)
+  fullName: Debugland.Debugger.MethodTerminated(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MethodTerminated
+    path: Debugland/Debugger.cs
+    startLine: 51
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MethodTerminated(string methodName)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: The name of the method which is being called.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MethodTerminated(methodName As String)
+  overload: Debugland.Debugger.MethodTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MethodTerminated(String)
+  fullName.vb: Debugland.Debugger.MethodTerminated(String)
+  name.vb: MethodTerminated(String)
+- uid: Debugland.Debugger.TimeInitiated(System.String)
+  commentId: M:Debugland.Debugger.TimeInitiated(System.String)
+  id: TimeInitiated(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: TimeInitiated(string)
+  nameWithType: Debugger.TimeInitiated(string)
+  fullName: Debugland.Debugger.TimeInitiated(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: TimeInitiated
+    path: Debugland/Debugger.cs
+    startLine: 68
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to start the stopwatch and write the elapsed time to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void TimeInitiated(string methodName)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: The name of the method which is being called.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub TimeInitiated(methodName As String)
+  overload: Debugland.Debugger.TimeInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.TimeInitiated(String)
+  fullName.vb: Debugland.Debugger.TimeInitiated(String)
+  name.vb: TimeInitiated(String)
+- uid: Debugland.Debugger.TimeTerminated(System.String)
+  commentId: M:Debugland.Debugger.TimeTerminated(System.String)
+  id: TimeTerminated(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: TimeTerminated(string)
+  nameWithType: Debugger.TimeTerminated(string)
+  fullName: Debugland.Debugger.TimeTerminated(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: TimeTerminated
+    path: Debugland/Debugger.cs
+    startLine: 94
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to stop the stopwatch and write the elapsed time to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void TimeTerminated(string methodName)
+    parameters:
+    - id: methodName
+      type: System.String
+      description: The name of the method which is being called.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub TimeTerminated(methodName As String)
+  overload: Debugland.Debugger.TimeTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.TimeTerminated(String)
+  fullName.vb: Debugland.Debugger.TimeTerminated(String)
+  name.vb: TimeTerminated(String)
+- uid: Debugland.Debugger.Message(System.String)
+  commentId: M:Debugland.Debugger.Message(System.String)
+  id: Message(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Message(string)
+  nameWithType: Debugger.Message(string)
+  fullName: Debugland.Debugger.Message(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Message
+    path: Debugland/Debugger.cs
+    startLine: 125
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a message to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Message(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: Beskeden som skal skrives til debug vinduet.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Message(message As String)
+  overload: Debugland.Debugger.Message*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.Message(String)
+  fullName.vb: Debugland.Debugger.Message(String)
+  name.vb: Message(String)
+- uid: Debugland.Debugger.MessageImportant(System.String)
+  commentId: M:Debugland.Debugger.MessageImportant(System.String)
+  id: MessageImportant(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MessageImportant(string)
+  nameWithType: Debugger.MessageImportant(string)
+  fullName: Debugland.Debugger.MessageImportant(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MessageImportant
+    path: Debugland/Debugger.cs
+    startLine: 141
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write an important message to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MessageImportant(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message which is being written to the debug window.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MessageImportant(message As String)
+  overload: Debugland.Debugger.MessageImportant*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MessageImportant(String)
+  fullName.vb: Debugland.Debugger.MessageImportant(String)
+  name.vb: MessageImportant(String)
+- uid: Debugland.Debugger.SQLCommandInitiated(System.String)
+  commentId: M:Debugland.Debugger.SQLCommandInitiated(System.String)
+  id: SQLCommandInitiated(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: SQLCommandInitiated(string)
+  nameWithType: Debugger.SQLCommandInitiated(string)
+  fullName: Debugland.Debugger.SQLCommandInitiated(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: SQLCommandInitiated
+    path: Debugland/Debugger.cs
+    startLine: 157
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to debug SQL Commands, it will write the command to the debug window. This will initate the SQL Connection.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void SQLCommandInitiated(string operation)
+    parameters:
+    - id: operation
+      type: System.String
+      description: The SQL Command which is being executed.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub SQLCommandInitiated(operation As String)
+  overload: Debugland.Debugger.SQLCommandInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.SQLCommandInitiated(String)
+  fullName.vb: Debugland.Debugger.SQLCommandInitiated(String)
+  name.vb: SQLCommandInitiated(String)
+- uid: Debugland.Debugger.SQLCommandTerminating
+  commentId: M:Debugland.Debugger.SQLCommandTerminating
+  id: SQLCommandTerminating
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: SQLCommandTerminating()
+  nameWithType: Debugger.SQLCommandTerminating()
+  fullName: Debugland.Debugger.SQLCommandTerminating()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: SQLCommandTerminating
+    path: Debugland/Debugger.cs
+    startLine: 172
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void SQLCommandTerminating()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub SQLCommandTerminating()
+  overload: Debugland.Debugger.SQLCommandTerminating*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.ReaderInitiated
+  commentId: M:Debugland.Debugger.ReaderInitiated
+  id: ReaderInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: ReaderInitiated()
+  nameWithType: Debugger.ReaderInitiated()
+  fullName: Debugland.Debugger.ReaderInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: ReaderInitiated
+    path: Debugland/Debugger.cs
+    startLine: 187
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method shows that the SQL Reader has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void ReaderInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub ReaderInitiated()
+  overload: Debugland.Debugger.ReaderInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.ReaderTerminating
+  commentId: M:Debugland.Debugger.ReaderTerminating
+  id: ReaderTerminating
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: ReaderTerminating()
+  nameWithType: Debugger.ReaderTerminating()
+  fullName: Debugland.Debugger.ReaderTerminating()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: ReaderTerminating
+    path: Debugland/Debugger.cs
+    startLine: 201
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void ReaderTerminating()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub ReaderTerminating()
+  overload: Debugland.Debugger.ReaderTerminating*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.SQLConnectionInitiated
+  commentId: M:Debugland.Debugger.SQLConnectionInitiated
+  id: SQLConnectionInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: SQLConnectionInitiated()
+  nameWithType: Debugger.SQLConnectionInitiated()
+  fullName: Debugland.Debugger.SQLConnectionInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: SQLConnectionInitiated
+    path: Debugland/Debugger.cs
+    startLine: 216
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: Connects to the SQL Server and the database. This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void SQLConnectionInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub SQLConnectionInitiated()
+  overload: Debugland.Debugger.SQLConnectionInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.SQLConnectionTerminating
+  commentId: M:Debugland.Debugger.SQLConnectionTerminating
+  id: SQLConnectionTerminating
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: SQLConnectionTerminating()
+  nameWithType: Debugger.SQLConnectionTerminating()
+  fullName: Debugland.Debugger.SQLConnectionTerminating()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: SQLConnectionTerminating
+    path: Debugland/Debugger.cs
+    startLine: 230
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void SQLConnectionTerminating()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub SQLConnectionTerminating()
+  overload: Debugland.Debugger.SQLConnectionTerminating*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.Variable
+  commentId: M:Debugland.Debugger.Variable
+  id: Variable
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Variable()
+  nameWithType: Debugger.Variable()
+  fullName: Debugland.Debugger.Variable()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Variable
+    path: Debugland/Debugger.cs
+    startLine: 245
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that multiple Variables has been declared.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Variable()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Variable()
+  overload: Debugland.Debugger.Variable*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.Variable(System.String)
+  commentId: M:Debugland.Debugger.Variable(System.String)
+  id: Variable(System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Variable(string)
+  nameWithType: Debugger.Variable(string)
+  fullName: Debugland.Debugger.Variable(string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Variable
+    path: Debugland/Debugger.cs
+    startLine: 261
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Variable has been declared.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Variable(string variableName)
+    parameters:
+    - id: variableName
+      type: System.String
+      description: Name of the variable you declared
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Variable(variableName As String)
+  overload: Debugland.Debugger.Variable*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.Variable(String)
+  fullName.vb: Debugland.Debugger.Variable(String)
+  name.vb: Variable(String)
+- uid: Debugland.Debugger.Variable(System.String,System.String)
+  commentId: M:Debugland.Debugger.Variable(System.String,System.String)
+  id: Variable(System.String,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Variable(string, string)
+  nameWithType: Debugger.Variable(string, string)
+  fullName: Debugland.Debugger.Variable(string, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Variable
+    path: Debugland/Debugger.cs
+    startLine: 276
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Variable has been declared. It also writes the value of the variable.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Variable(string variableName, string variableValue)
+    parameters:
+    - id: variableName
+      type: System.String
+      description: Name of the variable you declared
+    - id: variableValue
+      type: System.String
+      description: Value of the variable you declared
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Variable(variableName As String, variableValue As String)
+  overload: Debugland.Debugger.Variable*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.Variable(String, String)
+  fullName.vb: Debugland.Debugger.Variable(String, String)
+  name.vb: Variable(String, String)
+- uid: Debugland.Debugger.TryBlockInitiated
+  commentId: M:Debugland.Debugger.TryBlockInitiated
+  id: TryBlockInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: TryBlockInitiated()
+  nameWithType: Debugger.TryBlockInitiated()
+  fullName: Debugland.Debugger.TryBlockInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: TryBlockInitiated
+    path: Debugland/Debugger.cs
+    startLine: 290
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Try Block has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void TryBlockInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub TryBlockInitiated()
+  overload: Debugland.Debugger.TryBlockInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.TryBlockTerminated
+  commentId: M:Debugland.Debugger.TryBlockTerminated
+  id: TryBlockTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: TryBlockTerminated()
+  nameWithType: Debugger.TryBlockTerminated()
+  fullName: Debugland.Debugger.TryBlockTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: TryBlockTerminated
+    path: Debugland/Debugger.cs
+    startLine: 305
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Try Block has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void TryBlockTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub TryBlockTerminated()
+  overload: Debugland.Debugger.TryBlockTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.CatchBlockInitiated
+  commentId: M:Debugland.Debugger.CatchBlockInitiated
+  id: CatchBlockInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: CatchBlockInitiated()
+  nameWithType: Debugger.CatchBlockInitiated()
+  fullName: Debugland.Debugger.CatchBlockInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: CatchBlockInitiated
+    path: Debugland/Debugger.cs
+    startLine: 320
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Catch Block has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void CatchBlockInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub CatchBlockInitiated()
+  overload: Debugland.Debugger.CatchBlockInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.CatchBlockTerminated
+  commentId: M:Debugland.Debugger.CatchBlockTerminated
+  id: CatchBlockTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: CatchBlockTerminated()
+  nameWithType: Debugger.CatchBlockTerminated()
+  fullName: Debugland.Debugger.CatchBlockTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: CatchBlockTerminated
+    path: Debugland/Debugger.cs
+    startLine: 334
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Catch Block has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void CatchBlockTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub CatchBlockTerminated()
+  overload: Debugland.Debugger.CatchBlockTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.FinallyBlockInitiated
+  commentId: M:Debugland.Debugger.FinallyBlockInitiated
+  id: FinallyBlockInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: FinallyBlockInitiated()
+  nameWithType: Debugger.FinallyBlockInitiated()
+  fullName: Debugland.Debugger.FinallyBlockInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: FinallyBlockInitiated
+    path: Debugland/Debugger.cs
+    startLine: 348
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Finally Block has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void FinallyBlockInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub FinallyBlockInitiated()
+  overload: Debugland.Debugger.FinallyBlockInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.FinallyBlockTerminated
+  commentId: M:Debugland.Debugger.FinallyBlockTerminated
+  id: FinallyBlockTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: FinallyBlockTerminated()
+  nameWithType: Debugger.FinallyBlockTerminated()
+  fullName: Debugland.Debugger.FinallyBlockTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: FinallyBlockTerminated
+    path: Debugland/Debugger.cs
+    startLine: 363
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Finally Block has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void FinallyBlockTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub FinallyBlockTerminated()
+  overload: Debugland.Debugger.FinallyBlockTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.Close
+  commentId: M:Debugland.Debugger.Close
+  id: Close
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: Debugger.Close()
+  fullName: Debugland.Debugger.Close()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Close
+    path: Debugland/Debugger.cs
+    startLine: 377
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Close()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Close()
+  overload: Debugland.Debugger.Close*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.Fail(System.String,System.String)
+  commentId: M:Debugland.Debugger.Fail(System.String,System.String)
+  id: Fail(System.String,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Fail(string, string)
+  nameWithType: Debugger.Fail(string, string)
+  fullName: Debugland.Debugger.Fail(string, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Fail
+    path: Debugland/Debugger.cs
+    startLine: 389
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a fail message to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Fail(string message, string secondMessage)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message which is being written to the debug window.
+    - id: secondMessage
+      type: System.String
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Fail(message As String, secondMessage As String)
+  overload: Debugland.Debugger.Fail*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.Fail(String, String)
+  fullName.vb: Debugland.Debugger.Fail(String, String)
+  name.vb: Fail(String, String)
+- uid: Debugland.Debugger.IfInitiated
+  commentId: M:Debugland.Debugger.IfInitiated
+  id: IfInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: IfInitiated()
+  nameWithType: Debugger.IfInitiated()
+  fullName: Debugland.Debugger.IfInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: IfInitiated
+    path: Debugland/Debugger.cs
+    startLine: 404
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a If Statement has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void IfInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub IfInitiated()
+  overload: Debugland.Debugger.IfInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.IfTerminated
+  commentId: M:Debugland.Debugger.IfTerminated
+  id: IfTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: IfTerminated()
+  nameWithType: Debugger.IfTerminated()
+  fullName: Debugland.Debugger.IfTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: IfTerminated
+    path: Debugland/Debugger.cs
+    startLine: 418
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a If Statement has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void IfTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub IfTerminated()
+  overload: Debugland.Debugger.IfTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.ForLoopInitiated
+  commentId: M:Debugland.Debugger.ForLoopInitiated
+  id: ForLoopInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: ForLoopInitiated()
+  nameWithType: Debugger.ForLoopInitiated()
+  fullName: Debugland.Debugger.ForLoopInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: ForLoopInitiated
+    path: Debugland/Debugger.cs
+    startLine: 432
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a for loop  has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void ForLoopInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub ForLoopInitiated()
+  overload: Debugland.Debugger.ForLoopInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.ForLoopTerminated
+  commentId: M:Debugland.Debugger.ForLoopTerminated
+  id: ForLoopTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: ForLoopTerminated()
+  nameWithType: Debugger.ForLoopTerminated()
+  fullName: Debugland.Debugger.ForLoopTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: ForLoopTerminated
+    path: Debugland/Debugger.cs
+    startLine: 446
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a for loop  has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void ForLoopTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub ForLoopTerminated()
+  overload: Debugland.Debugger.ForLoopTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.WhileLoopInitiated
+  commentId: M:Debugland.Debugger.WhileLoopInitiated
+  id: WhileLoopInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: WhileLoopInitiated()
+  nameWithType: Debugger.WhileLoopInitiated()
+  fullName: Debugland.Debugger.WhileLoopInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: WhileLoopInitiated
+    path: Debugland/Debugger.cs
+    startLine: 460
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a while loop has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void WhileLoopInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub WhileLoopInitiated()
+  overload: Debugland.Debugger.WhileLoopInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.WhileLoopTerminated
+  commentId: M:Debugland.Debugger.WhileLoopTerminated
+  id: WhileLoopTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: WhileLoopTerminated()
+  nameWithType: Debugger.WhileLoopTerminated()
+  fullName: Debugland.Debugger.WhileLoopTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: WhileLoopTerminated
+    path: Debugland/Debugger.cs
+    startLine: 471
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a while loop has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void WhileLoopTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub WhileLoopTerminated()
+  overload: Debugland.Debugger.WhileLoopTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.DoWhileLoopInitiated
+  commentId: M:Debugland.Debugger.DoWhileLoopInitiated
+  id: DoWhileLoopInitiated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: DoWhileLoopInitiated()
+  nameWithType: Debugger.DoWhileLoopInitiated()
+  fullName: Debugland.Debugger.DoWhileLoopInitiated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: DoWhileLoopInitiated
+    path: Debugland/Debugger.cs
+    startLine: 486
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Do-while loop has been initiated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void DoWhileLoopInitiated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub DoWhileLoopInitiated()
+  overload: Debugland.Debugger.DoWhileLoopInitiated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.DoWhileLoopTerminated
+  commentId: M:Debugland.Debugger.DoWhileLoopTerminated
+  id: DoWhileLoopTerminated
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: DoWhileLoopTerminated()
+  nameWithType: Debugger.DoWhileLoopTerminated()
+  fullName: Debugland.Debugger.DoWhileLoopTerminated()
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: DoWhileLoopTerminated
+    path: Debugland/Debugger.cs
+    startLine: 497
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This Method is used to let you know that a Do-while loop has been terminated.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void DoWhileLoopTerminated()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub DoWhileLoopTerminated()
+  overload: Debugland.Debugger.DoWhileLoopTerminated*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: Debugland.Debugger.Let(System.Boolean,System.String)
+  commentId: M:Debugland.Debugger.Let(System.Boolean,System.String)
+  id: Let(System.Boolean,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: Let(bool, string)
+  nameWithType: Debugger.Let(bool, string)
+  fullName: Debugland.Debugger.Let(bool, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: Let
+    path: Debugland/Debugger.cs
+    startLine: 515
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to check if a condition is true. If the condition is false, the method will write a message to the debug window.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Let(bool condition, string message)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: The condition which is being checked.
+    - id: message
+      type: System.String
+      description: The message which is being written to the debug window.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub [Let](condition As Boolean, message As String)
+  overload: Debugland.Debugger.Let*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.Let(Boolean, String)
+  fullName.vb: Debugland.Debugger.Let(Boolean, String)
+  name.vb: Let(Boolean, String)
+- uid: Debugland.Debugger.MessageIf(System.Boolean,System.String)
+  commentId: M:Debugland.Debugger.MessageIf(System.Boolean,System.String)
+  id: MessageIf(System.Boolean,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MessageIf(bool, string)
+  nameWithType: Debugger.MessageIf(bool, string)
+  fullName: Debugland.Debugger.MessageIf(bool, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MessageIf
+    path: Debugland/Debugger.cs
+    startLine: 531
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a message to the debug window if a condition is true.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MessageIf(bool condition, string message)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: The condition which is being checked.
+    - id: message
+      type: System.String
+      description: The message which is being written to the debug window.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MessageIf(condition As Boolean, message As String)
+  overload: Debugland.Debugger.MessageIf*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MessageIf(Boolean, String)
+  fullName.vb: Debugland.Debugger.MessageIf(Boolean, String)
+  name.vb: MessageIf(Boolean, String)
+- uid: Debugland.Debugger.MessageIf(System.Boolean,System.Object)
+  commentId: M:Debugland.Debugger.MessageIf(System.Boolean,System.Object)
+  id: MessageIf(System.Boolean,System.Object)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MessageIf(bool, object)
+  nameWithType: Debugger.MessageIf(bool, object)
+  fullName: Debugland.Debugger.MessageIf(bool, object)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MessageIf
+    path: Debugland/Debugger.cs
+    startLine: 545
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a message to the debug window if a condition is true.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MessageIf(bool condition, object value)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: The conditional expression to evaluate. If the condition is true, the value is written to the trace listeners in the collection.
+    - id: value
+      type: System.Object
+      description: An object whose name is sent to the Listeners.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MessageIf(condition As Boolean, value As Object)
+  overload: Debugland.Debugger.MessageIf*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MessageIf(Boolean, Object)
+  fullName.vb: Debugland.Debugger.MessageIf(Boolean, Object)
+  name.vb: MessageIf(Boolean, Object)
+- uid: Debugland.Debugger.MessageIf(System.Boolean,System.Object,System.String)
+  commentId: M:Debugland.Debugger.MessageIf(System.Boolean,System.Object,System.String)
+  id: MessageIf(System.Boolean,System.Object,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MessageIf(bool, object, string)
+  nameWithType: Debugger.MessageIf(bool, object, string)
+  fullName: Debugland.Debugger.MessageIf(bool, object, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MessageIf
+    path: Debugland/Debugger.cs
+    startLine: 560
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a message to the debug window if a condition is true.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MessageIf(bool condition, object value, string category)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: The condition which is being checked.
+    - id: value
+      type: System.Object
+      description: An object whose name is sent to the Listeners.
+    - id: category
+      type: System.String
+      description: A category name used to organize the output.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MessageIf(condition As Boolean, value As Object, category As String)
+  overload: Debugland.Debugger.MessageIf*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MessageIf(Boolean, Object, String)
+  fullName.vb: Debugland.Debugger.MessageIf(Boolean, Object, String)
+  name.vb: MessageIf(Boolean, Object, String)
+- uid: Debugland.Debugger.MessageIf(System.Boolean,System.String,System.String)
+  commentId: M:Debugland.Debugger.MessageIf(System.Boolean,System.String,System.String)
+  id: MessageIf(System.Boolean,System.String,System.String)
+  parent: Debugland.Debugger
+  langs:
+  - csharp
+  - vb
+  name: MessageIf(bool, string, string)
+  nameWithType: Debugger.MessageIf(bool, string, string)
+  fullName: Debugland.Debugger.MessageIf(bool, string, string)
+  type: Method
+  source:
+    remote:
+      path: Debugland/Debugger.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/Debugland
+    id: MessageIf
+    path: Debugland/Debugger.cs
+    startLine: 575
+  assemblies:
+  - Debugland - Backup
+  namespace: Debugland
+  summary: This method is used to write a message to the debug window if a condition is true.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void MessageIf(bool condition, string stringMessage, string category)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: The conditional expression to evaluate. If the condition is true, the category name and message are written to the trace listeners in the collection.
+    - id: stringMessage
+      type: System.String
+      description: A message to write.
+    - id: category
+      type: System.String
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub MessageIf(condition As Boolean, stringMessage As String, category As String)
+  overload: Debugland.Debugger.MessageIf*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Debugger.MessageIf(Boolean, String, String)
+  fullName.vb: Debugland.Debugger.MessageIf(Boolean, String, String)
+  name.vb: MessageIf(Boolean, String, String)
+references:
+- uid: Debugland
+  commentId: N:Debugland
+  href: Debugland.html
+  name: Debugland
+  nameWithType: Debugland
+  fullName: Debugland
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Debugland.Debugger.MethodInitiated*
+  commentId: Overload:Debugland.Debugger.MethodInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_MethodInitiated_System_String_
+  name: MethodInitiated
+  nameWithType: Debugger.MethodInitiated
+  fullName: Debugland.Debugger.MethodInitiated
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Debugland.Debugger.MethodTerminated*
+  commentId: Overload:Debugland.Debugger.MethodTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_MethodTerminated_System_String_
+  name: MethodTerminated
+  nameWithType: Debugger.MethodTerminated
+  fullName: Debugland.Debugger.MethodTerminated
+- uid: Debugland.Debugger.TimeInitiated*
+  commentId: Overload:Debugland.Debugger.TimeInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_TimeInitiated_System_String_
+  name: TimeInitiated
+  nameWithType: Debugger.TimeInitiated
+  fullName: Debugland.Debugger.TimeInitiated
+- uid: Debugland.Debugger.TimeTerminated*
+  commentId: Overload:Debugland.Debugger.TimeTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_TimeTerminated_System_String_
+  name: TimeTerminated
+  nameWithType: Debugger.TimeTerminated
+  fullName: Debugland.Debugger.TimeTerminated
+- uid: Debugland.Debugger.Message*
+  commentId: Overload:Debugland.Debugger.Message
+  href: Debugland.Debugger.html#Debugland_Debugger_Message_System_String_
+  name: Message
+  nameWithType: Debugger.Message
+  fullName: Debugland.Debugger.Message
+- uid: Debugland.Debugger.MessageImportant*
+  commentId: Overload:Debugland.Debugger.MessageImportant
+  href: Debugland.Debugger.html#Debugland_Debugger_MessageImportant_System_String_
+  name: MessageImportant
+  nameWithType: Debugger.MessageImportant
+  fullName: Debugland.Debugger.MessageImportant
+- uid: Debugland.Debugger.SQLCommandInitiated*
+  commentId: Overload:Debugland.Debugger.SQLCommandInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLCommandInitiated_System_String_
+  name: SQLCommandInitiated
+  nameWithType: Debugger.SQLCommandInitiated
+  fullName: Debugland.Debugger.SQLCommandInitiated
+- uid: Debugland.Debugger.SQLCommandTerminating*
+  commentId: Overload:Debugland.Debugger.SQLCommandTerminating
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminating
+  name: SQLCommandTerminating
+  nameWithType: Debugger.SQLCommandTerminating
+  fullName: Debugland.Debugger.SQLCommandTerminating
+- uid: Debugland.Debugger.ReaderInitiated*
+  commentId: Overload:Debugland.Debugger.ReaderInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_ReaderInitiated
+  name: ReaderInitiated
+  nameWithType: Debugger.ReaderInitiated
+  fullName: Debugland.Debugger.ReaderInitiated
+- uid: Debugland.Debugger.ReaderTerminating*
+  commentId: Overload:Debugland.Debugger.ReaderTerminating
+  href: Debugland.Debugger.html#Debugland_Debugger_ReaderTerminating
+  name: ReaderTerminating
+  nameWithType: Debugger.ReaderTerminating
+  fullName: Debugland.Debugger.ReaderTerminating
+- uid: Debugland.Debugger.SQLConnectionInitiated*
+  commentId: Overload:Debugland.Debugger.SQLConnectionInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLConnectionInitiated
+  name: SQLConnectionInitiated
+  nameWithType: Debugger.SQLConnectionInitiated
+  fullName: Debugland.Debugger.SQLConnectionInitiated
+- uid: Debugland.Debugger.SQLConnectionTerminating*
+  commentId: Overload:Debugland.Debugger.SQLConnectionTerminating
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminating
+  name: SQLConnectionTerminating
+  nameWithType: Debugger.SQLConnectionTerminating
+  fullName: Debugland.Debugger.SQLConnectionTerminating
+- uid: Debugland.Debugger.Variable*
+  commentId: Overload:Debugland.Debugger.Variable
+  href: Debugland.Debugger.html#Debugland_Debugger_Variable
+  name: Variable
+  nameWithType: Debugger.Variable
+  fullName: Debugland.Debugger.Variable
+- uid: Debugland.Debugger.TryBlockInitiated*
+  commentId: Overload:Debugland.Debugger.TryBlockInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_TryBlockInitiated
+  name: TryBlockInitiated
+  nameWithType: Debugger.TryBlockInitiated
+  fullName: Debugland.Debugger.TryBlockInitiated
+- uid: Debugland.Debugger.TryBlockTerminated*
+  commentId: Overload:Debugland.Debugger.TryBlockTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_TryBlockTerminated
+  name: TryBlockTerminated
+  nameWithType: Debugger.TryBlockTerminated
+  fullName: Debugland.Debugger.TryBlockTerminated
+- uid: Debugland.Debugger.CatchBlockInitiated*
+  commentId: Overload:Debugland.Debugger.CatchBlockInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_CatchBlockInitiated
+  name: CatchBlockInitiated
+  nameWithType: Debugger.CatchBlockInitiated
+  fullName: Debugland.Debugger.CatchBlockInitiated
+- uid: Debugland.Debugger.CatchBlockTerminated*
+  commentId: Overload:Debugland.Debugger.CatchBlockTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_CatchBlockTerminated
+  name: CatchBlockTerminated
+  nameWithType: Debugger.CatchBlockTerminated
+  fullName: Debugland.Debugger.CatchBlockTerminated
+- uid: Debugland.Debugger.FinallyBlockInitiated*
+  commentId: Overload:Debugland.Debugger.FinallyBlockInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_FinallyBlockInitiated
+  name: FinallyBlockInitiated
+  nameWithType: Debugger.FinallyBlockInitiated
+  fullName: Debugland.Debugger.FinallyBlockInitiated
+- uid: Debugland.Debugger.FinallyBlockTerminated*
+  commentId: Overload:Debugland.Debugger.FinallyBlockTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_FinallyBlockTerminated
+  name: FinallyBlockTerminated
+  nameWithType: Debugger.FinallyBlockTerminated
+  fullName: Debugland.Debugger.FinallyBlockTerminated
+- uid: Debugland.Debugger.Close*
+  commentId: Overload:Debugland.Debugger.Close
+  href: Debugland.Debugger.html#Debugland_Debugger_Close
+  name: Close
+  nameWithType: Debugger.Close
+  fullName: Debugland.Debugger.Close
+- uid: Debugland.Debugger.Fail*
+  commentId: Overload:Debugland.Debugger.Fail
+  href: Debugland.Debugger.html#Debugland_Debugger_Fail_System_String_System_String_
+  name: Fail
+  nameWithType: Debugger.Fail
+  fullName: Debugland.Debugger.Fail
+- uid: Debugland.Debugger.IfInitiated*
+  commentId: Overload:Debugland.Debugger.IfInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_IfInitiated
+  name: IfInitiated
+  nameWithType: Debugger.IfInitiated
+  fullName: Debugland.Debugger.IfInitiated
+- uid: Debugland.Debugger.IfTerminated*
+  commentId: Overload:Debugland.Debugger.IfTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_IfTerminated
+  name: IfTerminated
+  nameWithType: Debugger.IfTerminated
+  fullName: Debugland.Debugger.IfTerminated
+- uid: Debugland.Debugger.ForLoopInitiated*
+  commentId: Overload:Debugland.Debugger.ForLoopInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_ForLoopInitiated
+  name: ForLoopInitiated
+  nameWithType: Debugger.ForLoopInitiated
+  fullName: Debugland.Debugger.ForLoopInitiated
+- uid: Debugland.Debugger.ForLoopTerminated*
+  commentId: Overload:Debugland.Debugger.ForLoopTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_ForLoopTerminated
+  name: ForLoopTerminated
+  nameWithType: Debugger.ForLoopTerminated
+  fullName: Debugland.Debugger.ForLoopTerminated
+- uid: Debugland.Debugger.WhileLoopInitiated*
+  commentId: Overload:Debugland.Debugger.WhileLoopInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_WhileLoopInitiated
+  name: WhileLoopInitiated
+  nameWithType: Debugger.WhileLoopInitiated
+  fullName: Debugland.Debugger.WhileLoopInitiated
+- uid: Debugland.Debugger.WhileLoopTerminated*
+  commentId: Overload:Debugland.Debugger.WhileLoopTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_WhileLoopTerminated
+  name: WhileLoopTerminated
+  nameWithType: Debugger.WhileLoopTerminated
+  fullName: Debugland.Debugger.WhileLoopTerminated
+- uid: Debugland.Debugger.DoWhileLoopInitiated*
+  commentId: Overload:Debugland.Debugger.DoWhileLoopInitiated
+  href: Debugland.Debugger.html#Debugland_Debugger_DoWhileLoopInitiated
+  name: DoWhileLoopInitiated
+  nameWithType: Debugger.DoWhileLoopInitiated
+  fullName: Debugland.Debugger.DoWhileLoopInitiated
+- uid: Debugland.Debugger.DoWhileLoopTerminated*
+  commentId: Overload:Debugland.Debugger.DoWhileLoopTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_DoWhileLoopTerminated
+  name: DoWhileLoopTerminated
+  nameWithType: Debugger.DoWhileLoopTerminated
+  fullName: Debugland.Debugger.DoWhileLoopTerminated
+- uid: Debugland.Debugger.Let*
+  commentId: Overload:Debugland.Debugger.Let
+  href: Debugland.Debugger.html#Debugland_Debugger_Let_System_Boolean_System_String_
+  name: Let
+  nameWithType: Debugger.Let
+  fullName: Debugland.Debugger.Let
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Debugland.Debugger.MessageIf*
+  commentId: Overload:Debugland.Debugger.MessageIf
+  href: Debugland.Debugger.html#Debugland_Debugger_MessageIf_System_Boolean_System_String_
+  name: MessageIf
+  nameWithType: Debugger.MessageIf
+  fullName: Debugland.Debugger.MessageIf

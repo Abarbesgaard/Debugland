@@ -1,0 +1,3627 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.ViewModel.OrderVM
+  commentId: T:Borks_WPF.ViewModel.OrderVM
+  id: OrderVM
+  parent: Borks_WPF.ViewModel
+  children:
+  - Borks_WPF.ViewModel.OrderVM.#ctor
+  - Borks_WPF.ViewModel.OrderVM.#ctor(Borks_WPF.Model.Order)
+  - Borks_WPF.ViewModel.OrderVM.Comment
+  - Borks_WPF.ViewModel.OrderVM.CustomerVM
+  - Borks_WPF.ViewModel.OrderVM.DeleteOrder
+  - Borks_WPF.ViewModel.OrderVM.DeliveryDate
+  - Borks_WPF.ViewModel.OrderVM.Finalized
+  - Borks_WPF.ViewModel.OrderVM.FinalizedString
+  - Borks_WPF.ViewModel.OrderVM.FindingPlace
+  - Borks_WPF.ViewModel.OrderVM.FinishOrder
+  - Borks_WPF.ViewModel.OrderVM.GameVM
+  - Borks_WPF.ViewModel.OrderVM.GetAllOrdervms
+  - Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums
+  - Borks_WPF.ViewModel.OrderVM.Id
+  - Borks_WPF.ViewModel.OrderVM.IsPayed
+  - Borks_WPF.ViewModel.OrderVM.IsPayedString
+  - Borks_WPF.ViewModel.OrderVM.ItemColor
+  - Borks_WPF.ViewModel.OrderVM.Meassurement
+  - Borks_WPF.ViewModel.OrderVM.MeassurementString
+  - Borks_WPF.ViewModel.OrderVM.Montage
+  - Borks_WPF.ViewModel.OrderVM.OrderDate
+  - Borks_WPF.ViewModel.OrderVM.Orders
+  - Borks_WPF.ViewModel.OrderVM.PercentPayed
+  - Borks_WPF.ViewModel.OrderVM.Price
+  - Borks_WPF.ViewModel.OrderVM.SortedOrders(System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM})
+  - Borks_WPF.ViewModel.OrderVM.StringConverterFinalized(System.Boolean)
+  - Borks_WPF.ViewModel.OrderVM.StringConverterIspayed(System.Boolean)
+  - Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement(System.Boolean)
+  - Borks_WPF.ViewModel.OrderVM.StringMontage
+  - Borks_WPF.ViewModel.OrderVM.StringMontageConverter(Borks_WPF.Model.EnumMontage)
+  - Borks_WPF.ViewModel.OrderVM.TimeToColorConverter(System.DateTime)
+  - Borks_WPF.ViewModel.OrderVM.UpdateOrder
+  langs:
+  - csharp
+  - vb
+  name: OrderVM
+  nameWithType: OrderVM
+  fullName: Borks_WPF.ViewModel.OrderVM
+  type: Class
+  source:
+    id: OrderVM
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 6
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: A base class for objects of which the properties must be observable.
+  example: []
+  syntax:
+    content: 'public class OrderVM : ObservableObject, INotifyPropertyChanged, INotifyPropertyChanging'
+    content.vb: Public Class OrderVM Inherits ObservableObject Implements INotifyPropertyChanged, INotifyPropertyChanging
+  inheritance:
+  - System.Object
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  inheritedMembers:
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.Collections.Generic.IEqualityComparer{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Action{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Collections.Generic.IEqualityComparer{{T}},System.Action{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},{TModel},System.Action{{TModel},{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},System.Collections.Generic.IEqualityComparer{{T}},{TModel},System.Action{{TModel},{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.Action{System.Threading.Tasks.Task{{T}}},System.String)
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  - CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Borks_WPF.ViewModel.OrderVM.#ctor
+  commentId: M:Borks_WPF.ViewModel.OrderVM.#ctor
+  id: '#ctor'
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: OrderVM()
+  nameWithType: OrderVM.OrderVM()
+  fullName: Borks_WPF.ViewModel.OrderVM.OrderVM()
+  type: Constructor
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: .ctor
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 157
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Initialiserer en ny instans af OrderVM.
+  example: []
+  syntax:
+    content: public OrderVM()
+    content.vb: Public Sub New()
+  overload: Borks_WPF.ViewModel.OrderVM.#ctor*
+  nameWithType.vb: OrderVM.New()
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.New()
+  name.vb: New()
+- uid: Borks_WPF.ViewModel.OrderVM.#ctor(Borks_WPF.Model.Order)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.#ctor(Borks_WPF.Model.Order)
+  id: '#ctor(Borks_WPF.Model.Order)'
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: OrderVM(Order)
+  nameWithType: OrderVM.OrderVM(Order)
+  fullName: Borks_WPF.ViewModel.OrderVM.OrderVM(Borks_WPF.Model.Order)
+  type: Constructor
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: .ctor
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 165
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Initialiserer en ny instans af OrderVM baseret på en eksisterende Order.
+  example: []
+  syntax:
+    content: public OrderVM(Order order)
+    parameters:
+    - id: order
+      type: Borks_WPF.Model.Order
+      description: Order-objektet, der skal repræsenteres af OrderVM.
+    content.vb: Public Sub New(order As Order)
+  overload: Borks_WPF.ViewModel.OrderVM.#ctor*
+  nameWithType.vb: OrderVM.New(Order)
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.New(Borks_WPF.Model.Order)
+  name.vb: New(Order)
+- uid: Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums
+  commentId: M:Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums
+  id: GetChosenMontageEnums
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: GetChosenMontageEnums()
+  nameWithType: OrderVM.GetChosenMontageEnums()
+  fullName: Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums()
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: GetChosenMontageEnums
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 201
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Henter en liste af strengrepræsentationer for valgte montageenummereringer.
+  example: []
+  syntax:
+    content: public static List<string> GetChosenMontageEnums()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: En Liste af string indeholdende navnene på valgte montageenummereringer, hvor underscores er erstattet af mellemrum.
+    content.vb: Public Shared Function GetChosenMontageEnums() As List(Of String)
+  overload: Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums*
+- uid: Borks_WPF.ViewModel.OrderVM.FinishOrder
+  commentId: M:Borks_WPF.ViewModel.OrderVM.FinishOrder
+  id: FinishOrder
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: FinishOrder()
+  nameWithType: OrderVM.FinishOrder()
+  fullName: Borks_WPF.ViewModel.OrderVM.FinishOrder()
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: FinishOrder
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 216
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode, FinishOrder, opretter og gemmer en ordre ved at kalde relevante metoder (SaveCustomer, SaveGame, og SaveOrder). Den bruger data fra CustomerVM og GameVM og specificerer attributter for at fuldføre ordren. Dette sikrer, at en ordre bliver oprettet og gemt korrekt i systemet.
+  example: []
+  syntax:
+    content: public void FinishOrder()
+    content.vb: Public Sub FinishOrder()
+  overload: Borks_WPF.ViewModel.OrderVM.FinishOrder*
+- uid: Borks_WPF.ViewModel.OrderVM.UpdateOrder
+  commentId: M:Borks_WPF.ViewModel.OrderVM.UpdateOrder
+  id: UpdateOrder
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrder()
+  nameWithType: OrderVM.UpdateOrder()
+  fullName: Borks_WPF.ViewModel.OrderVM.UpdateOrder()
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: UpdateOrder
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 228
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode opdaterer egenskaberne for en eksisterende "order" (ordre) og kalder derefter en UpdateOrder metode på en instans af or (måske en order repository eller service).
+  example: []
+  syntax:
+    content: public void UpdateOrder()
+    content.vb: Public Sub UpdateOrder()
+  overload: Borks_WPF.ViewModel.OrderVM.UpdateOrder*
+- uid: Borks_WPF.ViewModel.OrderVM.GetAllOrdervms
+  commentId: M:Borks_WPF.ViewModel.OrderVM.GetAllOrdervms
+  id: GetAllOrdervms
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: GetAllOrdervms()
+  nameWithType: OrderVM.GetAllOrdervms()
+  fullName: Borks_WPF.ViewModel.OrderVM.GetAllOrdervms()
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: GetAllOrdervms
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 279
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  syntax:
+    content: public ObservableCollection<OrderVM> GetAllOrdervms()
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM}
+    content.vb: Public Function GetAllOrdervms() As ObservableCollection(Of OrderVM)
+  overload: Borks_WPF.ViewModel.OrderVM.GetAllOrdervms*
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement(System.Boolean)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement(System.Boolean)
+  id: StringConverterMeassurement(System.Boolean)
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: StringConverterMeassurement(bool)
+  nameWithType: OrderVM.StringConverterMeassurement(bool)
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement(bool)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: StringConverterMeassurement
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 305
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode, StringConverterMeassurement, er en simpel konverteringsmetode, der tager en boolesk værdi (meassurement) som input og returnerer en tilsvarende strengværdi. Metoden bruger en switch-sætning til at afgøre, hvordan konverteringen skal udføres afhængigt af den givne booleske værdi.
+  example: []
+  syntax:
+    content: public string StringConverterMeassurement(bool meassurement)
+    parameters:
+    - id: meassurement
+      type: System.Boolean
+      description: Angiver en boolesk værdi, der repræsenterer en opmåling.
+    return:
+      type: System.String
+      description: Returnerer en streng, der repræsenterer en opmåling.
+    content.vb: Public Function StringConverterMeassurement(meassurement As Boolean) As String
+  overload: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement*
+  nameWithType.vb: OrderVM.StringConverterMeassurement(Boolean)
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement(Boolean)
+  name.vb: StringConverterMeassurement(Boolean)
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed(System.Boolean)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.StringConverterIspayed(System.Boolean)
+  id: StringConverterIspayed(System.Boolean)
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: StringConverterIspayed(bool)
+  nameWithType: OrderVM.StringConverterIspayed(bool)
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed(bool)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: StringConverterIspayed
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 329
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode, StringConverterIspayed, er en simpel konverteringsmetode, der tager en boolesk værdi (isPayed) som input og returnerer en tilsvarende strengværdi. Metoden bruger en switch-sætning til at afgøre, hvordan konverteringen skal udføres afhængigt af den givne booleske værdi.
+  example: []
+  syntax:
+    content: public string StringConverterIspayed(bool isPayed)
+    parameters:
+    - id: isPayed
+      type: System.Boolean
+      description: Angiver en boolesk værdi, der repræsenterer om en betaling er betalt.
+    return:
+      type: System.String
+      description: Returnerer en streng, der repræsenterer om en betaling er betalt.
+    content.vb: Public Function StringConverterIspayed(isPayed As Boolean) As String
+  overload: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed*
+  nameWithType.vb: OrderVM.StringConverterIspayed(Boolean)
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed(Boolean)
+  name.vb: StringConverterIspayed(Boolean)
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized(System.Boolean)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.StringConverterFinalized(System.Boolean)
+  id: StringConverterFinalized(System.Boolean)
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: StringConverterFinalized(bool)
+  nameWithType: OrderVM.StringConverterFinalized(bool)
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized(bool)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: StringConverterFinalized
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 351
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode, StringConverterFinalized, er en simpel konverteringsmetode, der tager en boolesk værdi (finalized) som input og returnerer en tilsvarende strengværdi. Metoden bruger en switch-sætning til at afgøre, hvordan konverteringen skal udføres afhængigt af den givne booleske værdi.
+  example: []
+  syntax:
+    content: public string StringConverterFinalized(bool finalized)
+    parameters:
+    - id: finalized
+      type: System.Boolean
+      description: Angiver en boolesk værdi, der repræsenterer om en ordre er færdig.
+    return:
+      type: System.String
+      description: Returnerer en streng, der repræsenterer om en ordre er færdig.
+    content.vb: Public Function StringConverterFinalized(finalized As Boolean) As String
+  overload: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized*
+  nameWithType.vb: OrderVM.StringConverterFinalized(Boolean)
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized(Boolean)
+  name.vb: StringConverterFinalized(Boolean)
+- uid: Borks_WPF.ViewModel.OrderVM.StringMontageConverter(Borks_WPF.Model.EnumMontage)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.StringMontageConverter(Borks_WPF.Model.EnumMontage)
+  id: StringMontageConverter(Borks_WPF.Model.EnumMontage)
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: StringMontageConverter(EnumMontage)
+  nameWithType: OrderVM.StringMontageConverter(EnumMontage)
+  fullName: Borks_WPF.ViewModel.OrderVM.StringMontageConverter(Borks_WPF.Model.EnumMontage)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: StringMontageConverter
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 375
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode konverterer en enum om til strenge
+  example: []
+  syntax:
+    content: public string StringMontageConverter(EnumMontage montage)
+    parameters:
+    - id: montage
+      type: Borks_WPF.Model.EnumMontage
+      description: Montage enums
+    return:
+      type: System.String
+      description: string
+    content.vb: Public Function StringMontageConverter(montage As EnumMontage) As String
+  overload: Borks_WPF.ViewModel.OrderVM.StringMontageConverter*
+- uid: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter(System.DateTime)
+  commentId: M:Borks_WPF.ViewModel.OrderVM.TimeToColorConverter(System.DateTime)
+  id: TimeToColorConverter(System.DateTime)
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: TimeToColorConverter(DateTime)
+  nameWithType: OrderVM.TimeToColorConverter(DateTime)
+  fullName: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: TimeToColorConverter
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 396
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode giver farve på cirklerne på front
+  example: []
+  syntax:
+    content: public SolidColorBrush TimeToColorConverter(DateTime deliveryDate)
+    parameters:
+    - id: deliveryDate
+      type: System.DateTime
+      description: Slut Datoen for ordren
+    return:
+      type: System.Windows.Media.SolidColorBrush
+      description: Solid color Brush
+    content.vb: Public Function TimeToColorConverter(deliveryDate As Date) As SolidColorBrush
+  overload: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter*
+  nameWithType.vb: OrderVM.TimeToColorConverter(Date)
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter(Date)
+  name.vb: TimeToColorConverter(Date)
+- uid: Borks_WPF.ViewModel.OrderVM.SortedOrders(System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM})
+  commentId: M:Borks_WPF.ViewModel.OrderVM.SortedOrders(System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM})
+  id: SortedOrders(System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM})
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: SortedOrders(ObservableCollection<OrderVM>)
+  nameWithType: OrderVM.SortedOrders(ObservableCollection<OrderVM>)
+  fullName: Borks_WPF.ViewModel.OrderVM.SortedOrders(System.Collections.ObjectModel.ObservableCollection<Borks_WPF.ViewModel.OrderVM>)
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: SortedOrders
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 414
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Denne metode, SortedOrders, filtrerer ordrer, der ikke er færdige og ikke er fugle og små pattedyr.
+  example: []
+  syntax:
+    content: public ObservableCollection<OrderVM> SortedOrders(ObservableCollection<OrderVM> unfiltered)
+    parameters:
+    - id: unfiltered
+      type: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM}
+      description: Angiver en ObservableCollection af OrderVM-objekter, der repræsenterer en ufiltreret liste af ordrer.
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM}
+      description: Returnerer en ObservableCollection af OrderVM-objekter, der repræsenterer en filtreret liste af ordrer.
+    content.vb: Public Function SortedOrders(unfiltered As ObservableCollection(Of OrderVM)) As ObservableCollection(Of OrderVM)
+  overload: Borks_WPF.ViewModel.OrderVM.SortedOrders*
+  nameWithType.vb: OrderVM.SortedOrders(ObservableCollection(Of OrderVM))
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.SortedOrders(System.Collections.ObjectModel.ObservableCollection(Of Borks_WPF.ViewModel.OrderVM))
+  name.vb: SortedOrders(ObservableCollection(Of OrderVM))
+- uid: Borks_WPF.ViewModel.OrderVM.DeleteOrder
+  commentId: M:Borks_WPF.ViewModel.OrderVM.DeleteOrder
+  id: DeleteOrder
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrder()
+  nameWithType: OrderVM.DeleteOrder()
+  fullName: Borks_WPF.ViewModel.OrderVM.DeleteOrder()
+  type: Method
+  source:
+    remote:
+      path: Borks_WPF/ViewModel/OrderVM.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: DeleteOrder
+    path: ../BorksKonservering/Borks_WPF/ViewModel/OrderVM.cs
+    startLine: 428
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: sletter en ordre
+  example: []
+  syntax:
+    content: public void DeleteOrder()
+    content.vb: Public Sub DeleteOrder()
+  overload: Borks_WPF.ViewModel.OrderVM.DeleteOrder*
+- uid: Borks_WPF.ViewModel.OrderVM.Id
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Id
+  id: Id
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: OrderVM.Id
+  fullName: Borks_WPF.ViewModel.OrderVM.Id
+  type: Property
+  source:
+    id: Id
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 9
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for et heltal, der repræsenterer et ordre-id.
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Borks_WPF.ViewModel.OrderVM.Id*
+- uid: Borks_WPF.ViewModel.OrderVM.Montage
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Montage
+  id: Montage
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Montage
+  nameWithType: OrderVM.Montage
+  fullName: Borks_WPF.ViewModel.OrderVM.Montage
+  type: Property
+  source:
+    id: Montage
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 30
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en EnumMontage, der repræsenterer et montageenummer.
+  example: []
+  syntax:
+    content: public EnumMontage Montage { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.Model.EnumMontage
+    content.vb: Public Property Montage As EnumMontage
+  overload: Borks_WPF.ViewModel.OrderVM.Montage*
+- uid: Borks_WPF.ViewModel.OrderVM.DeliveryDate
+  commentId: P:Borks_WPF.ViewModel.OrderVM.DeliveryDate
+  id: DeliveryDate
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: DeliveryDate
+  nameWithType: OrderVM.DeliveryDate
+  fullName: Borks_WPF.ViewModel.OrderVM.DeliveryDate
+  type: Property
+  source:
+    id: DeliveryDate
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 51
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en DateTime-variabel, der repræsenterer en leveringsdato.
+  example: []
+  syntax:
+    content: public DateTime DeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DeliveryDate As Date
+  overload: Borks_WPF.ViewModel.OrderVM.DeliveryDate*
+- uid: Borks_WPF.ViewModel.OrderVM.OrderDate
+  commentId: P:Borks_WPF.ViewModel.OrderVM.OrderDate
+  id: OrderDate
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: OrderDate
+  nameWithType: OrderVM.OrderDate
+  fullName: Borks_WPF.ViewModel.OrderVM.OrderDate
+  type: Property
+  source:
+    id: OrderDate
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 72
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en DateTime-variabel, der repræsenterer en ordredato.
+  example: []
+  syntax:
+    content: public DateTime OrderDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property OrderDate As Date
+  overload: Borks_WPF.ViewModel.OrderVM.OrderDate*
+- uid: Borks_WPF.ViewModel.OrderVM.Price
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Price
+  id: Price
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Price
+  nameWithType: OrderVM.Price
+  fullName: Borks_WPF.ViewModel.OrderVM.Price
+  type: Property
+  source:
+    id: Price
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 93
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en double, der repræsenterer en pris.
+  example: []
+  syntax:
+    content: public double Price { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Price As Double
+  overload: Borks_WPF.ViewModel.OrderVM.Price*
+- uid: Borks_WPF.ViewModel.OrderVM.Meassurement
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Meassurement
+  id: Meassurement
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Meassurement
+  nameWithType: OrderVM.Meassurement
+  fullName: Borks_WPF.ViewModel.OrderVM.Meassurement
+  type: Property
+  source:
+    id: Meassurement
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 114
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en bool, der repræsenterer en opmåling.
+  example: []
+  syntax:
+    content: public bool Meassurement { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Meassurement As Boolean
+  overload: Borks_WPF.ViewModel.OrderVM.Meassurement*
+- uid: Borks_WPF.ViewModel.OrderVM.MeassurementString
+  commentId: P:Borks_WPF.ViewModel.OrderVM.MeassurementString
+  id: MeassurementString
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: MeassurementString
+  nameWithType: OrderVM.MeassurementString
+  fullName: Borks_WPF.ViewModel.OrderVM.MeassurementString
+  type: Property
+  source:
+    id: MeassurementString
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 135
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: angiver en observerbar egenskab for en bool, der repræsenterer en måling.
+  example: []
+  syntax:
+    content: public string MeassurementString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MeassurementString As String
+  overload: Borks_WPF.ViewModel.OrderVM.MeassurementString*
+- uid: Borks_WPF.ViewModel.OrderVM.Comment
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Comment
+  id: Comment
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: OrderVM.Comment
+  fullName: Borks_WPF.ViewModel.OrderVM.Comment
+  type: Property
+  source:
+    id: Comment
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 157
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en streng, der repræsenterer en kommentar.
+  example: []
+  syntax:
+    content: public string Comment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comment As String
+  overload: Borks_WPF.ViewModel.OrderVM.Comment*
+- uid: Borks_WPF.ViewModel.OrderVM.GameVM
+  commentId: P:Borks_WPF.ViewModel.OrderVM.GameVM
+  id: GameVM
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: GameVM
+  nameWithType: OrderVM.GameVM
+  fullName: Borks_WPF.ViewModel.OrderVM.GameVM
+  type: Property
+  source:
+    id: GameVM
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 179
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for et GameVM-objekt, der repræsenterer et Vildt.
+  example: []
+  syntax:
+    content: public GameVM GameVM { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.ViewModel.GameVM
+    content.vb: Public Property GameVM As GameVM
+  overload: Borks_WPF.ViewModel.OrderVM.GameVM*
+- uid: Borks_WPF.ViewModel.OrderVM.CustomerVM
+  commentId: P:Borks_WPF.ViewModel.OrderVM.CustomerVM
+  id: CustomerVM
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: CustomerVM
+  nameWithType: OrderVM.CustomerVM
+  fullName: Borks_WPF.ViewModel.OrderVM.CustomerVM
+  type: Property
+  source:
+    id: CustomerVM
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 201
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for et CustomerVM-objekt, der repræsenterer en kunde.
+  example: []
+  syntax:
+    content: public CustomerVM CustomerVM { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.ViewModel.CustomerVM
+    content.vb: Public Property CustomerVM As CustomerVM
+  overload: Borks_WPF.ViewModel.OrderVM.CustomerVM*
+- uid: Borks_WPF.ViewModel.OrderVM.IsPayed
+  commentId: P:Borks_WPF.ViewModel.OrderVM.IsPayed
+  id: IsPayed
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: IsPayed
+  nameWithType: OrderVM.IsPayed
+  fullName: Borks_WPF.ViewModel.OrderVM.IsPayed
+  type: Property
+  source:
+    id: IsPayed
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 223
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en bool, der repræsenterer om en betaling er betalt.
+  example: []
+  syntax:
+    content: public bool IsPayed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPayed As Boolean
+  overload: Borks_WPF.ViewModel.OrderVM.IsPayed*
+- uid: Borks_WPF.ViewModel.OrderVM.IsPayedString
+  commentId: P:Borks_WPF.ViewModel.OrderVM.IsPayedString
+  id: IsPayedString
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: IsPayedString
+  nameWithType: OrderVM.IsPayedString
+  fullName: Borks_WPF.ViewModel.OrderVM.IsPayedString
+  type: Property
+  source:
+    id: IsPayedString
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 244
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en streng, der repræsenterer om en betaling er betalt.
+  example: []
+  syntax:
+    content: public string IsPayedString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IsPayedString As String
+  overload: Borks_WPF.ViewModel.OrderVM.IsPayedString*
+- uid: Borks_WPF.ViewModel.OrderVM.PercentPayed
+  commentId: P:Borks_WPF.ViewModel.OrderVM.PercentPayed
+  id: PercentPayed
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: PercentPayed
+  nameWithType: OrderVM.PercentPayed
+  fullName: Borks_WPF.ViewModel.OrderVM.PercentPayed
+  type: Property
+  source:
+    id: PercentPayed
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 266
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for et heltal, der repræsenterer en procentdel af betalingen.
+  example: []
+  syntax:
+    content: public int PercentPayed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PercentPayed As Integer
+  overload: Borks_WPF.ViewModel.OrderVM.PercentPayed*
+- uid: Borks_WPF.ViewModel.OrderVM.FindingPlace
+  commentId: P:Borks_WPF.ViewModel.OrderVM.FindingPlace
+  id: FindingPlace
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: FindingPlace
+  nameWithType: OrderVM.FindingPlace
+  fullName: Borks_WPF.ViewModel.OrderVM.FindingPlace
+  type: Property
+  source:
+    id: FindingPlace
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 287
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en streng, der repræsenterer et findested hvor vildtet er nedlagt.
+  example: []
+  syntax:
+    content: public string FindingPlace { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FindingPlace As String
+  overload: Borks_WPF.ViewModel.OrderVM.FindingPlace*
+- uid: Borks_WPF.ViewModel.OrderVM.Finalized
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Finalized
+  id: Finalized
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Finalized
+  nameWithType: OrderVM.Finalized
+  fullName: Borks_WPF.ViewModel.OrderVM.Finalized
+  type: Property
+  source:
+    id: Finalized
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 309
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en Finalized, der repræsenterer om en ordre er færdig.
+  example: []
+  syntax:
+    content: public bool Finalized { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Finalized As Boolean
+  overload: Borks_WPF.ViewModel.OrderVM.Finalized*
+- uid: Borks_WPF.ViewModel.OrderVM.FinalizedString
+  commentId: P:Borks_WPF.ViewModel.OrderVM.FinalizedString
+  id: FinalizedString
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: FinalizedString
+  nameWithType: OrderVM.FinalizedString
+  fullName: Borks_WPF.ViewModel.OrderVM.FinalizedString
+  type: Property
+  source:
+    id: FinalizedString
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 330
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en streng, der repræsenterer om en ordre er færdiggjort.
+  example: []
+  syntax:
+    content: public string FinalizedString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FinalizedString As String
+  overload: Borks_WPF.ViewModel.OrderVM.FinalizedString*
+- uid: Borks_WPF.ViewModel.OrderVM.Orders
+  commentId: P:Borks_WPF.ViewModel.OrderVM.Orders
+  id: Orders
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Orders
+  nameWithType: OrderVM.Orders
+  fullName: Borks_WPF.ViewModel.OrderVM.Orders
+  type: Property
+  source:
+    id: Orders
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 352
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en ObservableCollection af Order-objekter.
+  example: []
+  syntax:
+    content: public ObservableCollection<Order> Orders { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.Model.Order}
+    content.vb: Public Property Orders As ObservableCollection(Of Order)
+  overload: Borks_WPF.ViewModel.OrderVM.Orders*
+- uid: Borks_WPF.ViewModel.OrderVM.ItemColor
+  commentId: P:Borks_WPF.ViewModel.OrderVM.ItemColor
+  id: ItemColor
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: ItemColor
+  nameWithType: OrderVM.ItemColor
+  fullName: Borks_WPF.ViewModel.OrderVM.ItemColor
+  type: Property
+  source:
+    id: ItemColor
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 374
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab for en SolidColorBrush, der repræsenterer en farve.
+  example: []
+  syntax:
+    content: public SolidColorBrush ItemColor { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Media.SolidColorBrush
+    content.vb: Public Property ItemColor As SolidColorBrush
+  overload: Borks_WPF.ViewModel.OrderVM.ItemColor*
+- uid: Borks_WPF.ViewModel.OrderVM.StringMontage
+  commentId: P:Borks_WPF.ViewModel.OrderVM.StringMontage
+  id: StringMontage
+  parent: Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: StringMontage
+  nameWithType: OrderVM.StringMontage
+  fullName: Borks_WPF.ViewModel.OrderVM.StringMontage
+  type: Property
+  source:
+    id: StringMontage
+    path: CommunityToolkit.Mvvm.SourceGenerators\CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator\Borks_WPF.ViewModel.OrderVM.g.cs
+    startLine: 396
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.ViewModel
+  summary: Angiver en observerbar egenskab der bruges til at få montage fra enums til steng format
+  example: []
+  syntax:
+    content: public string StringMontage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StringMontage As String
+  overload: Borks_WPF.ViewModel.OrderVM.StringMontage*
+references:
+- uid: Borks_WPF.ViewModel
+  commentId: N:Borks_WPF.ViewModel
+  href: Borks_WPF.html
+  name: Borks_WPF.ViewModel
+  nameWithType: Borks_WPF.ViewModel
+  fullName: Borks_WPF.ViewModel
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.ViewModel
+    name: ViewModel
+    href: Borks_WPF.ViewModel.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.ViewModel
+    name: ViewModel
+    href: Borks_WPF.ViewModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  commentId: T:CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  parent: CommunityToolkit.Mvvm.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject
+  name: ObservableObject
+  nameWithType: ObservableObject
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-componentmodel-propertychangedeventargs)
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: ObservableObject.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-componentmodel-propertychangedeventargs)
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-componentmodel-propertychangedeventargs)
+  - name: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-componentmodel-propertychangingeventargs)
+  name: OnPropertyChanging(PropertyChangingEventArgs)
+  nameWithType: ObservableObject.OnPropertyChanging(PropertyChangingEventArgs)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+    name: OnPropertyChanging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-componentmodel-propertychangingeventargs)
+  - name: (
+  - uid: System.ComponentModel.PropertyChangingEventArgs
+    name: PropertyChangingEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangingeventargs
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)
+    name: OnPropertyChanging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-componentmodel-propertychangingeventargs)
+  - name: (
+  - uid: System.ComponentModel.PropertyChangingEventArgs
+    name: PropertyChangingEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangingeventargs
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-string)
+  name: OnPropertyChanged(string)
+  nameWithType: ObservableObject.OnPropertyChanged(string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(string)
+  nameWithType.vb: ObservableObject.OnPropertyChanged(String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanged#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanged(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-string)
+  name: OnPropertyChanging(string)
+  nameWithType: ObservableObject.OnPropertyChanging(string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(string)
+  nameWithType.vb: ObservableObject.OnPropertyChanging(String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(String)
+  name.vb: OnPropertyChanging(String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.onpropertychanging#communitytoolkit-mvvm-componentmodel-observableobject-onpropertychanging(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: ObservableObject.SetProperty<T>(ref T, T, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T}@,{T},System.Collections.Generic.IEqualityComparer{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  name: SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(ref T, T, System.Collections.Generic.IEqualityComparer<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Action{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  name: SetProperty<T>(T, T, Action<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, Action<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Action<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Action(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1({T},{T},System.Collections.Generic.IEqualityComparer{{T}},System.Action{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.Action<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.Action(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},{TModel},System.Action{{TModel},{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  name: SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, string)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, TModel, System.Action<TModel, T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, System.Action(Of TModel, T), String)
+  name.vb: SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2({T},{T},System.Collections.Generic.IEqualityComparer{{T}},{TModel},System.Action{{TModel},{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  name: SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, string)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, System.Collections.Generic.IEqualityComparer<T>, TModel, System.Action<TModel, T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), TModel, System.Action(Of TModel, T), String)
+  name.vb: SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-string)
+  name: SetPropertyAndNotifyOnCompletion(ref TaskNotifier, Task, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(ref ObservableObject.TaskNotifier, Task, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, String)
+  name.vb: SetPropertyAndNotifyOnCompletion(TaskNotifier, Task, String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-string)
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-string)
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-action((system-threading-tasks-task))-system-string)
+  name: SetPropertyAndNotifyOnCompletion(ref TaskNotifier, Task, Action<Task>, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion(ref ObservableObject.TaskNotifier, Task, Action<Task>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, System.Action<System.Threading.Tasks.Task>, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(ObservableObject.TaskNotifier, Task, Action(Of Task), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier, System.Threading.Tasks.Task, System.Action(Of System.Threading.Tasks.Task), String)
+  name.vb: SetPropertyAndNotifyOnCompletion(TaskNotifier, Task, Action(Of Task), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-action((system-threading-tasks-task))-system-string)
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier@-system-threading-tasks-task-system-action((system-threading-tasks-task))-system-string)
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  name: SetPropertyAndNotifyOnCompletion<T>(ref TaskNotifier<T>, Task<T>, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref ObservableObject.TaskNotifier<T>, Task<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(TaskNotifier(Of T), Task(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{{T}}@,System.Threading.Tasks.Task{{T}},System.Action{System.Threading.Tasks.Task{{T}}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  definition: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  name: SetPropertyAndNotifyOnCompletion<T>(ref TaskNotifier<T>, Task<T>, Action<Task<T>>, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.Action<System.Threading.Tasks.Task<T>>, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.Action(Of System.Threading.Tasks.Task(Of T)), String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  commentId: E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.propertychanged
+  name: PropertyChanged
+  nameWithType: ObservableObject.PropertyChanged
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  commentId: E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+  parent: CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.propertychanging
+  name: PropertyChanging
+  nameWithType: ObservableObject.PropertyChanging
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CommunityToolkit.Mvvm.ComponentModel
+  commentId: N:CommunityToolkit.Mvvm.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  name: CommunityToolkit.Mvvm.ComponentModel
+  nameWithType: CommunityToolkit.Mvvm.ComponentModel
+  fullName: CommunityToolkit.Mvvm.ComponentModel
+  spec.csharp:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel
+  spec.vb:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm
+  - name: .
+  - uid: CommunityToolkit.Mvvm.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: ObservableObject.SetProperty<T>(ref T, T, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  name: SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(ref T, T, IEqualityComparer<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(ref T, T, System.Collections.Generic.IEqualityComparer<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0@-0-system-collections-generic-iequalitycomparer((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  name: SetProperty<T>(T, T, Action<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, Action<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Action<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Action(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-action((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  name: SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, string)
+  nameWithType: ObservableObject.SetProperty<T>(T, T, IEqualityComparer<T>, Action<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<T>(T, T, System.Collections.Generic.IEqualityComparer<T>, System.Action<T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), System.Action(Of T), String)
+  name.vb: SetProperty(Of T)(T, T, IEqualityComparer(Of T), Action(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-1(-0-0-system-collections-generic-iequalitycomparer((-0))-system-action((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  name: SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, string)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, TModel, Action<TModel, T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, TModel, System.Action<TModel, T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, TModel, System.Action(Of TModel, T), String)
+  name.vb: SetProperty(Of TModel, T)(T, T, TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-0-system-action((-0-1))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  name: SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, string)
+  nameWithType: ObservableObject.SetProperty<TModel, T>(T, T, IEqualityComparer<T>, TModel, Action<TModel, T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty<TModel, T>(T, T, System.Collections.Generic.IEqualityComparer<T>, TModel, System.Action<TModel, T>, string)
+  nameWithType.vb: ObservableObject.SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty(Of TModel, T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), TModel, System.Action(Of TModel, T), String)
+  name.vb: SetProperty(Of TModel, T)(T, T, IEqualityComparer(Of T), TModel, Action(Of TModel, T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)
+    name: SetProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setproperty#communitytoolkit-mvvm-componentmodel-observableobject-setproperty-2(-1-1-system-collections-generic-iequalitycomparer((-1))-0-system-action((-0-1))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  name: SetPropertyAndNotifyOnCompletion<T>(ref TaskNotifier<T>, Task<T>, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref ObservableObject.TaskNotifier<T>, Task<T>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(TaskNotifier(Of T), Task(Of T), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  commentId: M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  name: SetPropertyAndNotifyOnCompletion<T>(ref TaskNotifier<T>, Task<T>, Action<Task<T>>, string)
+  nameWithType: ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref ObservableObject.TaskNotifier<T>, Task<T>, Action<Task<T>>, string)
+  fullName: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion<T>(ref CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier<T>, System.Threading.Tasks.Task<T>, System.Action<System.Threading.Tasks.Task<T>>, string)
+  nameWithType.vb: ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(ObservableObject.TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  fullName.vb: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Of T)(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier(Of T), System.Threading.Tasks.Task(Of T), System.Action(Of System.Threading.Tasks.Task(Of T)), String)
+  name.vb: SetPropertyAndNotifyOnCompletion(Of T)(TaskNotifier(Of T), Task(Of T), Action(Of Task(Of T)), String)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)
+    name: SetPropertyAndNotifyOnCompletion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.setpropertyandnotifyoncompletion#communitytoolkit-mvvm-componentmodel-observableobject-setpropertyandnotifyoncompletion-1(communitytoolkit-mvvm-componentmodel-observableobject-tasknotifier((-0))@-system-threading-tasks-task((-0))-system-action((system-threading-tasks-task((-0))))-system-string)
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: CommunityToolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1
+    name: TaskNotifier
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.componentmodel.observableobject.tasknotifier-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Borks_WPF.ViewModel.OrderVM.#ctor*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.#ctor
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM__ctor
+  name: OrderVM
+  nameWithType: OrderVM.OrderVM
+  fullName: Borks_WPF.ViewModel.OrderVM.OrderVM
+  nameWithType.vb: OrderVM.New
+  fullName.vb: Borks_WPF.ViewModel.OrderVM.New
+  name.vb: New
+- uid: Borks_WPF.Model.Order
+  commentId: T:Borks_WPF.Model.Order
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.Order.html
+  name: Order
+  nameWithType: Order
+  fullName: Borks_WPF.Model.Order
+- uid: Borks_WPF.Model
+  commentId: N:Borks_WPF.Model
+  href: Borks_WPF.html
+  name: Borks_WPF.Model
+  nameWithType: Borks_WPF.Model
+  fullName: Borks_WPF.Model
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+- uid: Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_GetChosenMontageEnums
+  name: GetChosenMontageEnums
+  nameWithType: OrderVM.GetChosenMontageEnums
+  fullName: Borks_WPF.ViewModel.OrderVM.GetChosenMontageEnums
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Borks_WPF.ViewModel.OrderVM.FinishOrder*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.FinishOrder
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_FinishOrder
+  name: FinishOrder
+  nameWithType: OrderVM.FinishOrder
+  fullName: Borks_WPF.ViewModel.OrderVM.FinishOrder
+- uid: Borks_WPF.ViewModel.OrderVM.UpdateOrder*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.UpdateOrder
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_UpdateOrder
+  name: UpdateOrder
+  nameWithType: OrderVM.UpdateOrder
+  fullName: Borks_WPF.ViewModel.OrderVM.UpdateOrder
+- uid: Borks_WPF.ViewModel.OrderVM.GetAllOrdervms*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.GetAllOrdervms
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_GetAllOrdervms
+  name: GetAllOrdervms
+  nameWithType: OrderVM.GetAllOrdervms
+  fullName: Borks_WPF.ViewModel.OrderVM.GetAllOrdervms
+- uid: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Borks_WPF.ViewModel.OrderVM}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<OrderVM>
+  nameWithType: ObservableCollection<OrderVM>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Borks_WPF.ViewModel.OrderVM>
+  nameWithType.vb: ObservableCollection(Of OrderVM)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Borks_WPF.ViewModel.OrderVM)
+  name.vb: ObservableCollection(Of OrderVM)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Borks_WPF.ViewModel.OrderVM
+    name: OrderVM
+    href: Borks_WPF.ViewModel.OrderVM.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Borks_WPF.ViewModel.OrderVM
+    name: OrderVM
+    href: Borks_WPF.ViewModel.OrderVM.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_StringConverterMeassurement_System_Boolean_
+  name: StringConverterMeassurement
+  nameWithType: OrderVM.StringConverterMeassurement
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterMeassurement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.StringConverterIspayed
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_StringConverterIspayed_System_Boolean_
+  name: StringConverterIspayed
+  nameWithType: OrderVM.StringConverterIspayed
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterIspayed
+- uid: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.StringConverterFinalized
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_StringConverterFinalized_System_Boolean_
+  name: StringConverterFinalized
+  nameWithType: OrderVM.StringConverterFinalized
+  fullName: Borks_WPF.ViewModel.OrderVM.StringConverterFinalized
+- uid: Borks_WPF.ViewModel.OrderVM.StringMontageConverter*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.StringMontageConverter
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_StringMontageConverter_Borks_WPF_Model_EnumMontage_
+  name: StringMontageConverter
+  nameWithType: OrderVM.StringMontageConverter
+  fullName: Borks_WPF.ViewModel.OrderVM.StringMontageConverter
+- uid: Borks_WPF.Model.EnumMontage
+  commentId: T:Borks_WPF.Model.EnumMontage
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.EnumMontage.html
+  name: EnumMontage
+  nameWithType: EnumMontage
+  fullName: Borks_WPF.Model.EnumMontage
+- uid: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.TimeToColorConverter
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_TimeToColorConverter_System_DateTime_
+  name: TimeToColorConverter
+  nameWithType: OrderVM.TimeToColorConverter
+  fullName: Borks_WPF.ViewModel.OrderVM.TimeToColorConverter
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Windows.Media.SolidColorBrush
+  commentId: T:System.Windows.Media.SolidColorBrush
+  parent: System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.solidcolorbrush
+  name: SolidColorBrush
+  nameWithType: SolidColorBrush
+  fullName: System.Windows.Media.SolidColorBrush
+- uid: System.Windows.Media
+  commentId: N:System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media
+  nameWithType: System.Windows.Media
+  fullName: System.Windows.Media
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+- uid: Borks_WPF.ViewModel.OrderVM.SortedOrders*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.SortedOrders
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_SortedOrders_System_Collections_ObjectModel_ObservableCollection_Borks_WPF_ViewModel_OrderVM__
+  name: SortedOrders
+  nameWithType: OrderVM.SortedOrders
+  fullName: Borks_WPF.ViewModel.OrderVM.SortedOrders
+- uid: Borks_WPF.ViewModel.OrderVM.DeleteOrder*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.DeleteOrder
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_DeleteOrder
+  name: DeleteOrder
+  nameWithType: OrderVM.DeleteOrder
+  fullName: Borks_WPF.ViewModel.OrderVM.DeleteOrder
+- uid: Borks_WPF.ViewModel.OrderVM.Id*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Id
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Id
+  name: Id
+  nameWithType: OrderVM.Id
+  fullName: Borks_WPF.ViewModel.OrderVM.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Borks_WPF.ViewModel.OrderVM.Montage*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Montage
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Montage
+  name: Montage
+  nameWithType: OrderVM.Montage
+  fullName: Borks_WPF.ViewModel.OrderVM.Montage
+- uid: Borks_WPF.ViewModel.OrderVM.DeliveryDate*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.DeliveryDate
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_DeliveryDate
+  name: DeliveryDate
+  nameWithType: OrderVM.DeliveryDate
+  fullName: Borks_WPF.ViewModel.OrderVM.DeliveryDate
+- uid: Borks_WPF.ViewModel.OrderVM.OrderDate*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.OrderDate
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_OrderDate
+  name: OrderDate
+  nameWithType: OrderVM.OrderDate
+  fullName: Borks_WPF.ViewModel.OrderVM.OrderDate
+- uid: Borks_WPF.ViewModel.OrderVM.Price*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Price
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Price
+  name: Price
+  nameWithType: OrderVM.Price
+  fullName: Borks_WPF.ViewModel.OrderVM.Price
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Borks_WPF.ViewModel.OrderVM.Meassurement*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Meassurement
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Meassurement
+  name: Meassurement
+  nameWithType: OrderVM.Meassurement
+  fullName: Borks_WPF.ViewModel.OrderVM.Meassurement
+- uid: Borks_WPF.ViewModel.OrderVM.MeassurementString*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.MeassurementString
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_MeassurementString
+  name: MeassurementString
+  nameWithType: OrderVM.MeassurementString
+  fullName: Borks_WPF.ViewModel.OrderVM.MeassurementString
+- uid: Borks_WPF.ViewModel.OrderVM.Comment*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Comment
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Comment
+  name: Comment
+  nameWithType: OrderVM.Comment
+  fullName: Borks_WPF.ViewModel.OrderVM.Comment
+- uid: Borks_WPF.ViewModel.OrderVM.GameVM*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.GameVM
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_GameVM
+  name: GameVM
+  nameWithType: OrderVM.GameVM
+  fullName: Borks_WPF.ViewModel.OrderVM.GameVM
+- uid: Borks_WPF.ViewModel.GameVM
+  commentId: T:Borks_WPF.ViewModel.GameVM
+  parent: Borks_WPF.ViewModel
+  href: Borks_WPF.ViewModel.GameVM.html
+  name: GameVM
+  nameWithType: GameVM
+  fullName: Borks_WPF.ViewModel.GameVM
+- uid: Borks_WPF.ViewModel.OrderVM.CustomerVM*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.CustomerVM
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_CustomerVM
+  name: CustomerVM
+  nameWithType: OrderVM.CustomerVM
+  fullName: Borks_WPF.ViewModel.OrderVM.CustomerVM
+- uid: Borks_WPF.ViewModel.CustomerVM
+  commentId: T:Borks_WPF.ViewModel.CustomerVM
+  parent: Borks_WPF.ViewModel
+  href: Borks_WPF.ViewModel.CustomerVM.html
+  name: CustomerVM
+  nameWithType: CustomerVM
+  fullName: Borks_WPF.ViewModel.CustomerVM
+- uid: Borks_WPF.ViewModel.OrderVM.IsPayed*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.IsPayed
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_IsPayed
+  name: IsPayed
+  nameWithType: OrderVM.IsPayed
+  fullName: Borks_WPF.ViewModel.OrderVM.IsPayed
+- uid: Borks_WPF.ViewModel.OrderVM.IsPayedString*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.IsPayedString
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_IsPayedString
+  name: IsPayedString
+  nameWithType: OrderVM.IsPayedString
+  fullName: Borks_WPF.ViewModel.OrderVM.IsPayedString
+- uid: Borks_WPF.ViewModel.OrderVM.PercentPayed*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.PercentPayed
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_PercentPayed
+  name: PercentPayed
+  nameWithType: OrderVM.PercentPayed
+  fullName: Borks_WPF.ViewModel.OrderVM.PercentPayed
+- uid: Borks_WPF.ViewModel.OrderVM.FindingPlace*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.FindingPlace
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_FindingPlace
+  name: FindingPlace
+  nameWithType: OrderVM.FindingPlace
+  fullName: Borks_WPF.ViewModel.OrderVM.FindingPlace
+- uid: Borks_WPF.ViewModel.OrderVM.Finalized*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Finalized
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Finalized
+  name: Finalized
+  nameWithType: OrderVM.Finalized
+  fullName: Borks_WPF.ViewModel.OrderVM.Finalized
+- uid: Borks_WPF.ViewModel.OrderVM.FinalizedString*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.FinalizedString
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_FinalizedString
+  name: FinalizedString
+  nameWithType: OrderVM.FinalizedString
+  fullName: Borks_WPF.ViewModel.OrderVM.FinalizedString
+- uid: Borks_WPF.ViewModel.OrderVM.Orders*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.Orders
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_Orders
+  name: Orders
+  nameWithType: OrderVM.Orders
+  fullName: Borks_WPF.ViewModel.OrderVM.Orders
+- uid: System.Collections.ObjectModel.ObservableCollection{Borks_WPF.Model.Order}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{Borks_WPF.Model.Order}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<Order>
+  nameWithType: ObservableCollection<Order>
+  fullName: System.Collections.ObjectModel.ObservableCollection<Borks_WPF.Model.Order>
+  nameWithType.vb: ObservableCollection(Of Order)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Borks_WPF.Model.Order)
+  name.vb: ObservableCollection(Of Order)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Borks_WPF.Model.Order
+    name: Order
+    href: Borks_WPF.Model.Order.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Borks_WPF.Model.Order
+    name: Order
+    href: Borks_WPF.Model.Order.html
+  - name: )
+- uid: Borks_WPF.ViewModel.OrderVM.ItemColor*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.ItemColor
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_ItemColor
+  name: ItemColor
+  nameWithType: OrderVM.ItemColor
+  fullName: Borks_WPF.ViewModel.OrderVM.ItemColor
+- uid: Borks_WPF.ViewModel.OrderVM.StringMontage*
+  commentId: Overload:Borks_WPF.ViewModel.OrderVM.StringMontage
+  href: Borks_WPF.ViewModel.OrderVM.html#Borks_WPF_ViewModel_OrderVM_StringMontage
+  name: StringMontage
+  nameWithType: OrderVM.StringMontage
+  fullName: Borks_WPF.ViewModel.OrderVM.StringMontage

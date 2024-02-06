@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: Squire.Models.TaskItem
+  commentId: T:Squire.Models.TaskItem
+  id: TaskItem
+  parent: Squire.Models
+  children:
+  - Squire.Models.TaskItem.#ctor
+  - Squire.Models.TaskItem.#ctor(System.Int32,System.String)
+  - Squire.Models.TaskItem.#ctor(System.Int32,System.String,System.DateTime)
+  - Squire.Models.TaskItem.#ctor(System.String)
+  - Squire.Models.TaskItem.Completed
+  - Squire.Models.TaskItem.DateCreated
+  - Squire.Models.TaskItem.Id
+  - Squire.Models.TaskItem.Text
+  langs:
+  - csharp
+  - vb
+  name: TaskItem
+  nameWithType: TaskItem
+  fullName: Squire.Models.TaskItem
+  type: Class
+  source:
+    id: TaskItem
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 5
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public class TaskItem
+    content.vb: Public Class TaskItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Squire.Models.TaskItem.Id
+  commentId: P:Squire.Models.TaskItem.Id
+  id: Id
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TaskItem.Id
+  fullName: Squire.Models.TaskItem.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 8
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Squire.Models.TaskItem.Id*
+- uid: Squire.Models.TaskItem.Text
+  commentId: P:Squire.Models.TaskItem.Text
+  id: Text
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: TaskItem.Text
+  fullName: Squire.Models.TaskItem.Text
+  type: Property
+  source:
+    id: Text
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 9
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Squire.Models.TaskItem.Text*
+- uid: Squire.Models.TaskItem.DateCreated
+  commentId: P:Squire.Models.TaskItem.DateCreated
+  id: DateCreated
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: DateCreated
+  nameWithType: TaskItem.DateCreated
+  fullName: Squire.Models.TaskItem.DateCreated
+  type: Property
+  source:
+    id: DateCreated
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 11
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public DateTime DateCreated { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DateCreated As Date
+  overload: Squire.Models.TaskItem.DateCreated*
+- uid: Squire.Models.TaskItem.Completed
+  commentId: P:Squire.Models.TaskItem.Completed
+  id: Completed
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: TaskItem.Completed
+  fullName: Squire.Models.TaskItem.Completed
+  type: Property
+  source:
+    id: Completed
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 13
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public bool Completed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Completed As Boolean
+  overload: Squire.Models.TaskItem.Completed*
+- uid: Squire.Models.TaskItem.#ctor
+  commentId: M:Squire.Models.TaskItem.#ctor
+  id: '#ctor'
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: TaskItem()
+  nameWithType: TaskItem.TaskItem()
+  fullName: Squire.Models.TaskItem.TaskItem()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 15
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public TaskItem()
+    content.vb: Public Sub New()
+  overload: Squire.Models.TaskItem.#ctor*
+  nameWithType.vb: TaskItem.New()
+  fullName.vb: Squire.Models.TaskItem.New()
+  name.vb: New()
+- uid: Squire.Models.TaskItem.#ctor(System.String)
+  commentId: M:Squire.Models.TaskItem.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: TaskItem(string)
+  nameWithType: TaskItem.TaskItem(string)
+  fullName: Squire.Models.TaskItem.TaskItem(string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 19
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public TaskItem(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(text As String)
+  overload: Squire.Models.TaskItem.#ctor*
+  nameWithType.vb: TaskItem.New(String)
+  fullName.vb: Squire.Models.TaskItem.New(String)
+  name.vb: New(String)
+- uid: Squire.Models.TaskItem.#ctor(System.Int32,System.String)
+  commentId: M:Squire.Models.TaskItem.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: TaskItem(int, string)
+  nameWithType: TaskItem.TaskItem(int, string)
+  fullName: Squire.Models.TaskItem.TaskItem(int, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 23
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public TaskItem(int id, string text)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(id As Integer, text As String)
+  overload: Squire.Models.TaskItem.#ctor*
+  nameWithType.vb: TaskItem.New(Integer, String)
+  fullName.vb: Squire.Models.TaskItem.New(Integer, String)
+  name.vb: New(Integer, String)
+- uid: Squire.Models.TaskItem.#ctor(System.Int32,System.String,System.DateTime)
+  commentId: M:Squire.Models.TaskItem.#ctor(System.Int32,System.String,System.DateTime)
+  id: '#ctor(System.Int32,System.String,System.DateTime)'
+  parent: Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: TaskItem(int, string, DateTime)
+  nameWithType: TaskItem.TaskItem(int, string, DateTime)
+  fullName: Squire.Models.TaskItem.TaskItem(int, string, System.DateTime)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\45217\source\repos\Squire\Squire\Models\TaskItem.cs
+    startLine: 28
+  assemblies:
+  - Squire
+  namespace: Squire.Models
+  syntax:
+    content: public TaskItem(int id, string text, DateTime dateCreated)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: text
+      type: System.String
+    - id: dateCreated
+      type: System.DateTime
+    content.vb: Public Sub New(id As Integer, text As String, dateCreated As Date)
+  overload: Squire.Models.TaskItem.#ctor*
+  nameWithType.vb: TaskItem.New(Integer, String, Date)
+  fullName.vb: Squire.Models.TaskItem.New(Integer, String, Date)
+  name.vb: New(Integer, String, Date)
+references:
+- uid: Squire.Models
+  commentId: N:Squire.Models
+  href: Squire.html
+  name: Squire.Models
+  nameWithType: Squire.Models
+  fullName: Squire.Models
+  spec.csharp:
+  - uid: Squire
+    name: Squire
+    href: Squire.html
+  - name: .
+  - uid: Squire.Models
+    name: Models
+    href: Squire.Models.html
+  spec.vb:
+  - uid: Squire
+    name: Squire
+    href: Squire.html
+  - name: .
+  - uid: Squire.Models
+    name: Models
+    href: Squire.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Squire.Models.TaskItem.Id*
+  commentId: Overload:Squire.Models.TaskItem.Id
+  href: Squire.Models.TaskItem.html#Squire_Models_TaskItem_Id
+  name: Id
+  nameWithType: TaskItem.Id
+  fullName: Squire.Models.TaskItem.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Squire.Models.TaskItem.Text*
+  commentId: Overload:Squire.Models.TaskItem.Text
+  href: Squire.Models.TaskItem.html#Squire_Models_TaskItem_Text
+  name: Text
+  nameWithType: TaskItem.Text
+  fullName: Squire.Models.TaskItem.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Squire.Models.TaskItem.DateCreated*
+  commentId: Overload:Squire.Models.TaskItem.DateCreated
+  href: Squire.Models.TaskItem.html#Squire_Models_TaskItem_DateCreated
+  name: DateCreated
+  nameWithType: TaskItem.DateCreated
+  fullName: Squire.Models.TaskItem.DateCreated
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Squire.Models.TaskItem.Completed*
+  commentId: Overload:Squire.Models.TaskItem.Completed
+  href: Squire.Models.TaskItem.html#Squire_Models_TaskItem_Completed
+  name: Completed
+  nameWithType: TaskItem.Completed
+  fullName: Squire.Models.TaskItem.Completed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Squire.Models.TaskItem.#ctor*
+  commentId: Overload:Squire.Models.TaskItem.#ctor
+  href: Squire.Models.TaskItem.html#Squire_Models_TaskItem__ctor
+  name: TaskItem
+  nameWithType: TaskItem.TaskItem
+  fullName: Squire.Models.TaskItem.TaskItem
+  nameWithType.vb: TaskItem.New
+  fullName.vb: Squire.Models.TaskItem.New
+  name.vb: New

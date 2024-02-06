@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_unitTest
+  commentId: N:Borks_unitTest
+  id: Borks_unitTest
+  children:
+  - Borks_unitTest.Constructors
+  - Borks_unitTest.CustomerRepository
+  - Borks_unitTest.OrderRepository
+  langs:
+  - csharp
+  - vb
+  name: Borks_unitTest
+  nameWithType: Borks_unitTest
+  fullName: Borks_unitTest
+  type: Namespace
+  assemblies:
+  - Borks_unitTest
+references:
+- uid: Borks_unitTest.Constructors
+  commentId: T:Borks_unitTest.Constructors
+  href: Borks_unitTest.Constructors.html
+  name: Constructors
+  nameWithType: Constructors
+  fullName: Borks_unitTest.Constructors
+- uid: Borks_unitTest.CustomerRepository
+  commentId: T:Borks_unitTest.CustomerRepository
+  href: Borks_unitTest.CustomerRepository.html
+  name: CustomerRepository
+  nameWithType: CustomerRepository
+  fullName: Borks_unitTest.CustomerRepository
+- uid: Borks_unitTest.OrderRepository
+  commentId: T:Borks_unitTest.OrderRepository
+  href: Borks_unitTest.OrderRepository.html
+  name: OrderRepository
+  nameWithType: OrderRepository
+  fullName: Borks_unitTest.OrderRepository

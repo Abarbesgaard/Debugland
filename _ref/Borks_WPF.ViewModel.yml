@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.ViewModel
+  commentId: N:Borks_WPF.ViewModel
+  id: Borks_WPF.ViewModel
+  children:
+  - Borks_WPF.ViewModel.CustomerVM
+  - Borks_WPF.ViewModel.GameVM
+  - Borks_WPF.ViewModel.MainViewModel
+  - Borks_WPF.ViewModel.OrderVM
+  langs:
+  - csharp
+  - vb
+  name: Borks_WPF.ViewModel
+  nameWithType: Borks_WPF.ViewModel
+  fullName: Borks_WPF.ViewModel
+  type: Namespace
+  assemblies:
+  - Borks_WPF
+references:
+- uid: Borks_WPF.ViewModel.CustomerVM
+  commentId: T:Borks_WPF.ViewModel.CustomerVM
+  parent: Borks_WPF.ViewModel
+  href: Borks_WPF.ViewModel.CustomerVM.html
+  name: CustomerVM
+  nameWithType: CustomerVM
+  fullName: Borks_WPF.ViewModel.CustomerVM
+- uid: Borks_WPF.ViewModel.GameVM
+  commentId: T:Borks_WPF.ViewModel.GameVM
+  parent: Borks_WPF.ViewModel
+  href: Borks_WPF.ViewModel.GameVM.html
+  name: GameVM
+  nameWithType: GameVM
+  fullName: Borks_WPF.ViewModel.GameVM
+- uid: Borks_WPF.ViewModel.MainViewModel
+  commentId: T:Borks_WPF.ViewModel.MainViewModel
+  href: Borks_WPF.ViewModel.MainViewModel.html
+  name: MainViewModel
+  nameWithType: MainViewModel
+  fullName: Borks_WPF.ViewModel.MainViewModel
+- uid: Borks_WPF.ViewModel.OrderVM
+  commentId: T:Borks_WPF.ViewModel.OrderVM
+  parent: Borks_WPF.ViewModel
+  href: Borks_WPF.ViewModel.OrderVM.html
+  name: OrderVM
+  nameWithType: OrderVM
+  fullName: Borks_WPF.ViewModel.OrderVM
+- uid: Borks_WPF.ViewModel
+  commentId: N:Borks_WPF.ViewModel
+  href: Borks_WPF.html
+  name: Borks_WPF.ViewModel
+  nameWithType: Borks_WPF.ViewModel
+  fullName: Borks_WPF.ViewModel
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.ViewModel
+    name: ViewModel
+    href: Borks_WPF.ViewModel.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.ViewModel
+    name: ViewModel
+    href: Borks_WPF.ViewModel.html

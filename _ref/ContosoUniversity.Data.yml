@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ContosoUniversity.Data
+  commentId: N:ContosoUniversity.Data
+  id: ContosoUniversity.Data
+  children:
+  - ContosoUniversity.Data.SchoolContext
+  langs:
+  - csharp
+  - vb
+  name: ContosoUniversity.Data
+  nameWithType: ContosoUniversity.Data
+  fullName: ContosoUniversity.Data
+  type: Namespace
+  assemblies:
+  - WebApplication1
+references:
+- uid: ContosoUniversity.Data.SchoolContext
+  commentId: T:ContosoUniversity.Data.SchoolContext
+  href: ContosoUniversity.Data.SchoolContext.html
+  name: SchoolContext
+  nameWithType: SchoolContext
+  fullName: ContosoUniversity.Data.SchoolContext

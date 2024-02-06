@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Squire.Models
+  commentId: N:Squire.Models
+  id: Squire.Models
+  children:
+  - Squire.Models.TaskItem
+  langs:
+  - csharp
+  - vb
+  name: Squire.Models
+  nameWithType: Squire.Models
+  fullName: Squire.Models
+  type: Namespace
+  assemblies:
+  - Squire
+references:
+- uid: Squire.Models.TaskItem
+  commentId: T:Squire.Models.TaskItem
+  href: Squire.Models.TaskItem.html
+  name: TaskItem
+  nameWithType: TaskItem
+  fullName: Squire.Models.TaskItem

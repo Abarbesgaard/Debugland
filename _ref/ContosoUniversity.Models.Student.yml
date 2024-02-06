@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: ContosoUniversity.Models.Student
+  commentId: T:ContosoUniversity.Models.Student
+  id: Student
+  parent: ContosoUniversity.Models
+  children:
+  - ContosoUniversity.Models.Student.EnrollmentDate
+  - ContosoUniversity.Models.Student.Enrollments
+  - ContosoUniversity.Models.Student.FirstMidName
+  - ContosoUniversity.Models.Student.ID
+  - ContosoUniversity.Models.Student.LastName
+  langs:
+  - csharp
+  - vb
+  name: Student
+  nameWithType: Student
+  fullName: ContosoUniversity.Models.Student
+  type: Class
+  source:
+    id: Student
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 5
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public class Student
+    content.vb: Public Class Student
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ContosoUniversity.Models.Student.ID
+  commentId: P:ContosoUniversity.Models.Student.ID
+  id: ID
+  parent: ContosoUniversity.Models.Student
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: Student.ID
+  fullName: ContosoUniversity.Models.Student.ID
+  type: Property
+  source:
+    id: ID
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 7
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public int ID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ID As Integer
+  overload: ContosoUniversity.Models.Student.ID*
+- uid: ContosoUniversity.Models.Student.LastName
+  commentId: P:ContosoUniversity.Models.Student.LastName
+  id: LastName
+  parent: ContosoUniversity.Models.Student
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: Student.LastName
+  fullName: ContosoUniversity.Models.Student.LastName
+  type: Property
+  source:
+    id: LastName
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 8
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public string LastName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LastName As String
+  overload: ContosoUniversity.Models.Student.LastName*
+- uid: ContosoUniversity.Models.Student.FirstMidName
+  commentId: P:ContosoUniversity.Models.Student.FirstMidName
+  id: FirstMidName
+  parent: ContosoUniversity.Models.Student
+  langs:
+  - csharp
+  - vb
+  name: FirstMidName
+  nameWithType: Student.FirstMidName
+  fullName: ContosoUniversity.Models.Student.FirstMidName
+  type: Property
+  source:
+    id: FirstMidName
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 9
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public string FirstMidName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FirstMidName As String
+  overload: ContosoUniversity.Models.Student.FirstMidName*
+- uid: ContosoUniversity.Models.Student.EnrollmentDate
+  commentId: P:ContosoUniversity.Models.Student.EnrollmentDate
+  id: EnrollmentDate
+  parent: ContosoUniversity.Models.Student
+  langs:
+  - csharp
+  - vb
+  name: EnrollmentDate
+  nameWithType: Student.EnrollmentDate
+  fullName: ContosoUniversity.Models.Student.EnrollmentDate
+  type: Property
+  source:
+    id: EnrollmentDate
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 10
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public DateTime EnrollmentDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property EnrollmentDate As Date
+  overload: ContosoUniversity.Models.Student.EnrollmentDate*
+- uid: ContosoUniversity.Models.Student.Enrollments
+  commentId: P:ContosoUniversity.Models.Student.Enrollments
+  id: Enrollments
+  parent: ContosoUniversity.Models.Student
+  langs:
+  - csharp
+  - vb
+  name: Enrollments
+  nameWithType: Student.Enrollments
+  fullName: ContosoUniversity.Models.Student.Enrollments
+  type: Property
+  source:
+    id: Enrollments
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Student.cs
+    startLine: 12
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public ICollection<Enrollment> Enrollments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{ContosoUniversity.Models.Enrollment}
+    content.vb: Public Property Enrollments As ICollection(Of Enrollment)
+  overload: ContosoUniversity.Models.Student.Enrollments*
+references:
+- uid: ContosoUniversity.Models
+  commentId: N:ContosoUniversity.Models
+  href: ContosoUniversity.html
+  name: ContosoUniversity.Models
+  nameWithType: ContosoUniversity.Models
+  fullName: ContosoUniversity.Models
+  spec.csharp:
+  - uid: ContosoUniversity
+    name: ContosoUniversity
+    href: ContosoUniversity.html
+  - name: .
+  - uid: ContosoUniversity.Models
+    name: Models
+    href: ContosoUniversity.Models.html
+  spec.vb:
+  - uid: ContosoUniversity
+    name: ContosoUniversity
+    href: ContosoUniversity.html
+  - name: .
+  - uid: ContosoUniversity.Models
+    name: Models
+    href: ContosoUniversity.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ContosoUniversity.Models.Student.ID*
+  commentId: Overload:ContosoUniversity.Models.Student.ID
+  href: ContosoUniversity.Models.Student.html#ContosoUniversity_Models_Student_ID
+  name: ID
+  nameWithType: Student.ID
+  fullName: ContosoUniversity.Models.Student.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ContosoUniversity.Models.Student.LastName*
+  commentId: Overload:ContosoUniversity.Models.Student.LastName
+  href: ContosoUniversity.Models.Student.html#ContosoUniversity_Models_Student_LastName
+  name: LastName
+  nameWithType: Student.LastName
+  fullName: ContosoUniversity.Models.Student.LastName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ContosoUniversity.Models.Student.FirstMidName*
+  commentId: Overload:ContosoUniversity.Models.Student.FirstMidName
+  href: ContosoUniversity.Models.Student.html#ContosoUniversity_Models_Student_FirstMidName
+  name: FirstMidName
+  nameWithType: Student.FirstMidName
+  fullName: ContosoUniversity.Models.Student.FirstMidName
+- uid: ContosoUniversity.Models.Student.EnrollmentDate*
+  commentId: Overload:ContosoUniversity.Models.Student.EnrollmentDate
+  href: ContosoUniversity.Models.Student.html#ContosoUniversity_Models_Student_EnrollmentDate
+  name: EnrollmentDate
+  nameWithType: Student.EnrollmentDate
+  fullName: ContosoUniversity.Models.Student.EnrollmentDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ContosoUniversity.Models.Student.Enrollments*
+  commentId: Overload:ContosoUniversity.Models.Student.Enrollments
+  href: ContosoUniversity.Models.Student.html#ContosoUniversity_Models_Student_Enrollments
+  name: Enrollments
+  nameWithType: Student.Enrollments
+  fullName: ContosoUniversity.Models.Student.Enrollments
+- uid: System.Collections.Generic.ICollection{ContosoUniversity.Models.Enrollment}
+  commentId: T:System.Collections.Generic.ICollection{ContosoUniversity.Models.Enrollment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Enrollment>
+  nameWithType: ICollection<Enrollment>
+  fullName: System.Collections.Generic.ICollection<ContosoUniversity.Models.Enrollment>
+  nameWithType.vb: ICollection(Of Enrollment)
+  fullName.vb: System.Collections.Generic.ICollection(Of ContosoUniversity.Models.Enrollment)
+  name.vb: ICollection(Of Enrollment)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: ContosoUniversity.Models.Enrollment
+    name: Enrollment
+    href: ContosoUniversity.Models.Enrollment.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ContosoUniversity.Models.Enrollment
+    name: Enrollment
+    href: ContosoUniversity.Models.Enrollment.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

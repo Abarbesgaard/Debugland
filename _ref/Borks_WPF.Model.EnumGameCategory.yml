@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.Model.EnumGameCategory
+  commentId: T:Borks_WPF.Model.EnumGameCategory
+  id: EnumGameCategory
+  parent: Borks_WPF.Model
+  children:
+  - Borks_WPF.Model.EnumGameCategory.Fugle_og_små_pattedyr
+  - Borks_WPF.Model.EnumGameCategory.Trofæ
+  langs:
+  - csharp
+  - vb
+  name: EnumGameCategory
+  nameWithType: EnumGameCategory
+  fullName: Borks_WPF.Model.EnumGameCategory
+  type: Enum
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumGameCategory.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: EnumGameCategory
+    path: ../BorksKonservering/Borks_WPF/Model/EnumGameCategory.cs
+    startLine: 12
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: De 2 kategorier som Vildt bliver opdelt i
+  example: []
+  syntax:
+    content: public enum EnumGameCategory
+    content.vb: Public Enum EnumGameCategory
+- uid: Borks_WPF.Model.EnumGameCategory.Fugle_og_små_pattedyr
+  commentId: F:Borks_WPF.Model.EnumGameCategory.Fugle_og_små_pattedyr
+  id: Fugle_og_små_pattedyr
+  parent: Borks_WPF.Model.EnumGameCategory
+  langs:
+  - csharp
+  - vb
+  name: Fugle_og_små_pattedyr
+  nameWithType: EnumGameCategory.Fugle_og_små_pattedyr
+  fullName: Borks_WPF.Model.EnumGameCategory.Fugle_og_små_pattedyr
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumGameCategory.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Fugle_og_små_pattedyr
+    path: ../BorksKonservering/Borks_WPF/Model/EnumGameCategory.cs
+    startLine: 15
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Fugle_og_små_pattedyr = 1
+    return:
+      type: Borks_WPF.Model.EnumGameCategory
+- uid: Borks_WPF.Model.EnumGameCategory.Trofæ
+  commentId: F:Borks_WPF.Model.EnumGameCategory.Trofæ
+  id: Trofæ
+  parent: Borks_WPF.Model.EnumGameCategory
+  langs:
+  - csharp
+  - vb
+  name: Trofæ
+  nameWithType: EnumGameCategory.Trofæ
+  fullName: Borks_WPF.Model.EnumGameCategory.Trofæ
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumGameCategory.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Trofæ
+    path: ../BorksKonservering/Borks_WPF/Model/EnumGameCategory.cs
+    startLine: 16
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Trofæ = 2
+    return:
+      type: Borks_WPF.Model.EnumGameCategory
+references:
+- uid: Borks_WPF.Model
+  commentId: N:Borks_WPF.Model
+  href: Borks_WPF.html
+  name: Borks_WPF.Model
+  nameWithType: Borks_WPF.Model
+  fullName: Borks_WPF.Model
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+- uid: Borks_WPF.Model.EnumGameCategory
+  commentId: T:Borks_WPF.Model.EnumGameCategory
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.EnumGameCategory.html
+  name: EnumGameCategory
+  nameWithType: EnumGameCategory
+  fullName: Borks_WPF.Model.EnumGameCategory

@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.Model.EnumMontage
+  commentId: T:Borks_WPF.Model.EnumMontage
+  id: EnumMontage
+  parent: Borks_WPF.Model
+  children:
+  - Borks_WPF.Model.EnumMontage.Bord_Montage
+  - Borks_WPF.Model.EnumMontage.Fuld_Montage
+  - Borks_WPF.Model.EnumMontage.Pedistal
+  - Borks_WPF.Model.EnumMontage.Væg_Montage
+  langs:
+  - csharp
+  - vb
+  name: EnumMontage
+  nameWithType: EnumMontage
+  fullName: Borks_WPF.Model.EnumMontage
+  type: Enum
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumMontage.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: EnumMontage
+    path: ../BorksKonservering/Borks_WPF/Model/EnumMontage.cs
+    startLine: 11
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Hvordan trofæet skal monteres
+  example: []
+  syntax:
+    content: public enum EnumMontage
+    content.vb: Public Enum EnumMontage
+- uid: Borks_WPF.Model.EnumMontage.Væg_Montage
+  commentId: F:Borks_WPF.Model.EnumMontage.Væg_Montage
+  id: Væg_Montage
+  parent: Borks_WPF.Model.EnumMontage
+  langs:
+  - csharp
+  - vb
+  name: Væg_Montage
+  nameWithType: EnumMontage.Væg_Montage
+  fullName: Borks_WPF.Model.EnumMontage.Væg_Montage
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumMontage.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Væg_Montage
+    path: ../BorksKonservering/Borks_WPF/Model/EnumMontage.cs
+    startLine: 13
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Væg_Montage = 1
+    return:
+      type: Borks_WPF.Model.EnumMontage
+- uid: Borks_WPF.Model.EnumMontage.Fuld_Montage
+  commentId: F:Borks_WPF.Model.EnumMontage.Fuld_Montage
+  id: Fuld_Montage
+  parent: Borks_WPF.Model.EnumMontage
+  langs:
+  - csharp
+  - vb
+  name: Fuld_Montage
+  nameWithType: EnumMontage.Fuld_Montage
+  fullName: Borks_WPF.Model.EnumMontage.Fuld_Montage
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumMontage.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Fuld_Montage
+    path: ../BorksKonservering/Borks_WPF/Model/EnumMontage.cs
+    startLine: 14
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Fuld_Montage = 2
+    return:
+      type: Borks_WPF.Model.EnumMontage
+- uid: Borks_WPF.Model.EnumMontage.Pedistal
+  commentId: F:Borks_WPF.Model.EnumMontage.Pedistal
+  id: Pedistal
+  parent: Borks_WPF.Model.EnumMontage
+  langs:
+  - csharp
+  - vb
+  name: Pedistal
+  nameWithType: EnumMontage.Pedistal
+  fullName: Borks_WPF.Model.EnumMontage.Pedistal
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumMontage.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Pedistal
+    path: ../BorksKonservering/Borks_WPF/Model/EnumMontage.cs
+    startLine: 15
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Pedistal = 3
+    return:
+      type: Borks_WPF.Model.EnumMontage
+- uid: Borks_WPF.Model.EnumMontage.Bord_Montage
+  commentId: F:Borks_WPF.Model.EnumMontage.Bord_Montage
+  id: Bord_Montage
+  parent: Borks_WPF.Model.EnumMontage
+  langs:
+  - csharp
+  - vb
+  name: Bord_Montage
+  nameWithType: EnumMontage.Bord_Montage
+  fullName: Borks_WPF.Model.EnumMontage.Bord_Montage
+  type: Field
+  source:
+    remote:
+      path: Borks_WPF/Model/EnumMontage.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Bord_Montage
+    path: ../BorksKonservering/Borks_WPF/Model/EnumMontage.cs
+    startLine: 16
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  syntax:
+    content: Bord_Montage = 4
+    return:
+      type: Borks_WPF.Model.EnumMontage
+references:
+- uid: Borks_WPF.Model
+  commentId: N:Borks_WPF.Model
+  href: Borks_WPF.html
+  name: Borks_WPF.Model
+  nameWithType: Borks_WPF.Model
+  fullName: Borks_WPF.Model
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+- uid: Borks_WPF.Model.EnumMontage
+  commentId: T:Borks_WPF.Model.EnumMontage
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.EnumMontage.html
+  name: EnumMontage
+  nameWithType: EnumMontage
+  fullName: Borks_WPF.Model.EnumMontage

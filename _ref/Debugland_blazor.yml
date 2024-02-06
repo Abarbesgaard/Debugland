@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Debugland_blazor
+  commentId: N:Debugland_blazor
+  id: Debugland_blazor
+  children:
+  - Debugland_blazor.Program
+  langs:
+  - csharp
+  - vb
+  name: Debugland_blazor
+  nameWithType: Debugland_blazor
+  fullName: Debugland_blazor
+  type: Namespace
+  assemblies:
+  - Debugland_blazor
+references:
+- uid: Debugland_blazor.Program
+  commentId: T:Debugland_blazor.Program
+  href: Debugland_blazor.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: Debugland_blazor.Program

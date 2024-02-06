@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.View
+  commentId: N:Borks_WPF.View
+  id: Borks_WPF.View
+  children:
+  - Borks_WPF.View.DetailsWindow
+  - Borks_WPF.View.NewOrderWindow
+  langs:
+  - csharp
+  - vb
+  name: Borks_WPF.View
+  nameWithType: Borks_WPF.View
+  fullName: Borks_WPF.View
+  type: Namespace
+  assemblies:
+  - Borks_WPF
+references:
+- uid: Borks_WPF.View.DetailsWindow
+  commentId: T:Borks_WPF.View.DetailsWindow
+  href: Borks_WPF.View.DetailsWindow.html
+  name: DetailsWindow
+  nameWithType: DetailsWindow
+  fullName: Borks_WPF.View.DetailsWindow
+- uid: Borks_WPF.View.NewOrderWindow
+  commentId: T:Borks_WPF.View.NewOrderWindow
+  href: Borks_WPF.View.NewOrderWindow.html
+  name: NewOrderWindow
+  nameWithType: NewOrderWindow
+  fullName: Borks_WPF.View.NewOrderWindow

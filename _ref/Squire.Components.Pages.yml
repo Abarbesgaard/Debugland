@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Squire.Components.Pages
+  commentId: N:Squire.Components.Pages
+  id: Squire.Components.Pages
+  children:
+  - Squire.Components.Pages.Error
+  - Squire.Components.Pages.Home
+  langs:
+  - csharp
+  - vb
+  name: Squire.Components.Pages
+  nameWithType: Squire.Components.Pages
+  fullName: Squire.Components.Pages
+  type: Namespace
+  assemblies:
+  - Squire
+references:
+- uid: Squire.Components.Pages.Error
+  commentId: T:Squire.Components.Pages.Error
+  href: Squire.Components.Pages.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: Squire.Components.Pages.Error
+- uid: Squire.Components.Pages.Home
+  commentId: T:Squire.Components.Pages.Home
+  href: Squire.Components.Pages.Home.html
+  name: Home
+  nameWithType: Home
+  fullName: Squire.Components.Pages.Home

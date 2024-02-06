@@ -1,0 +1,1049 @@
+### YamlMime:ManagedReference
+items:
+- uid: Borks_WPF.Model.Order
+  commentId: T:Borks_WPF.Model.Order
+  id: Order
+  parent: Borks_WPF.Model
+  children:
+  - Borks_WPF.Model.Order.#ctor
+  - Borks_WPF.Model.Order.#ctor(Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  - Borks_WPF.Model.Order.#ctor(System.Int32,Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  - Borks_WPF.Model.Order.Comment
+  - Borks_WPF.Model.Order.Customer
+  - Borks_WPF.Model.Order.DeliveryDate
+  - Borks_WPF.Model.Order.Finalized
+  - Borks_WPF.Model.Order.FindingPlace
+  - Borks_WPF.Model.Order.Game
+  - Borks_WPF.Model.Order.Id
+  - Borks_WPF.Model.Order.IsPayed
+  - Borks_WPF.Model.Order.Meassurement
+  - Borks_WPF.Model.Order.Montage
+  - Borks_WPF.Model.Order.OrderDate
+  - Borks_WPF.Model.Order.PercentPayed
+  - Borks_WPF.Model.Order.Price
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: Order
+  fullName: Borks_WPF.Model.Order
+  type: Class
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Order
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 13
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klasse
+  example: []
+  syntax:
+    content: public class Order
+    content.vb: Public Class Order
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Borks_WPF.Model.Order.Id
+  commentId: P:Borks_WPF.Model.Order.Id
+  id: Id
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Order.Id
+  fullName: Borks_WPF.Model.Order.Id
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Id
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 18
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Id Property
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Borks_WPF.Model.Order.Id*
+- uid: Borks_WPF.Model.Order.Montage
+  commentId: P:Borks_WPF.Model.Order.Montage
+  id: Montage
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Montage
+  nameWithType: Order.Montage
+  fullName: Borks_WPF.Model.Order.Montage
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Montage
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 22
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Montage Property
+  example: []
+  syntax:
+    content: public EnumMontage Montage { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.Model.EnumMontage
+    content.vb: Public Property Montage As EnumMontage
+  overload: Borks_WPF.Model.Order.Montage*
+- uid: Borks_WPF.Model.Order.Customer
+  commentId: P:Borks_WPF.Model.Order.Customer
+  id: Customer
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Customer
+  nameWithType: Order.Customer
+  fullName: Borks_WPF.Model.Order.Customer
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Customer
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 26
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Customer Property
+  example: []
+  syntax:
+    content: public Customer Customer { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.Model.Customer
+    content.vb: Public Property Customer As Customer
+  overload: Borks_WPF.Model.Order.Customer*
+- uid: Borks_WPF.Model.Order.Game
+  commentId: P:Borks_WPF.Model.Order.Game
+  id: Game
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Order.Game
+  fullName: Borks_WPF.Model.Order.Game
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Game
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 30
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Vildt Property
+  example: []
+  syntax:
+    content: public Game Game { get; set; }
+    parameters: []
+    return:
+      type: Borks_WPF.Model.Game
+    content.vb: Public Property Game As Game
+  overload: Borks_WPF.Model.Order.Game*
+- uid: Borks_WPF.Model.Order.DeliveryDate
+  commentId: P:Borks_WPF.Model.Order.DeliveryDate
+  id: DeliveryDate
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: DeliveryDate
+  nameWithType: Order.DeliveryDate
+  fullName: Borks_WPF.Model.Order.DeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: DeliveryDate
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 34
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen "Afleveret Dato" Property
+  example: []
+  syntax:
+    content: public DateTime DeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DeliveryDate As Date
+  overload: Borks_WPF.Model.Order.DeliveryDate*
+- uid: Borks_WPF.Model.Order.OrderDate
+  commentId: P:Borks_WPF.Model.Order.OrderDate
+  id: OrderDate
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: OrderDate
+  nameWithType: Order.OrderDate
+  fullName: Borks_WPF.Model.Order.OrderDate
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: OrderDate
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 38
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen "Oprettet dato" Property
+  example: []
+  syntax:
+    content: public DateTime OrderDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property OrderDate As Date
+  overload: Borks_WPF.Model.Order.OrderDate*
+- uid: Borks_WPF.Model.Order.Price
+  commentId: P:Borks_WPF.Model.Order.Price
+  id: Price
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Price
+  nameWithType: Order.Price
+  fullName: Borks_WPF.Model.Order.Price
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Price
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 42
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Pris Property
+  example: []
+  syntax:
+    content: public double Price { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Price As Double
+  overload: Borks_WPF.Model.Order.Price*
+- uid: Borks_WPF.Model.Order.Meassurement
+  commentId: P:Borks_WPF.Model.Order.Meassurement
+  id: Meassurement
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Meassurement
+  nameWithType: Order.Meassurement
+  fullName: Borks_WPF.Model.Order.Meassurement
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Meassurement
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 46
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Opmåling Property
+  example: []
+  syntax:
+    content: public bool Meassurement { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Meassurement As Boolean
+  overload: Borks_WPF.Model.Order.Meassurement*
+- uid: Borks_WPF.Model.Order.Comment
+  commentId: P:Borks_WPF.Model.Order.Comment
+  id: Comment
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: Order.Comment
+  fullName: Borks_WPF.Model.Order.Comment
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Comment
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 50
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Bemærkninger Property
+  example: []
+  syntax:
+    content: public string Comment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comment As String
+  overload: Borks_WPF.Model.Order.Comment*
+- uid: Borks_WPF.Model.Order.IsPayed
+  commentId: P:Borks_WPF.Model.Order.IsPayed
+  id: IsPayed
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: IsPayed
+  nameWithType: Order.IsPayed
+  fullName: Borks_WPF.Model.Order.IsPayed
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: IsPayed
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 55
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Betalt Property
+  example: []
+  syntax:
+    content: public bool IsPayed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPayed As Boolean
+  overload: Borks_WPF.Model.Order.IsPayed*
+- uid: Borks_WPF.Model.Order.PercentPayed
+  commentId: P:Borks_WPF.Model.Order.PercentPayed
+  id: PercentPayed
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: PercentPayed
+  nameWithType: Order.PercentPayed
+  fullName: Borks_WPF.Model.Order.PercentPayed
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: PercentPayed
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 60
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Procent Betalt Property
+  example: []
+  syntax:
+    content: public int PercentPayed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PercentPayed As Integer
+  overload: Borks_WPF.Model.Order.PercentPayed*
+- uid: Borks_WPF.Model.Order.FindingPlace
+  commentId: P:Borks_WPF.Model.Order.FindingPlace
+  id: FindingPlace
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: FindingPlace
+  nameWithType: Order.FindingPlace
+  fullName: Borks_WPF.Model.Order.FindingPlace
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: FindingPlace
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 65
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Findested Property
+  example: []
+  syntax:
+    content: public string FindingPlace { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FindingPlace As String
+  overload: Borks_WPF.Model.Order.FindingPlace*
+- uid: Borks_WPF.Model.Order.Finalized
+  commentId: P:Borks_WPF.Model.Order.Finalized
+  id: Finalized
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Finalized
+  nameWithType: Order.Finalized
+  fullName: Borks_WPF.Model.Order.Finalized
+  type: Property
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: Finalized
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 70
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassens Afsluttet Property
+  example: []
+  syntax:
+    content: public bool Finalized { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Finalized As Boolean
+  overload: Borks_WPF.Model.Order.Finalized*
+- uid: Borks_WPF.Model.Order.#ctor
+  commentId: M:Borks_WPF.Model.Order.#ctor
+  id: '#ctor'
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Order()
+  nameWithType: Order.Order()
+  fullName: Borks_WPF.Model.Order.Order()
+  type: Constructor
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: .ctor
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 75
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen Constructor
+  example: []
+  syntax:
+    content: public Order()
+    content.vb: Public Sub New()
+  overload: Borks_WPF.Model.Order.#ctor*
+  nameWithType.vb: Order.New()
+  fullName.vb: Borks_WPF.Model.Order.New()
+  name.vb: New()
+- uid: Borks_WPF.Model.Order.#ctor(Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  commentId: M:Borks_WPF.Model.Order.#ctor(Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  id: '#ctor(Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)'
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Order(EnumMontage, Customer, Game, DateTime, double, bool, string, bool, int, string, bool)
+  nameWithType: Order.Order(EnumMontage, Customer, Game, DateTime, double, bool, string, bool, int, string, bool)
+  fullName: Borks_WPF.Model.Order.Order(Borks_WPF.Model.EnumMontage, Borks_WPF.Model.Customer, Borks_WPF.Model.Game, System.DateTime, double, bool, string, bool, int, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: .ctor
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 94
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen  overloaded Constructor
+  example: []
+  syntax:
+    content: public Order(EnumMontage montage, Customer customer, Game game, DateTime deliveryDate, double price, bool meassurement, string comment, bool isPayed, int percentPayed, string findingPlace, bool finalized)
+    parameters:
+    - id: montage
+      type: Borks_WPF.Model.EnumMontage
+      description: angiver hvilken type montage der er tale om
+    - id: customer
+      type: Borks_WPF.Model.Customer
+      description: angiver hvilken kunde der er tale om
+    - id: game
+      type: Borks_WPF.Model.Game
+      description: angiver hvilket vildt der er tale om
+    - id: deliveryDate
+      type: System.DateTime
+      description: angiver hvornår ordren skal afleveres
+    - id: price
+      type: System.Double
+      description: angiver prisen på ordren
+    - id: meassurement
+      type: System.Boolean
+      description: angiver om der skal opmåles
+    - id: comment
+      type: System.String
+      description: angiver kommentar til ordren
+    - id: isPayed
+      type: System.Boolean
+      description: angiver om ordren er betalt
+    - id: percentPayed
+      type: System.Int32
+      description: angiver hvor meget af ordren der er betalt
+    - id: findingPlace
+      type: System.String
+      description: angiver hvor Vildt er nedlagt
+    - id: finalized
+      type: System.Boolean
+      description: angiver om ordren er betalt
+    content.vb: Public Sub New(montage As EnumMontage, customer As Customer, game As Game, deliveryDate As Date, price As Double, meassurement As Boolean, comment As String, isPayed As Boolean, percentPayed As Integer, findingPlace As String, finalized As Boolean)
+  overload: Borks_WPF.Model.Order.#ctor*
+  nameWithType.vb: Order.New(EnumMontage, Customer, Game, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+  fullName.vb: Borks_WPF.Model.Order.New(Borks_WPF.Model.EnumMontage, Borks_WPF.Model.Customer, Borks_WPF.Model.Game, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+  name.vb: New(EnumMontage, Customer, Game, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+- uid: Borks_WPF.Model.Order.#ctor(System.Int32,Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  commentId: M:Borks_WPF.Model.Order.#ctor(System.Int32,Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)
+  id: '#ctor(System.Int32,Borks_WPF.Model.EnumMontage,Borks_WPF.Model.Customer,Borks_WPF.Model.Game,System.DateTime,System.DateTime,System.Double,System.Boolean,System.String,System.Boolean,System.Int32,System.String,System.Boolean)'
+  parent: Borks_WPF.Model.Order
+  langs:
+  - csharp
+  - vb
+  name: Order(int, EnumMontage, Customer, Game, DateTime, DateTime, double, bool, string, bool, int, string, bool)
+  nameWithType: Order.Order(int, EnumMontage, Customer, Game, DateTime, DateTime, double, bool, string, bool, int, string, bool)
+  fullName: Borks_WPF.Model.Order.Order(int, Borks_WPF.Model.EnumMontage, Borks_WPF.Model.Customer, Borks_WPF.Model.Game, System.DateTime, System.DateTime, double, bool, string, bool, int, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Borks_WPF/Model/Order.cs
+      branch: master
+      repo: https://github.com/Abarbesgaard/BorksKonservering
+    id: .ctor
+    path: ../BorksKonservering/Borks_WPF/Model/Order.cs
+    startLine: 125
+  assemblies:
+  - Borks_WPF
+  namespace: Borks_WPF.Model
+  summary: Ordre klassen overloaded Constructor
+  example: []
+  syntax:
+    content: public Order(int id, EnumMontage montage, Customer customer, Game game, DateTime deliveryDate, DateTime orderDate, double price, bool meassurement, string comment, bool isPayed, int percentPayed, string findingPlace, bool finalized)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: angiver hvilken id der er tale om
+    - id: montage
+      type: Borks_WPF.Model.EnumMontage
+      description: angiver hvilken type montage der er tale om
+    - id: customer
+      type: Borks_WPF.Model.Customer
+      description: angiver hvilken kunde der er tale om
+    - id: game
+      type: Borks_WPF.Model.Game
+      description: angiver hvilket vildt der er tale om
+    - id: deliveryDate
+      type: System.DateTime
+      description: angiver hvornår ordren skal afleveres
+    - id: orderDate
+      type: System.DateTime
+      description: angiver hvornår ordren er oprettet
+    - id: price
+      type: System.Double
+      description: angiver prisen på ordren
+    - id: meassurement
+      type: System.Boolean
+      description: angiver om der skal opmåles
+    - id: comment
+      type: System.String
+      description: angiver kommentar til ordren
+    - id: isPayed
+      type: System.Boolean
+      description: angiver om ordren er betalt
+    - id: percentPayed
+      type: System.Int32
+      description: angiver hvor meget af ordren der er betalt
+    - id: findingPlace
+      type: System.String
+      description: angiver hvor Vildt er nedlagt
+    - id: finalized
+      type: System.Boolean
+      description: angiver om ordren er betalt
+    content.vb: Public Sub New(id As Integer, montage As EnumMontage, customer As Customer, game As Game, deliveryDate As Date, orderDate As Date, price As Double, meassurement As Boolean, comment As String, isPayed As Boolean, percentPayed As Integer, findingPlace As String, finalized As Boolean)
+  overload: Borks_WPF.Model.Order.#ctor*
+  nameWithType.vb: Order.New(Integer, EnumMontage, Customer, Game, Date, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+  fullName.vb: Borks_WPF.Model.Order.New(Integer, Borks_WPF.Model.EnumMontage, Borks_WPF.Model.Customer, Borks_WPF.Model.Game, Date, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+  name.vb: New(Integer, EnumMontage, Customer, Game, Date, Date, Double, Boolean, String, Boolean, Integer, String, Boolean)
+references:
+- uid: Borks_WPF.Model
+  commentId: N:Borks_WPF.Model
+  href: Borks_WPF.html
+  name: Borks_WPF.Model
+  nameWithType: Borks_WPF.Model
+  fullName: Borks_WPF.Model
+  spec.csharp:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+  spec.vb:
+  - uid: Borks_WPF
+    name: Borks_WPF
+    href: Borks_WPF.html
+  - name: .
+  - uid: Borks_WPF.Model
+    name: Model
+    href: Borks_WPF.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Borks_WPF.Model.Order.Id*
+  commentId: Overload:Borks_WPF.Model.Order.Id
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Id
+  name: Id
+  nameWithType: Order.Id
+  fullName: Borks_WPF.Model.Order.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Borks_WPF.Model.Order.Montage*
+  commentId: Overload:Borks_WPF.Model.Order.Montage
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Montage
+  name: Montage
+  nameWithType: Order.Montage
+  fullName: Borks_WPF.Model.Order.Montage
+- uid: Borks_WPF.Model.EnumMontage
+  commentId: T:Borks_WPF.Model.EnumMontage
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.EnumMontage.html
+  name: EnumMontage
+  nameWithType: EnumMontage
+  fullName: Borks_WPF.Model.EnumMontage
+- uid: Borks_WPF.Model.Order.Customer*
+  commentId: Overload:Borks_WPF.Model.Order.Customer
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Customer
+  name: Customer
+  nameWithType: Order.Customer
+  fullName: Borks_WPF.Model.Order.Customer
+- uid: Borks_WPF.Model.Customer
+  commentId: T:Borks_WPF.Model.Customer
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.Customer.html
+  name: Customer
+  nameWithType: Customer
+  fullName: Borks_WPF.Model.Customer
+- uid: Borks_WPF.Model.Order.Game*
+  commentId: Overload:Borks_WPF.Model.Order.Game
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Game
+  name: Game
+  nameWithType: Order.Game
+  fullName: Borks_WPF.Model.Order.Game
+- uid: Borks_WPF.Model.Game
+  commentId: T:Borks_WPF.Model.Game
+  parent: Borks_WPF.Model
+  href: Borks_WPF.Model.Game.html
+  name: Game
+  nameWithType: Game
+  fullName: Borks_WPF.Model.Game
+- uid: Borks_WPF.Model.Order.DeliveryDate*
+  commentId: Overload:Borks_WPF.Model.Order.DeliveryDate
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_DeliveryDate
+  name: DeliveryDate
+  nameWithType: Order.DeliveryDate
+  fullName: Borks_WPF.Model.Order.DeliveryDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Borks_WPF.Model.Order.OrderDate*
+  commentId: Overload:Borks_WPF.Model.Order.OrderDate
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_OrderDate
+  name: OrderDate
+  nameWithType: Order.OrderDate
+  fullName: Borks_WPF.Model.Order.OrderDate
+- uid: Borks_WPF.Model.Order.Price*
+  commentId: Overload:Borks_WPF.Model.Order.Price
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Price
+  name: Price
+  nameWithType: Order.Price
+  fullName: Borks_WPF.Model.Order.Price
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Borks_WPF.Model.Order.Meassurement*
+  commentId: Overload:Borks_WPF.Model.Order.Meassurement
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Meassurement
+  name: Meassurement
+  nameWithType: Order.Meassurement
+  fullName: Borks_WPF.Model.Order.Meassurement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Borks_WPF.Model.Order.Comment*
+  commentId: Overload:Borks_WPF.Model.Order.Comment
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Comment
+  name: Comment
+  nameWithType: Order.Comment
+  fullName: Borks_WPF.Model.Order.Comment
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Borks_WPF.Model.Order.IsPayed*
+  commentId: Overload:Borks_WPF.Model.Order.IsPayed
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_IsPayed
+  name: IsPayed
+  nameWithType: Order.IsPayed
+  fullName: Borks_WPF.Model.Order.IsPayed
+- uid: Borks_WPF.Model.Order.PercentPayed*
+  commentId: Overload:Borks_WPF.Model.Order.PercentPayed
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_PercentPayed
+  name: PercentPayed
+  nameWithType: Order.PercentPayed
+  fullName: Borks_WPF.Model.Order.PercentPayed
+- uid: Borks_WPF.Model.Order.FindingPlace*
+  commentId: Overload:Borks_WPF.Model.Order.FindingPlace
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_FindingPlace
+  name: FindingPlace
+  nameWithType: Order.FindingPlace
+  fullName: Borks_WPF.Model.Order.FindingPlace
+- uid: Borks_WPF.Model.Order.Finalized*
+  commentId: Overload:Borks_WPF.Model.Order.Finalized
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order_Finalized
+  name: Finalized
+  nameWithType: Order.Finalized
+  fullName: Borks_WPF.Model.Order.Finalized
+- uid: Borks_WPF.Model.Order.#ctor*
+  commentId: Overload:Borks_WPF.Model.Order.#ctor
+  href: Borks_WPF.Model.Order.html#Borks_WPF_Model_Order__ctor
+  name: Order
+  nameWithType: Order.Order
+  fullName: Borks_WPF.Model.Order.Order
+  nameWithType.vb: Order.New
+  fullName.vb: Borks_WPF.Model.Order.New
+  name.vb: New

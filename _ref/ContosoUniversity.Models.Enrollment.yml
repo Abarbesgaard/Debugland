@@ -1,0 +1,557 @@
+### YamlMime:ManagedReference
+items:
+- uid: ContosoUniversity.Models.Enrollment
+  commentId: T:ContosoUniversity.Models.Enrollment
+  id: Enrollment
+  parent: ContosoUniversity.Models
+  children:
+  - ContosoUniversity.Models.Enrollment.Course
+  - ContosoUniversity.Models.Enrollment.CourseID
+  - ContosoUniversity.Models.Enrollment.EnrollmentID
+  - ContosoUniversity.Models.Enrollment.Grade
+  - ContosoUniversity.Models.Enrollment.Student
+  - ContosoUniversity.Models.Enrollment.StudentID
+  langs:
+  - csharp
+  - vb
+  name: Enrollment
+  nameWithType: Enrollment
+  fullName: ContosoUniversity.Models.Enrollment
+  type: Class
+  source:
+    id: Enrollment
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 7
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public class Enrollment
+    content.vb: Public Class Enrollment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ContosoUniversity.Models.Enrollment.EnrollmentID
+  commentId: P:ContosoUniversity.Models.Enrollment.EnrollmentID
+  id: EnrollmentID
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: EnrollmentID
+  nameWithType: Enrollment.EnrollmentID
+  fullName: ContosoUniversity.Models.Enrollment.EnrollmentID
+  type: Property
+  source:
+    id: EnrollmentID
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 9
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public int EnrollmentID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property EnrollmentID As Integer
+  overload: ContosoUniversity.Models.Enrollment.EnrollmentID*
+- uid: ContosoUniversity.Models.Enrollment.CourseID
+  commentId: P:ContosoUniversity.Models.Enrollment.CourseID
+  id: CourseID
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: CourseID
+  nameWithType: Enrollment.CourseID
+  fullName: ContosoUniversity.Models.Enrollment.CourseID
+  type: Property
+  source:
+    id: CourseID
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 10
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public int CourseID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CourseID As Integer
+  overload: ContosoUniversity.Models.Enrollment.CourseID*
+- uid: ContosoUniversity.Models.Enrollment.StudentID
+  commentId: P:ContosoUniversity.Models.Enrollment.StudentID
+  id: StudentID
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: StudentID
+  nameWithType: Enrollment.StudentID
+  fullName: ContosoUniversity.Models.Enrollment.StudentID
+  type: Property
+  source:
+    id: StudentID
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 11
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public int StudentID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StudentID As Integer
+  overload: ContosoUniversity.Models.Enrollment.StudentID*
+- uid: ContosoUniversity.Models.Enrollment.Grade
+  commentId: P:ContosoUniversity.Models.Enrollment.Grade
+  id: Grade
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: Grade
+  nameWithType: Enrollment.Grade
+  fullName: ContosoUniversity.Models.Enrollment.Grade
+  type: Property
+  source:
+    id: Grade
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 12
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public Grade? Grade { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{ContosoUniversity.Models.Grade}
+    content.vb: Public Property Grade As Grade?
+  overload: ContosoUniversity.Models.Enrollment.Grade*
+- uid: ContosoUniversity.Models.Enrollment.Course
+  commentId: P:ContosoUniversity.Models.Enrollment.Course
+  id: Course
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: Course
+  nameWithType: Enrollment.Course
+  fullName: ContosoUniversity.Models.Enrollment.Course
+  type: Property
+  source:
+    id: Course
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 14
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public Course Course { get; set; }
+    parameters: []
+    return:
+      type: ContosoUniversity.Models.Course
+    content.vb: Public Property Course As Course
+  overload: ContosoUniversity.Models.Enrollment.Course*
+- uid: ContosoUniversity.Models.Enrollment.Student
+  commentId: P:ContosoUniversity.Models.Enrollment.Student
+  id: Student
+  parent: ContosoUniversity.Models.Enrollment
+  langs:
+  - csharp
+  - vb
+  name: Student
+  nameWithType: Enrollment.Student
+  fullName: ContosoUniversity.Models.Enrollment.Student
+  type: Property
+  source:
+    id: Student
+    path: C:\Users\45217\source\repos\WebApplication1\WebApplication1\Models\Enrollment.cs
+    startLine: 15
+  assemblies:
+  - WebApplication1
+  namespace: ContosoUniversity.Models
+  syntax:
+    content: public Student Student { get; set; }
+    parameters: []
+    return:
+      type: ContosoUniversity.Models.Student
+    content.vb: Public Property Student As Student
+  overload: ContosoUniversity.Models.Enrollment.Student*
+references:
+- uid: ContosoUniversity.Models
+  commentId: N:ContosoUniversity.Models
+  href: ContosoUniversity.html
+  name: ContosoUniversity.Models
+  nameWithType: ContosoUniversity.Models
+  fullName: ContosoUniversity.Models
+  spec.csharp:
+  - uid: ContosoUniversity
+    name: ContosoUniversity
+    href: ContosoUniversity.html
+  - name: .
+  - uid: ContosoUniversity.Models
+    name: Models
+    href: ContosoUniversity.Models.html
+  spec.vb:
+  - uid: ContosoUniversity
+    name: ContosoUniversity
+    href: ContosoUniversity.html
+  - name: .
+  - uid: ContosoUniversity.Models
+    name: Models
+    href: ContosoUniversity.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ContosoUniversity.Models.Enrollment.EnrollmentID*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.EnrollmentID
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_EnrollmentID
+  name: EnrollmentID
+  nameWithType: Enrollment.EnrollmentID
+  fullName: ContosoUniversity.Models.Enrollment.EnrollmentID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ContosoUniversity.Models.Enrollment.CourseID*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.CourseID
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_CourseID
+  name: CourseID
+  nameWithType: Enrollment.CourseID
+  fullName: ContosoUniversity.Models.Enrollment.CourseID
+- uid: ContosoUniversity.Models.Enrollment.StudentID*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.StudentID
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_StudentID
+  name: StudentID
+  nameWithType: Enrollment.StudentID
+  fullName: ContosoUniversity.Models.Enrollment.StudentID
+- uid: ContosoUniversity.Models.Enrollment.Grade*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.Grade
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_Grade
+  name: Grade
+  nameWithType: Enrollment.Grade
+  fullName: ContosoUniversity.Models.Enrollment.Grade
+- uid: System.Nullable{ContosoUniversity.Models.Grade}
+  commentId: T:System.Nullable{ContosoUniversity.Models.Grade}
+  parent: System
+  definition: System.Nullable`1
+  href: ContosoUniversity.Models.Grade.html
+  name: Grade?
+  nameWithType: Grade?
+  fullName: ContosoUniversity.Models.Grade?
+  spec.csharp:
+  - uid: ContosoUniversity.Models.Grade
+    name: Grade
+    href: ContosoUniversity.Models.Grade.html
+  - name: '?'
+  spec.vb:
+  - uid: ContosoUniversity.Models.Grade
+    name: Grade
+    href: ContosoUniversity.Models.Grade.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ContosoUniversity.Models.Enrollment.Course*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.Course
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_Course
+  name: Course
+  nameWithType: Enrollment.Course
+  fullName: ContosoUniversity.Models.Enrollment.Course
+- uid: ContosoUniversity.Models.Course
+  commentId: T:ContosoUniversity.Models.Course
+  parent: ContosoUniversity.Models
+  href: ContosoUniversity.Models.Course.html
+  name: Course
+  nameWithType: Course
+  fullName: ContosoUniversity.Models.Course
+- uid: ContosoUniversity.Models.Enrollment.Student*
+  commentId: Overload:ContosoUniversity.Models.Enrollment.Student
+  href: ContosoUniversity.Models.Enrollment.html#ContosoUniversity_Models_Enrollment_Student
+  name: Student
+  nameWithType: Enrollment.Student
+  fullName: ContosoUniversity.Models.Enrollment.Student
+- uid: ContosoUniversity.Models.Student
+  commentId: T:ContosoUniversity.Models.Student
+  parent: ContosoUniversity.Models
+  href: ContosoUniversity.Models.Student.html
+  name: Student
+  nameWithType: Student
+  fullName: ContosoUniversity.Models.Student
