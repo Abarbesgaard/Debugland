@@ -6,30 +6,104 @@ using System.Runtime.CompilerServices;
 namespace Debugland
 {
     /// <summary>
-    /// This class is used for debugging purposes.
+    /// Provides debugging utilities for tracking method execution, timing, SQL command execution, variable declaration, and control flow statements within a .NET application.
     /// </summary>
+    /// <remarks>
+    ///     <para>
+    ///         The <see cref="Debugger"/> class assists developers in enhancing code visibility 
+    ///         and identifying issues during development and testing phases by offering a range of debugging functionalities.
+    ///         
+    ///         
+    ///     </para>
+    ///     <para>
+    ///         <b>Key Features</b> 
+    ///     </para>
+    ///     <para>
+    ///         <list type="bullet">
+    ///         
+    ///             <item>
+    ///                 <term>
+    ///                     <b>Method Tracking</b>
+    ///                 </term>
+    ///                 <description> 
+    ///                     Start and stop timers to monitor method execution time.
+    ///                 </description>
+    ///             </item>
+    ///             <item>
+    ///                 <term>
+    ///                     <b>SQL Command Debugging</b>
+    ///                 </term>
+    ///                 <description>
+    ///                     : Monitor SQL command execution and connection status.
+    ///                 </description>
+    ///             </item>
+    ///             <item>
+    ///                 <term>
+    ///                     <b>Variable Declaration</b>
+    ///                 </term>
+    ///                 <description>
+    ///                     Notify the declaration of variables, including names and values.
+    ///                 </description>
+    ///             </item>
+    ///             <item>
+    ///                 <term>
+    ///                     <b>Control Flow Tracking</b>
+    ///                 </term>
+    ///                 <description>
+    ///                      Monitor the initiation and termination of control flow statements such as try-catch blocks, loops, and if statements.
+    ///                 </description>
+    ///             </item>
+    ///             <item>
+    ///                 <term>
+    ///                     <b>Message Output</b>
+    ///                 </term>
+    ///                 <description>
+    ///                     Write custom messages to the debug window for informative purposes.
+    ///                 </description>
+    ///             </item>
+    ///         </list>
+    ///         
+    ///     </para>
+    ///     <para>
+    ///         Usage of this class in a DEBUG environment enhances code visibility and aids in the identification and resolution of potential issues during development.
+    ///     </para>
+    /// </remarks>
     public static class Debugger
     {
         #region Properties
-
-        private static readonly Stopwatch watch = new();
-        private static Dictionary<string, Stopwatch> methodTimers = [];   
-
-        #endregion 
-
-        #region Method initated
         /// <summary>
-        /// This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
+        /// Stopwatch instance for tracking elapsed time during method execution.
         /// </summary>
-        /// <param name="methodName">Navnet på metoden som kalles. </param>
+        private static readonly Stopwatch watch = new();
+        /// <summary>
+        /// Dictionary to store Stopwatch instances for tracking elapsed time of methods.
+        /// </summary>
+        private static Dictionary<string, Stopwatch> methodTimers = [];
+
+        #endregion
+
+        #region Method Initated
+        /// <summary>
+        /// Indicates that a method has started and initiated. 
+        /// </summary>
+        /// <remarks>
+        ///     <para>
+        ///         The method name is written to the debug window to provide context.
+        ///     </para>
+        ///     <para>
+        ///         The debug indent level is adjusted to improve readability of debug output.
+        ///     </para>
+        /// </remarks>
+        /// <param name="methodName">The name of the method being initiated.</param>
+
         [Conditional("DEBUG")]
-        public static void MethodInitiated(string Name)
+        public static void MethodInitiated(string methodName)
         {
             // Store the initial Debug.IndentLevel
             int initialIndentLevel = Debug.IndentLevel;
-            
+
             // Writes the name of the method to the debug window for the initial level
-            Debug.WriteLine($"[{Name}]");
+            Debug.WriteLine($"[{methodName}]");
 
             // Enter the loop starting from 1 to initialIndentLevel (including 0)
             for (int i = 1; i <= initialIndentLevel; i++)
@@ -38,17 +112,17 @@ namespace Debugland
                 Debug.IndentLevel = i;
             }
             // After the loop, reset Debug.IndentLevel to the initial value
-            Debug.IndentLevel = initialIndentLevel + 1; // Adjust the value as needed
+            Debug.IndentLevel = initialIndentLevel + 1; 
             Debug.WriteLine($"{(char)26} initiated");
 
         }
         #endregion
 
-        #region Method terminated
+        #region Method Terminated
         /// <summary>
-        /// This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
+        /// Indicates the end of a method's execution.
         /// </summary>
-        /// <param name="methodName">The name of the method which is being called.</param>
+        /// <param name="methodName">The name of the method that has completed execution.</param>
         [Conditional("DEBUG")]
         public static void MethodTerminated(string methodName)
         {
@@ -61,7 +135,7 @@ namespace Debugland
         }
         #endregion
 
-        #region Time initiated
+        #region Time Initiated
         /// <summary>
         /// This method is used to start the stopwatch and write the elapsed time to the debug window.
         /// </summary>
@@ -119,10 +193,11 @@ namespace Debugland
 
         #region Message
         /// <summary>
-        /// This method is used to write a message to the debug window.
+        /// Writes a message to the debug window.
         /// </summary>
-        /// <param name="message"> Beskeden som skal skrives til debug vinduet.</param>
-        /// <returns>Returnere beskeden som er skrevet til debug vinduet.</returns>
+        /// <param name="message">The message to be written to the debug window.</param>
+        /// <returns>The message that was written to the debug window.</returns>
+
         [Conditional("DEBUG")]
         public static void Message(string message)
         {
@@ -171,7 +246,7 @@ namespace Debugland
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.
         /// </summary>
         [Conditional("DEBUG")]
-        public static void SQLCommandTerminating()
+        public static void SQLCommandTerminated()
         {
             // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
@@ -200,7 +275,7 @@ namespace Debugland
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated. 
         /// </summary>
         [Conditional("DEBUG")]
-        public static void ReaderTerminating()
+        public static void ReaderTerminated()
         {
             // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
@@ -229,7 +304,7 @@ namespace Debugland
         /// This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.
         /// </summary>
         [Conditional("DEBUG")]
-        public static void SQLConnectionTerminating()
+        public static void SQLConnectionTerminated()
         {
             // Gets the initial IndentLevel
             Debug.IndentLevel += 0;
@@ -252,7 +327,7 @@ namespace Debugland
             Debug.WriteLine($"{(char)15} Variable(s) Declared");
 
         }
-        
+
 
 
         /// <summary>
@@ -266,7 +341,7 @@ namespace Debugland
             Debug.IndentLevel += 0;
             // Writes that the variable has been declared.
             Debug.WriteLine($"{(char)6}The Variable {variableName} has been declared");
-         
+
         }
 
         /// <summary>
@@ -284,7 +359,7 @@ namespace Debugland
         }
         #endregion
 
-        #region try block initiated
+        #region Try block initiated
         /// <summary>
         /// This Method is used to let you know that a Try Block has been initiated.
         /// </summary>
@@ -299,7 +374,7 @@ namespace Debugland
         }
         #endregion
 
-        #region try block terminated
+        #region Try block terminated
         /// <summary>
         /// This Method is used to let you know that a Try Block has been terminated.
         /// </summary>
@@ -384,9 +459,10 @@ namespace Debugland
 
         #region Fail
         /// <summary>
-        /// This method is used to write a fail message to the debug window.
+        /// Writes a failure message to the debug window.
         /// </summary>
-        /// <param name="message">The message which is being written to the debug window.</param>
+        /// <param name="message">The primary message to be written to the debug window.</param>
+        /// <param name="secondMessage">An additional message to provide context or details about the failure.</param>
         [Conditional("DEBUG")]
         public static void Fail(string message, string secondMessage)
         {
@@ -394,7 +470,7 @@ namespace Debugland
             Debug.IndentLevel += 0;
             // Writes the message to the debug window.
             Debug.Fail($"{(char)19} {message}", $"{(char)187} {secondMessage}");
-            
+
         }
         #endregion
 
