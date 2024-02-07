@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Setup </title>
+      <title> | Debugland </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Setup ">
+      <meta name="title" content=" | Debugland ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -88,116 +88,7 @@
 
 <p><img src="https://github.com/Abarbesgaard/Debugland/assets/11796684/08ffb432-8eba-4236-976b-9110a2d06242" alt="GITHUBBANNER">
 <a href="https://ko-fi.com/Z8Z51HUTZ"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a></p>
-<p>In the dynamic world of software development, Debugland stands as a beacon, revolutionizing the debugging experience during runtime.
-Designed to bring clarity and readability to the often intricate process of troubleshooting, Debugland introduces a suite of features that seamlessly integrate into your development workflow.</p>
-<p>To learn how to set it up please follow the next seciton</p>
-<h1 id="setup">Setup</h1>
-<ul>
-<li>download Debugland via nuget Manager</li>
-<li>Write the following at the beginning of your code:</li>
-</ul>
-<pre><code class="lang-csharp">  using Debugger = Debugland.Debugger;
-</code></pre>
-<p>And you're good to go!</p>
-<p>The next section will show you how to use the methods that Debugland has.</p>
-<h1 id="documentaiton">Documentaiton</h1>
-<h2 id="methodinitiated-and-methodterminated">MethodInitiated and MethodTerminated</h2>
-<p>The Initiation and termination method is crucial for starting every debug process when using Debugland. It plays a vital role in the overall layout in the debug window.</p>
-<p>Example:</p>
-<pre><code class="lang-csharp">//start by making a method
-public void TestMethod()
-{
-  //initiate the debugger with the name of this method
-  Debugger.MethodInitiated(&quot;TestMethod&quot;);
-
-  Method Logic ...
-
-  //Terminate the debugger for this method
-  Debugger.MethodTerminated(&quot;TestMethod&quot;);
-}
-</code></pre>
-<h3 id="debug-output-display">debug output display</h3>
-<pre><code>  [TestMethod]
-    → initiated
-  [/TestMethod]
-</code></pre>
-<h2 id="timeinitiated-and-timeterminated">TimeInitiated and Timeterminated</h2>
-<p>The purpose of this method is to track the time of a method</p>
-<pre><code class="lang-csharp">//start by making a method with the debugger initiated and terminated
-public void TestMethod()
-{
-  Debugger.MethodInitiated(&quot;TestMethod&quot;);
-  // Initiate the time tracking,
-  Debugger.TimeInitiated(&quot;TestMethod&quot;);
-
-  Method Logic ...
-
-  //Terminate the debugger for this method
-  Debugger.TimeTerminated
-  Debugger.MethodTerminated(&quot;TestMethod&quot;);
-}
-</code></pre>
-<h3 id="debug-output-display-1">debug output display</h3>
-<pre><code>  [TestMethod]
-    → initiated
-    ← Elapsed time for TestMethod: 15 milliseconds
-  [/TestMethod]
-</code></pre>
-<h2 id="message-and-messageimportant">Message and MessageImportant</h2>
-<p>This simple method is for writing a message in  the debug window. Along with MessageImportant you can highten awareness along certain steps in your debugging</p>
-<pre><code class="lang-csharp">//start by making a method with the debugger initiated and terminated
-public void TestMethod()
-{
-  Debugger.MethodInitiated(&quot;TestMethod&quot;);
-  // Write the message method anywhere in your methods.,
-  Debugger.Message(&quot;A message&quot;);
-  Debugger.MessageImportant(&quot;An Important Message&quot;);
-  Debugger.MethodTerminated(&quot;TestMethod&quot;);
-}
-</code></pre>
-<h3 id="debug-output-display-2">debug output display</h3>
-<pre><code>  [TestMethod]
-    → initiated
-    ! A message
-    ‼ An Important Message
-  [/TestMethod]
-</code></pre>
-<h1 id="tracking-sql">Tracking SQL</h1>
-<p>Now this part contains multiple methods that works well together. But you can use them as you see fit.
-If you want to track sql stuff the following methods will enable this:</p>
-<ul>
-<li>SQLCommandInitiated</li>
-<li>SQLCommandTerminated</li>
-<li>ReaderInitiated</li>
-<li>ReaderTerminated</li>
-<li>SQLConnectionInitiated</li>
-<li>SQLConnectionTerminated</li>
-</ul>
-<p>When they're all combined it will look like this:</p>
-<pre><code class="lang-csharp">//start by making a method with the debugger initiated and terminated
-public void TestMethod()
-{
-  Debugger.MethodInitiated(&quot;TestMethod&quot;);
-  // Write the message method anywhere in your methods.,
-  Debugger.SQLConnectionInitiated();
-  Debugger.SQLCommandInitiated(&quot;A specific command&quot;);
-  Debugger.ReaderInitiated();
-  Debugger.ReaderTerminating();
-  Debugger.SQLCommandTerminating();
-  Debugger.SQLConnectionTerminating();
-}
-</code></pre>
-<h3 id="debug-output-display-3">debug output display</h3>
-<pre><code>  [TestMethod]
-    →initialized
-    ┌SQL Connection Initiated
-    ┌SQL Command: A specific command
-    |Reader initialized
-    |Reader executed
-    |Command Terminated
-    └SQL Connection Terminated
-  [/TestMethod]
-</code></pre>
+<p><a href="https://abarbesgaard.github.io/Debugland/index.html">To see the documentation go here</a></p>
 
 </article>
 

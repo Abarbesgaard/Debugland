@@ -27,11 +27,11 @@ items:
   - Debugland.Debugger.MethodInitiated(System.String)
   - Debugland.Debugger.MethodTerminated(System.String)
   - Debugland.Debugger.ReaderInitiated
-  - Debugland.Debugger.ReaderTerminating
+  - Debugland.Debugger.ReaderTerminated
   - Debugland.Debugger.SQLCommandInitiated(System.String)
-  - Debugland.Debugger.SQLCommandTerminating
+  - Debugland.Debugger.SQLCommandTerminated
   - Debugland.Debugger.SQLConnectionInitiated
-  - Debugland.Debugger.SQLConnectionTerminating
+  - Debugland.Debugger.SQLConnectionTerminated
   - Debugland.Debugger.TimeInitiated(System.String)
   - Debugland.Debugger.TimeTerminated(System.String)
   - Debugland.Debugger.TryBlockInitiated
@@ -52,14 +52,54 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Debugger
     path: Debugland/Debugger.cs
-    startLine: 10
+    startLine: 70
   assemblies:
   - Debugland - Backup
   namespace: Debugland
-  summary: This class is used for debugging purposes.
+  summary: Provides debugging utilities for tracking method execution, timing, SQL command execution, variable declaration, and control flow statements within a .NET application.
+  remarks: >-
+    <p>
+        The <xref href="Debugland.Debugger" data-throw-if-not-resolved="false"></xref> class assists developers in enhancing code visibility 
+        and identifying issues during development and testing phases by offering a range of debugging functionalities.
+
+
+    </p>
+
+    <p>
+        <b>Key Features</b> 
+    </p>
+
+    <p>
+        <ul><li><span class="term">
+                    <b>Method Tracking</b>
+                </span> 
+                    Start and stop timers to monitor method execution time.
+                </li><li><span class="term">
+                    <b>SQL Command Debugging</b>
+                </span>
+                    : Monitor SQL command execution and connection status.
+                </li><li><span class="term">
+                    <b>Variable Declaration</b>
+                </span>
+                    Notify the declaration of variables, including names and values.
+                </li><li><span class="term">
+                    <b>Control Flow Tracking</b>
+                </span>
+                     Monitor the initiation and termination of control flow statements such as try-catch blocks, loops, and if statements.
+                </li><li><span class="term">
+                    <b>Message Output</b>
+                </span>
+                    Write custom messages to the debug window for informative purposes.
+                </li></ul>
+
+    </p>
+
+    <p>
+        Usage of this class in a DEBUG environment enhances code visibility and aids in the identification and resolution of potential issues during development.
+    </p>
   example: []
   syntax:
     content: public static class Debugger
@@ -89,27 +129,36 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MethodInitiated
     path: Debugland/Debugger.cs
-    startLine: 24
+    startLine: 98
   assemblies:
   - Debugland - Backup
   namespace: Debugland
-  summary: This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.
+  summary: Indicates that a method has started and initiated.
+  remarks: >-
+    <p>
+        The method name is written to the debug window to provide context.
+    </p>
+
+    <p>
+        The debug indent level is adjusted to improve readability of debug output.
+    </p>
   example: []
   syntax:
     content: >-
       [Conditional("DEBUG")]
 
-      public static void MethodInitiated(string Name)
+      public static void MethodInitiated(string methodName)
     parameters:
-    - id: Name
+    - id: methodName
       type: System.String
+      description: The name of the method being initiated.
     content.vb: >-
       <Conditional("DEBUG")>
 
-      Public Shared Sub MethodInitiated(Name As String)
+      Public Shared Sub MethodInitiated(methodName As String)
   overload: Debugland.Debugger.MethodInitiated*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -135,14 +184,14 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MethodTerminated
     path: Debugland/Debugger.cs
-    startLine: 51
+    startLine: 125
   assemblies:
   - Debugland - Backup
   namespace: Debugland
-  summary: This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.
+  summary: Indicates the end of a method's execution.
   example: []
   syntax:
     content: >-
@@ -152,7 +201,7 @@ items:
     parameters:
     - id: methodName
       type: System.String
-      description: The name of the method which is being called.
+      description: The name of the method that has completed execution.
     content.vb: >-
       <Conditional("DEBUG")>
 
@@ -182,10 +231,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: TimeInitiated
     path: Debugland/Debugger.cs
-    startLine: 68
+    startLine: 142
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -229,10 +278,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: TimeTerminated
     path: Debugland/Debugger.cs
-    startLine: 94
+    startLine: 168
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -276,14 +325,14 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Message
     path: Debugland/Debugger.cs
-    startLine: 125
+    startLine: 200
   assemblies:
   - Debugland - Backup
   namespace: Debugland
-  summary: This method is used to write a message to the debug window.
+  summary: Writes a message to the debug window.
   example: []
   syntax:
     content: >-
@@ -293,7 +342,7 @@ items:
     parameters:
     - id: message
       type: System.String
-      description: Beskeden som skal skrives til debug vinduet.
+      description: The message to be written to the debug window.
     content.vb: >-
       <Conditional("DEBUG")>
 
@@ -323,10 +372,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MessageImportant
     path: Debugland/Debugger.cs
-    startLine: 141
+    startLine: 216
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -370,10 +419,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: SQLCommandInitiated
     path: Debugland/Debugger.cs
-    startLine: 157
+    startLine: 232
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -402,25 +451,25 @@ items:
   nameWithType.vb: Debugger.SQLCommandInitiated(String)
   fullName.vb: Debugland.Debugger.SQLCommandInitiated(String)
   name.vb: SQLCommandInitiated(String)
-- uid: Debugland.Debugger.SQLCommandTerminating
-  commentId: M:Debugland.Debugger.SQLCommandTerminating
-  id: SQLCommandTerminating
+- uid: Debugland.Debugger.SQLCommandTerminated
+  commentId: M:Debugland.Debugger.SQLCommandTerminated
+  id: SQLCommandTerminated
   parent: Debugland.Debugger
   langs:
   - csharp
   - vb
-  name: SQLCommandTerminating()
-  nameWithType: Debugger.SQLCommandTerminating()
-  fullName: Debugland.Debugger.SQLCommandTerminating()
+  name: SQLCommandTerminated()
+  nameWithType: Debugger.SQLCommandTerminated()
+  fullName: Debugland.Debugger.SQLCommandTerminated()
   type: Method
   source:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
-    id: SQLCommandTerminating
+      repo: https://github.com/Abarbesgaard/Debugland.git
+    id: SQLCommandTerminated
     path: Debugland/Debugger.cs
-    startLine: 172
+    startLine: 247
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -430,12 +479,12 @@ items:
     content: >-
       [Conditional("DEBUG")]
 
-      public static void SQLCommandTerminating()
+      public static void SQLCommandTerminated()
     content.vb: >-
       <Conditional("DEBUG")>
 
-      Public Shared Sub SQLCommandTerminating()
-  overload: Debugland.Debugger.SQLCommandTerminating*
+      Public Shared Sub SQLCommandTerminated()
+  overload: Debugland.Debugger.SQLCommandTerminated*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
     ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
@@ -457,10 +506,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: ReaderInitiated
     path: Debugland/Debugger.cs
-    startLine: 187
+    startLine: 262
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -482,25 +531,25 @@ items:
     arguments:
     - type: System.String
       value: DEBUG
-- uid: Debugland.Debugger.ReaderTerminating
-  commentId: M:Debugland.Debugger.ReaderTerminating
-  id: ReaderTerminating
+- uid: Debugland.Debugger.ReaderTerminated
+  commentId: M:Debugland.Debugger.ReaderTerminated
+  id: ReaderTerminated
   parent: Debugland.Debugger
   langs:
   - csharp
   - vb
-  name: ReaderTerminating()
-  nameWithType: Debugger.ReaderTerminating()
-  fullName: Debugland.Debugger.ReaderTerminating()
+  name: ReaderTerminated()
+  nameWithType: Debugger.ReaderTerminated()
+  fullName: Debugland.Debugger.ReaderTerminated()
   type: Method
   source:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
-    id: ReaderTerminating
+      repo: https://github.com/Abarbesgaard/Debugland.git
+    id: ReaderTerminated
     path: Debugland/Debugger.cs
-    startLine: 201
+    startLine: 276
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -510,12 +559,12 @@ items:
     content: >-
       [Conditional("DEBUG")]
 
-      public static void ReaderTerminating()
+      public static void ReaderTerminated()
     content.vb: >-
       <Conditional("DEBUG")>
 
-      Public Shared Sub ReaderTerminating()
-  overload: Debugland.Debugger.ReaderTerminating*
+      Public Shared Sub ReaderTerminated()
+  overload: Debugland.Debugger.ReaderTerminated*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
     ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
@@ -537,10 +586,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: SQLConnectionInitiated
     path: Debugland/Debugger.cs
-    startLine: 216
+    startLine: 291
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -562,25 +611,25 @@ items:
     arguments:
     - type: System.String
       value: DEBUG
-- uid: Debugland.Debugger.SQLConnectionTerminating
-  commentId: M:Debugland.Debugger.SQLConnectionTerminating
-  id: SQLConnectionTerminating
+- uid: Debugland.Debugger.SQLConnectionTerminated
+  commentId: M:Debugland.Debugger.SQLConnectionTerminated
+  id: SQLConnectionTerminated
   parent: Debugland.Debugger
   langs:
   - csharp
   - vb
-  name: SQLConnectionTerminating()
-  nameWithType: Debugger.SQLConnectionTerminating()
-  fullName: Debugland.Debugger.SQLConnectionTerminating()
+  name: SQLConnectionTerminated()
+  nameWithType: Debugger.SQLConnectionTerminated()
+  fullName: Debugland.Debugger.SQLConnectionTerminated()
   type: Method
   source:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
-    id: SQLConnectionTerminating
+      repo: https://github.com/Abarbesgaard/Debugland.git
+    id: SQLConnectionTerminated
     path: Debugland/Debugger.cs
-    startLine: 230
+    startLine: 305
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -590,12 +639,12 @@ items:
     content: >-
       [Conditional("DEBUG")]
 
-      public static void SQLConnectionTerminating()
+      public static void SQLConnectionTerminated()
     content.vb: >-
       <Conditional("DEBUG")>
 
-      Public Shared Sub SQLConnectionTerminating()
-  overload: Debugland.Debugger.SQLConnectionTerminating*
+      Public Shared Sub SQLConnectionTerminated()
+  overload: Debugland.Debugger.SQLConnectionTerminated*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
     ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
@@ -617,10 +666,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Variable
     path: Debugland/Debugger.cs
-    startLine: 245
+    startLine: 320
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -657,10 +706,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Variable
     path: Debugland/Debugger.cs
-    startLine: 261
+    startLine: 336
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -704,10 +753,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Variable
     path: Debugland/Debugger.cs
-    startLine: 276
+    startLine: 351
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -754,10 +803,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: TryBlockInitiated
     path: Debugland/Debugger.cs
-    startLine: 290
+    startLine: 365
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -794,10 +843,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: TryBlockTerminated
     path: Debugland/Debugger.cs
-    startLine: 305
+    startLine: 380
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -834,10 +883,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: CatchBlockInitiated
     path: Debugland/Debugger.cs
-    startLine: 320
+    startLine: 395
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -874,10 +923,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: CatchBlockTerminated
     path: Debugland/Debugger.cs
-    startLine: 334
+    startLine: 409
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -914,10 +963,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: FinallyBlockInitiated
     path: Debugland/Debugger.cs
-    startLine: 348
+    startLine: 423
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -954,10 +1003,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: FinallyBlockTerminated
     path: Debugland/Debugger.cs
-    startLine: 363
+    startLine: 438
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -994,10 +1043,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Close
     path: Debugland/Debugger.cs
-    startLine: 377
+    startLine: 452
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1034,14 +1083,14 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Fail
     path: Debugland/Debugger.cs
-    startLine: 389
+    startLine: 465
   assemblies:
   - Debugland - Backup
   namespace: Debugland
-  summary: This method is used to write a fail message to the debug window.
+  summary: Writes a failure message to the debug window.
   example: []
   syntax:
     content: >-
@@ -1051,9 +1100,10 @@ items:
     parameters:
     - id: message
       type: System.String
-      description: The message which is being written to the debug window.
+      description: The primary message to be written to the debug window.
     - id: secondMessage
       type: System.String
+      description: An additional message to provide context or details about the failure.
     content.vb: >-
       <Conditional("DEBUG")>
 
@@ -1083,10 +1133,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: IfInitiated
     path: Debugland/Debugger.cs
-    startLine: 404
+    startLine: 480
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1123,10 +1173,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: IfTerminated
     path: Debugland/Debugger.cs
-    startLine: 418
+    startLine: 494
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1163,10 +1213,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: ForLoopInitiated
     path: Debugland/Debugger.cs
-    startLine: 432
+    startLine: 508
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1203,10 +1253,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: ForLoopTerminated
     path: Debugland/Debugger.cs
-    startLine: 446
+    startLine: 522
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1243,10 +1293,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: WhileLoopInitiated
     path: Debugland/Debugger.cs
-    startLine: 460
+    startLine: 536
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1283,10 +1333,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: WhileLoopTerminated
     path: Debugland/Debugger.cs
-    startLine: 471
+    startLine: 547
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1323,10 +1373,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: DoWhileLoopInitiated
     path: Debugland/Debugger.cs
-    startLine: 486
+    startLine: 562
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1363,10 +1413,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: DoWhileLoopTerminated
     path: Debugland/Debugger.cs
-    startLine: 497
+    startLine: 573
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1403,10 +1453,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: Let
     path: Debugland/Debugger.cs
-    startLine: 515
+    startLine: 591
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1453,10 +1503,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MessageIf
     path: Debugland/Debugger.cs
-    startLine: 531
+    startLine: 607
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1503,10 +1553,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MessageIf
     path: Debugland/Debugger.cs
-    startLine: 545
+    startLine: 621
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1553,10 +1603,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MessageIf
     path: Debugland/Debugger.cs
-    startLine: 560
+    startLine: 636
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1606,10 +1656,10 @@ items:
     remote:
       path: Debugland/Debugger.cs
       branch: master
-      repo: https://github.com/Abarbesgaard/Debugland
+      repo: https://github.com/Abarbesgaard/Debugland.git
     id: MessageIf
     path: Debugland/Debugger.cs
-    startLine: 575
+    startLine: 651
   assemblies:
   - Debugland - Backup
   namespace: Debugland
@@ -1644,6 +1694,12 @@ items:
   fullName.vb: Debugland.Debugger.MessageIf(Boolean, String, String)
   name.vb: MessageIf(Boolean, String, String)
 references:
+- uid: Debugland.Debugger
+  commentId: T:Debugland.Debugger
+  href: Debugland.Debugger.html
+  name: Debugger
+  nameWithType: Debugger
+  fullName: Debugland.Debugger
 - uid: Debugland
   commentId: N:Debugland
   href: Debugland.html
@@ -1940,36 +1996,36 @@ references:
   name: SQLCommandInitiated
   nameWithType: Debugger.SQLCommandInitiated
   fullName: Debugland.Debugger.SQLCommandInitiated
-- uid: Debugland.Debugger.SQLCommandTerminating*
-  commentId: Overload:Debugland.Debugger.SQLCommandTerminating
-  href: Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminating
-  name: SQLCommandTerminating
-  nameWithType: Debugger.SQLCommandTerminating
-  fullName: Debugland.Debugger.SQLCommandTerminating
+- uid: Debugland.Debugger.SQLCommandTerminated*
+  commentId: Overload:Debugland.Debugger.SQLCommandTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminated
+  name: SQLCommandTerminated
+  nameWithType: Debugger.SQLCommandTerminated
+  fullName: Debugland.Debugger.SQLCommandTerminated
 - uid: Debugland.Debugger.ReaderInitiated*
   commentId: Overload:Debugland.Debugger.ReaderInitiated
   href: Debugland.Debugger.html#Debugland_Debugger_ReaderInitiated
   name: ReaderInitiated
   nameWithType: Debugger.ReaderInitiated
   fullName: Debugland.Debugger.ReaderInitiated
-- uid: Debugland.Debugger.ReaderTerminating*
-  commentId: Overload:Debugland.Debugger.ReaderTerminating
-  href: Debugland.Debugger.html#Debugland_Debugger_ReaderTerminating
-  name: ReaderTerminating
-  nameWithType: Debugger.ReaderTerminating
-  fullName: Debugland.Debugger.ReaderTerminating
+- uid: Debugland.Debugger.ReaderTerminated*
+  commentId: Overload:Debugland.Debugger.ReaderTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_ReaderTerminated
+  name: ReaderTerminated
+  nameWithType: Debugger.ReaderTerminated
+  fullName: Debugland.Debugger.ReaderTerminated
 - uid: Debugland.Debugger.SQLConnectionInitiated*
   commentId: Overload:Debugland.Debugger.SQLConnectionInitiated
   href: Debugland.Debugger.html#Debugland_Debugger_SQLConnectionInitiated
   name: SQLConnectionInitiated
   nameWithType: Debugger.SQLConnectionInitiated
   fullName: Debugland.Debugger.SQLConnectionInitiated
-- uid: Debugland.Debugger.SQLConnectionTerminating*
-  commentId: Overload:Debugland.Debugger.SQLConnectionTerminating
-  href: Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminating
-  name: SQLConnectionTerminating
-  nameWithType: Debugger.SQLConnectionTerminating
-  fullName: Debugland.Debugger.SQLConnectionTerminating
+- uid: Debugland.Debugger.SQLConnectionTerminated*
+  commentId: Overload:Debugland.Debugger.SQLConnectionTerminated
+  href: Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminated
+  name: SQLConnectionTerminated
+  nameWithType: Debugger.SQLConnectionTerminated
+  fullName: Debugland.Debugger.SQLConnectionTerminated
 - uid: Debugland.Debugger.Variable*
   commentId: Overload:Debugland.Debugger.Variable
   href: Debugland.Debugger.html#Debugland_Debugger_Variable

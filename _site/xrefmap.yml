@@ -308,19 +308,19 @@ references:
   isSpec: "True"
   fullName: Debugland.Debugger.ReaderInitiated
   nameWithType: Debugger.ReaderInitiated
-- uid: Debugland.Debugger.ReaderTerminating
-  name: ReaderTerminating()
-  href: api/Debugland.Debugger.html#Debugland_Debugger_ReaderTerminating
-  commentId: M:Debugland.Debugger.ReaderTerminating
-  fullName: Debugland.Debugger.ReaderTerminating()
-  nameWithType: Debugger.ReaderTerminating()
-- uid: Debugland.Debugger.ReaderTerminating*
-  name: ReaderTerminating
-  href: api/Debugland.Debugger.html#Debugland_Debugger_ReaderTerminating_
-  commentId: Overload:Debugland.Debugger.ReaderTerminating
+- uid: Debugland.Debugger.ReaderTerminated
+  name: ReaderTerminated()
+  href: api/Debugland.Debugger.html#Debugland_Debugger_ReaderTerminated
+  commentId: M:Debugland.Debugger.ReaderTerminated
+  fullName: Debugland.Debugger.ReaderTerminated()
+  nameWithType: Debugger.ReaderTerminated()
+- uid: Debugland.Debugger.ReaderTerminated*
+  name: ReaderTerminated
+  href: api/Debugland.Debugger.html#Debugland_Debugger_ReaderTerminated_
+  commentId: Overload:Debugland.Debugger.ReaderTerminated
   isSpec: "True"
-  fullName: Debugland.Debugger.ReaderTerminating
-  nameWithType: Debugger.ReaderTerminating
+  fullName: Debugland.Debugger.ReaderTerminated
+  nameWithType: Debugger.ReaderTerminated
 - uid: Debugland.Debugger.SQLCommandInitiated(System.String)
   name: SQLCommandInitiated(string)
   href: api/Debugland.Debugger.html#Debugland_Debugger_SQLCommandInitiated_System_String_
@@ -337,19 +337,19 @@ references:
   isSpec: "True"
   fullName: Debugland.Debugger.SQLCommandInitiated
   nameWithType: Debugger.SQLCommandInitiated
-- uid: Debugland.Debugger.SQLCommandTerminating
-  name: SQLCommandTerminating()
-  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminating
-  commentId: M:Debugland.Debugger.SQLCommandTerminating
-  fullName: Debugland.Debugger.SQLCommandTerminating()
-  nameWithType: Debugger.SQLCommandTerminating()
-- uid: Debugland.Debugger.SQLCommandTerminating*
-  name: SQLCommandTerminating
-  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminating_
-  commentId: Overload:Debugland.Debugger.SQLCommandTerminating
+- uid: Debugland.Debugger.SQLCommandTerminated
+  name: SQLCommandTerminated()
+  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminated
+  commentId: M:Debugland.Debugger.SQLCommandTerminated
+  fullName: Debugland.Debugger.SQLCommandTerminated()
+  nameWithType: Debugger.SQLCommandTerminated()
+- uid: Debugland.Debugger.SQLCommandTerminated*
+  name: SQLCommandTerminated
+  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLCommandTerminated_
+  commentId: Overload:Debugland.Debugger.SQLCommandTerminated
   isSpec: "True"
-  fullName: Debugland.Debugger.SQLCommandTerminating
-  nameWithType: Debugger.SQLCommandTerminating
+  fullName: Debugland.Debugger.SQLCommandTerminated
+  nameWithType: Debugger.SQLCommandTerminated
 - uid: Debugland.Debugger.SQLConnectionInitiated
   name: SQLConnectionInitiated()
   href: api/Debugland.Debugger.html#Debugland_Debugger_SQLConnectionInitiated
@@ -363,19 +363,19 @@ references:
   isSpec: "True"
   fullName: Debugland.Debugger.SQLConnectionInitiated
   nameWithType: Debugger.SQLConnectionInitiated
-- uid: Debugland.Debugger.SQLConnectionTerminating
-  name: SQLConnectionTerminating()
-  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminating
-  commentId: M:Debugland.Debugger.SQLConnectionTerminating
-  fullName: Debugland.Debugger.SQLConnectionTerminating()
-  nameWithType: Debugger.SQLConnectionTerminating()
-- uid: Debugland.Debugger.SQLConnectionTerminating*
-  name: SQLConnectionTerminating
-  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminating_
-  commentId: Overload:Debugland.Debugger.SQLConnectionTerminating
+- uid: Debugland.Debugger.SQLConnectionTerminated
+  name: SQLConnectionTerminated()
+  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminated
+  commentId: M:Debugland.Debugger.SQLConnectionTerminated
+  fullName: Debugland.Debugger.SQLConnectionTerminated()
+  nameWithType: Debugger.SQLConnectionTerminated()
+- uid: Debugland.Debugger.SQLConnectionTerminated*
+  name: SQLConnectionTerminated
+  href: api/Debugland.Debugger.html#Debugland_Debugger_SQLConnectionTerminated_
+  commentId: Overload:Debugland.Debugger.SQLConnectionTerminated
   isSpec: "True"
-  fullName: Debugland.Debugger.SQLConnectionTerminating
-  nameWithType: Debugger.SQLConnectionTerminating
+  fullName: Debugland.Debugger.SQLConnectionTerminated
+  nameWithType: Debugger.SQLConnectionTerminated
 - uid: Debugland.Debugger.TimeInitiated(System.String)
   name: TimeInitiated(string)
   href: api/Debugland.Debugger.html#Debugland_Debugger_TimeInitiated_System_String_

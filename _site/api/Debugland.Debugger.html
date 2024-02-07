@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Debugger </title>
+      <title>Class Debugger | Debugland </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Debugger ">
+      <meta name="title" content="Class Debugger | Debugland ">
       
-      <meta name="description" content="This class is used for debugging purposes.">
+      <meta name="description" content="Provides debugging utilities for tracking method execution, timing, SQL command execution, variable declaration, and control flow statements within a .NET application.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Debugland_Debugger" data-uid="Debugland.Debugger" class="text-break">
-Class Debugger  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class Debugger  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class Debugger  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>Debugland - Backup.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This class is used for debugging purposes.</p>
+  <div class="markdown summary"><p>Provides debugging utilities for tracking method execution, timing, SQL command execution, variable declaration, and control flow statements within a .NET application.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,6 +147,41 @@ Class Debugger  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h2 id="Debugland_Debugger_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+    The <a class="xref" href="Debugland.Debugger.html">Debugger</a> class assists developers in enhancing code visibility 
+    and identifying issues during development and testing phases by offering a range of debugging functionalities.
+</p>
+<p>
+    <b>Key Features</b> 
+</p>
+<p>
+    <ul><li><span class="term">
+                <b>Method Tracking</b>
+            </span> 
+                Start and stop timers to monitor method execution time.
+            </li><li><span class="term">
+                <b>SQL Command Debugging</b>
+            </span>
+                : Monitor SQL command execution and connection status.
+            </li><li><span class="term">
+                <b>Variable Declaration</b>
+            </span>
+                Notify the declaration of variables, including names and values.
+            </li><li><span class="term">
+                <b>Control Flow Tracking</b>
+            </span>
+                 Monitor the initiation and termination of control flow statements such as try-catch blocks, loops, and if statements.
+            </li><li><span class="term">
+                <b>Message Output</b>
+            </span>
+                Write custom messages to the debug window for informative purposes.
+            </li></ul>
+
+<p>
+    Usage of this class in a DEBUG environment enhances code visibility and aids in the identification and resolution of potential issues during development.
+</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -157,7 +192,7 @@ Class Debugger  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Debugland_Debugger_CatchBlockInitiated" data-uid="Debugland.Debugger.CatchBlockInitiated">
   CatchBlockInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Catch Block has been initiated.</p>
@@ -185,7 +220,7 @@ public static void CatchBlockInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_CatchBlockTerminated" data-uid="Debugland.Debugger.CatchBlockTerminated">
   CatchBlockTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L410"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Catch Block has been terminated.</p>
@@ -213,7 +248,7 @@ public static void CatchBlockTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_Close" data-uid="Debugland.Debugger.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Flushes the output buffer and then calls the Close method on each of the Listeners. Basically the same as debug.close();</p>
@@ -241,7 +276,7 @@ public static void Close()</code></pre>
 
   <h3 id="Debugland_Debugger_DoWhileLoopInitiated" data-uid="Debugland.Debugger.DoWhileLoopInitiated">
   DoWhileLoopInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Do-while loop has been initiated.</p>
@@ -269,7 +304,7 @@ public static void DoWhileLoopInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_DoWhileLoopTerminated" data-uid="Debugland.Debugger.DoWhileLoopTerminated">
   DoWhileLoopTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L574"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Do-while loop has been terminated.</p>
@@ -297,10 +332,10 @@ public static void DoWhileLoopTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_Fail_System_String_System_String_" data-uid="Debugland.Debugger.Fail(System.String,System.String)">
   Fail(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>This method is used to write a fail message to the debug window.</p>
+  <div class="markdown level1 summary"><p>Writes a failure message to the debug window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -312,10 +347,11 @@ public static void Fail(string message, string secondMessage)</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The message which is being written to the debug window.</p>
+    <dd><p>The primary message to be written to the debug window.</p>
 </dd>
     <dt><code>secondMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>An additional message to provide context or details about the failure.</p>
+</dd>
   </dl>
 
 
@@ -333,7 +369,7 @@ public static void Fail(string message, string secondMessage)</code></pre>
 
   <h3 id="Debugland_Debugger_FinallyBlockInitiated" data-uid="Debugland.Debugger.FinallyBlockInitiated">
   FinallyBlockInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Finally Block has been initiated.</p>
@@ -361,7 +397,7 @@ public static void FinallyBlockInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_FinallyBlockTerminated" data-uid="Debugland.Debugger.FinallyBlockTerminated">
   FinallyBlockTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Finally Block has been terminated.</p>
@@ -389,7 +425,7 @@ public static void FinallyBlockTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_ForLoopInitiated" data-uid="Debugland.Debugger.ForLoopInitiated">
   ForLoopInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L509"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a for loop  has been initiated.</p>
@@ -417,7 +453,7 @@ public static void ForLoopInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_ForLoopTerminated" data-uid="Debugland.Debugger.ForLoopTerminated">
   ForLoopTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a for loop  has been terminated.</p>
@@ -445,7 +481,7 @@ public static void ForLoopTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_IfInitiated" data-uid="Debugland.Debugger.IfInitiated">
   IfInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L481"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a If Statement has been initiated.</p>
@@ -473,7 +509,7 @@ public static void IfInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_IfTerminated" data-uid="Debugland.Debugger.IfTerminated">
   IfTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a If Statement has been terminated.</p>
@@ -501,7 +537,7 @@ public static void IfTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_Let_System_Boolean_System_String_" data-uid="Debugland.Debugger.Let(System.Boolean,System.String)">
   Let(bool, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to check if a condition is true. If the condition is false, the method will write a message to the debug window.</p>
@@ -538,10 +574,10 @@ public static void Let(bool condition, string message)</code></pre>
 
   <h3 id="Debugland_Debugger_Message_System_String_" data-uid="Debugland.Debugger.Message(System.String)">
   Message(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>This method is used to write a message to the debug window.</p>
+  <div class="markdown level1 summary"><p>Writes a message to the debug window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -553,7 +589,7 @@ public static void Message(string message)</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Beskeden som skal skrives til debug vinduet.</p>
+    <dd><p>The message to be written to the debug window.</p>
 </dd>
   </dl>
 
@@ -572,7 +608,7 @@ public static void Message(string message)</code></pre>
 
   <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_Object_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.Object)">
   MessageIf(bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
@@ -609,7 +645,7 @@ public static void MessageIf(bool condition, object value)</code></pre>
 
   <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_Object_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.Object,System.String)">
   MessageIf(bool, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L637"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
@@ -649,7 +685,7 @@ public static void MessageIf(bool condition, object value, string category)</cod
 
   <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.String)">
   MessageIf(bool, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L608"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
@@ -686,7 +722,7 @@ public static void MessageIf(bool condition, string message)</code></pre>
 
   <h3 id="Debugland_Debugger_MessageIf_System_Boolean_System_String_System_String_" data-uid="Debugland.Debugger.MessageIf(System.Boolean,System.String,System.String)">
   MessageIf(bool, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L652"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to write a message to the debug window if a condition is true.</p>
@@ -725,7 +761,7 @@ public static void MessageIf(bool condition, string stringMessage, string catego
 
   <h3 id="Debugland_Debugger_MessageImportant_System_String_" data-uid="Debugland.Debugger.MessageImportant(System.String)">
   MessageImportant(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to write an important message to the debug window.</p>
@@ -759,22 +795,23 @@ public static void MessageImportant(string message)</code></pre>
 
   <h3 id="Debugland_Debugger_MethodInitiated_System_String_" data-uid="Debugland.Debugger.MethodInitiated(System.String)">
   MethodInitiated(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>This method indicates that the method has started and initiated. Begins the Stopwatch object and writes the name of the method to the debug window.</p>
+  <div class="markdown level1 summary"><p>Indicates that a method has started and initiated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void MethodInitiated(string Name)</code></pre>
+public static void MethodInitiated(string methodName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method being initiated.</p>
+</dd>
   </dl>
 
 
@@ -784,6 +821,14 @@ public static void MethodInitiated(string Name)</code></pre>
 
 
 
+  <h4 class="section" id="Debugland_Debugger_MethodInitiated_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+    The method name is written to the debug window to provide context.
+</p>
+<p>
+    The debug indent level is adjusted to improve readability of debug output.
+</p>
+</div>
 
 
 
@@ -792,10 +837,10 @@ public static void MethodInitiated(string Name)</code></pre>
 
   <h3 id="Debugland_Debugger_MethodTerminated_System_String_" data-uid="Debugland.Debugger.MethodTerminated(System.String)">
   MethodTerminated(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>This method indicates that the method has ended. Also stops the Stopwatch object and writes the lifespan of the method to the debug window.</p>
+  <div class="markdown level1 summary"><p>Indicates the end of a method's execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -807,7 +852,7 @@ public static void MethodTerminated(string methodName)</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name of the method which is being called.</p>
+    <dd><p>The name of the method that has completed execution.</p>
 </dd>
   </dl>
 
@@ -826,7 +871,7 @@ public static void MethodTerminated(string methodName)</code></pre>
 
   <h3 id="Debugland_Debugger_ReaderInitiated" data-uid="Debugland.Debugger.ReaderInitiated">
   ReaderInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method shows that the SQL Reader has been initiated.</p>
@@ -850,11 +895,11 @@ public static void ReaderInitiated()</code></pre>
 
 
 
-  <a id="Debugland_Debugger_ReaderTerminating_" data-uid="Debugland.Debugger.ReaderTerminating*"></a>
+  <a id="Debugland_Debugger_ReaderTerminated_" data-uid="Debugland.Debugger.ReaderTerminated*"></a>
 
-  <h3 id="Debugland_Debugger_ReaderTerminating" data-uid="Debugland.Debugger.ReaderTerminating">
-  ReaderTerminating()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Debugland_Debugger_ReaderTerminated" data-uid="Debugland.Debugger.ReaderTerminated">
+  ReaderTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the Reader has terminated.</p>
@@ -863,7 +908,7 @@ public static void ReaderInitiated()</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ReaderTerminating()</code></pre>
+public static void ReaderTerminated()</code></pre>
   </div>
 
 
@@ -882,7 +927,7 @@ public static void ReaderTerminating()</code></pre>
 
   <h3 id="Debugland_Debugger_SQLCommandInitiated_System_String_" data-uid="Debugland.Debugger.SQLCommandInitiated(System.String)">
   SQLCommandInitiated(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to debug SQL Commands, it will write the command to the debug window. This will initate the SQL Connection.</p>
@@ -912,11 +957,11 @@ public static void SQLCommandInitiated(string operation)</code></pre>
 
 
 
-  <a id="Debugland_Debugger_SQLCommandTerminating_" data-uid="Debugland.Debugger.SQLCommandTerminating*"></a>
+  <a id="Debugland_Debugger_SQLCommandTerminated_" data-uid="Debugland.Debugger.SQLCommandTerminated*"></a>
 
-  <h3 id="Debugland_Debugger_SQLCommandTerminating" data-uid="Debugland.Debugger.SQLCommandTerminating">
-  SQLCommandTerminating()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Debugland_Debugger_SQLCommandTerminated" data-uid="Debugland.Debugger.SQLCommandTerminated">
+  SQLCommandTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Command has terminated.</p>
@@ -925,7 +970,7 @@ public static void SQLCommandInitiated(string operation)</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void SQLCommandTerminating()</code></pre>
+public static void SQLCommandTerminated()</code></pre>
   </div>
 
 
@@ -944,7 +989,7 @@ public static void SQLCommandTerminating()</code></pre>
 
   <h3 id="Debugland_Debugger_SQLConnectionInitiated" data-uid="Debugland.Debugger.SQLConnectionInitiated">
   SQLConnectionInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Connects to the SQL Server and the database. This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has been initiated.</p>
@@ -968,11 +1013,11 @@ public static void SQLConnectionInitiated()</code></pre>
 
 
 
-  <a id="Debugland_Debugger_SQLConnectionTerminating_" data-uid="Debugland.Debugger.SQLConnectionTerminating*"></a>
+  <a id="Debugland_Debugger_SQLConnectionTerminated_" data-uid="Debugland.Debugger.SQLConnectionTerminated*"></a>
 
-  <h3 id="Debugland_Debugger_SQLConnectionTerminating" data-uid="Debugland.Debugger.SQLConnectionTerminating">
-  SQLConnectionTerminating()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Debugland_Debugger_SQLConnectionTerminated" data-uid="Debugland.Debugger.SQLConnectionTerminated">
+  SQLConnectionTerminated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to debug SQL Commands, it will write the command to the debug window that the SQL Connection has terminated.</p>
@@ -981,7 +1026,7 @@ public static void SQLConnectionInitiated()</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void SQLConnectionTerminating()</code></pre>
+public static void SQLConnectionTerminated()</code></pre>
   </div>
 
 
@@ -1000,7 +1045,7 @@ public static void SQLConnectionTerminating()</code></pre>
 
   <h3 id="Debugland_Debugger_TimeInitiated_System_String_" data-uid="Debugland.Debugger.TimeInitiated(System.String)">
   TimeInitiated(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to start the stopwatch and write the elapsed time to the debug window.</p>
@@ -1034,7 +1079,7 @@ public static void TimeInitiated(string methodName)</code></pre>
 
   <h3 id="Debugland_Debugger_TimeTerminated_System_String_" data-uid="Debugland.Debugger.TimeTerminated(System.String)">
   TimeTerminated(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is used to stop the stopwatch and write the elapsed time to the debug window.</p>
@@ -1068,7 +1113,7 @@ public static void TimeTerminated(string methodName)</code></pre>
 
   <h3 id="Debugland_Debugger_TryBlockInitiated" data-uid="Debugland.Debugger.TryBlockInitiated">
   TryBlockInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Try Block has been initiated.</p>
@@ -1096,7 +1141,7 @@ public static void TryBlockInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_TryBlockTerminated" data-uid="Debugland.Debugger.TryBlockTerminated">
   TryBlockTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Try Block has been terminated.</p>
@@ -1124,7 +1169,7 @@ public static void TryBlockTerminated()</code></pre>
 
   <h3 id="Debugland_Debugger_Variable" data-uid="Debugland.Debugger.Variable">
   Variable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that multiple Variables has been declared.</p>
@@ -1152,7 +1197,7 @@ public static void Variable()</code></pre>
 
   <h3 id="Debugland_Debugger_Variable_System_String_" data-uid="Debugland.Debugger.Variable(System.String)">
   Variable(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Variable has been declared.</p>
@@ -1186,7 +1231,7 @@ public static void Variable(string variableName)</code></pre>
 
   <h3 id="Debugland_Debugger_Variable_System_String_System_String_" data-uid="Debugland.Debugger.Variable(System.String,System.String)">
   Variable(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a Variable has been declared. It also writes the value of the variable.</p>
@@ -1223,7 +1268,7 @@ public static void Variable(string variableName, string variableValue)</code></p
 
   <h3 id="Debugland_Debugger_WhileLoopInitiated" data-uid="Debugland.Debugger.WhileLoopInitiated">
   WhileLoopInitiated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a while loop has been initiated.</p>
@@ -1251,7 +1296,7 @@ public static void WhileLoopInitiated()</code></pre>
 
   <h3 id="Debugland_Debugger_WhileLoopTerminated" data-uid="Debugland.Debugger.WhileLoopTerminated">
   WhileLoopTerminated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This Method is used to let you know that a while loop has been terminated.</p>
@@ -1279,7 +1324,7 @@ public static void WhileLoopTerminated()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Abarbesgaard/Debugland/blob/master/Debugland/Debugger.cs/#L71" class="edit-link">Edit this page</a>
         </div>
 
 
