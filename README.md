@@ -12,11 +12,8 @@ Open your project's NuGet Package Manager. Search for "Debugland" and select the
 
 In your project's code file, add a reference to the Debugland namespace using the following line:
 ```csharp
-using Debugland;
+using Debugger = Debugland.Debugger;
 ```
-
-Visual Studio: Go to Project Properties > Debug and set Start Debugging to True.
-Command Line: Set the DEBUG environment variable to true before running your application.
 
 3. Start Using Debugland's Methods:
 
