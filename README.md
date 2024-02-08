@@ -24,8 +24,6 @@ Now you can start using Debugland's methods throughout your codebase to track va
 ```charp
 Debugger.MethodInitiated("MyMethodName");
 // Your method logic here
-Debugger.MethodTerminated("MyMethodName");
-
 string myVariable = "Some value";
 Debugger.Variable("myVariable", myVariable);
 
@@ -35,6 +33,7 @@ using (var reader = ...)
   // Use the reader
   Debugger.ReaderTerminated();
 }
+Debugger.MethodTerminated("MyMethodName");
 ```
 
 Remember, these are just the basic steps. Refer to Debugland's documentation for the full range of methods and usage examples specific to your debugging needs.
