@@ -660,5 +660,16 @@ namespace Debugland
 
         #endregion
 
+        #region Metod Parameter
+        [Conditional( "DEBUG")]
+        public static void MethodParameter(string parameter)
+        {
+            // Gets the initial IndentLevel
+            Debug.IndentLevel += 0;
+            // Writes the message to the debug window.
+            Debug.WriteLine( $"{(char)15} Parameter value was: {parameter}"); 
+        }
+        #endregion
+
     }
 }
