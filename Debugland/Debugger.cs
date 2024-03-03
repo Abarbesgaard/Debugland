@@ -660,6 +660,10 @@ namespace Debugland
 
         #endregion
 
+        /// <summary>
+        /// Prints a formatted message to the debug window, indicating the value of the provided parameter.
+        /// </summary>
+        /// <param name="parameter">The value to be logged to the debug window.</param>
         #region Metod Parameter
         [Conditional( "DEBUG")]
         public static void MethodParameter(string parameter)
