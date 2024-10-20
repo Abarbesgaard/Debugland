@@ -48,7 +48,7 @@ jobs:
       run: npm install github-actions-ctrf@0.0.29
    
     - name: Dotnet Manifesto
-      run: dotnet new tool-manifest
+      run: dotnet new tool-manifest --force
       
     - name: Install DotnetCTRFreporter
       run: dotnet tool install DotnetCtrfJsonReporter --local
@@ -58,7 +58,7 @@ jobs:
     
     
     - name: convert Report
-      run: dotnet tool run DotnetCtrfJsonReporter -p "/home/runner/work/Debugland/TestResults/testResults.trx"
+      run: dotnet tool run DotnetCtrfJsonReporter -p "/home/runner/work/Debugland/TestProject/TestResults/testResults.trx"
     
     - name: Publish Test Summary Results
       run: npx github-actions-ctrf ./ctrf/ctrf-report.json --pr-comment
