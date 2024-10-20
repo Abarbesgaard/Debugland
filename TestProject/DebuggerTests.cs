@@ -17,7 +17,7 @@ public class DebuggerTests
         _listener = new TextWriterTraceListener(_writer);
         Trace.Listeners.Add(_listener);
     }
-
+ 
     [TestCleanup]
     public void TearDown()
     {
