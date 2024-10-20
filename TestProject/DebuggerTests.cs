@@ -225,4 +225,26 @@ public class DebuggerTests
             const string methodName = "TestMethod";
             Debugger.TimeTerminated(methodName); // Call without starting the timer first
         }
+        [TestMethod]
+        [TestCategory("Debug")]
+        public void Message_ShouldWriteCorrectMessageToDebug()
+        {
+            // Arrange
+            const string expectedMessage = "This is a test message.";
+
+            // Act
+            Debugger.Message(expectedMessage); // Call the method under test
+            Trace.Flush(); // Ensure all output is flushed
+
+            // Assert
+            var traceOutput = _writer?.ToString();
+
+            // Debugging output
+            Console.WriteLine("Trace Output:");
+            Console.WriteLine(traceOutput);
+
+            // Assertions - check for the correct output
+            Assert.IsNotNull(traceOutput, "Trace output should not be null.");
+            Assert.IsTrue(traceOutput.Contains($"!{expectedMessage}"), "The message logged should match the expected message.");
+        } 
 }

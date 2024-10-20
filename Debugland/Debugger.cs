@@ -196,7 +196,6 @@ public static class Debugger
     }
 
 
-    #region Message
 
     /// <summary>
     /// Writes a message to the debug window.
@@ -213,7 +212,6 @@ public static class Debugger
         Debug.WriteLine($"{(char)33}{message}");
     }
 
-    #endregion
 
     #region Message important
 
