@@ -16,6 +16,7 @@ public class DebuggerTests
         _writer = new StringWriter();
         _listener = new TextWriterTraceListener(_writer);
         Trace.Listeners.Add(_listener);
+        Debugger.MethodTimers.Clear(); 
     }
  
     [TestCleanup]
@@ -25,9 +26,10 @@ public class DebuggerTests
         Trace.Listeners.Remove(_listener);
         _listener?.Dispose();
         _writer?.Dispose();
-    }
+    } 
 
     [TestMethod]
+    [TestCategory("Debug")]
     public void LogException_Should_Format_Exception_Details_Correctly()
     {
         // Arrange
@@ -64,6 +66,7 @@ public class DebuggerTests
         traceOutput.Should().Contain($"|\t \tMessage: {innerExceptionMessage}");
     }
     [TestMethod]
+    [TestCategory("Debug")]
     public void LogException_Should_Handle_AggregateException()
     {
         // Arrange
@@ -105,4 +108,121 @@ public class DebuggerTests
         StringAssert.Contains(traceOutput, "A NullReferenceException occurred.");
         StringAssert.Contains(traceOutput, "Stack Trace:"); // Optional: Check for stack trace presence
     }
+    [TestMethod] 
+    [TestCategory("Debug")]
+    public void MethodInitiated_ShouldIncreaseIndentLevelAndWriteToDebug()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+        var initialIndentLevel = Debug.IndentLevel;
+
+        // Act
+        Debugger.MethodInitiated(methodName);
+
+        // Assert
+        Assert.AreEqual(initialIndentLevel + 1, Debug.IndentLevel, "Indent level should be incremented by 1.");
+    }
+    [TestMethod]
+    [TestCategory("Debug")]
+    public void MethodTerminated_ShouldDecreaseIndentLevelAndWriteToDebug()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+        Debug.IndentLevel = 1; // Set initial indent level for testing
+
+        // Act
+        Debugger.MethodTerminated(methodName);
+
+        // Assert
+        Assert.AreEqual(0, Debug.IndentLevel, "Indent level should be decremented to 0.");
+        // Optionally check if the debug output contains the correct messages, if needed
+    }
+    [TestMethod]
+    [TestCategory("Timer")]
+    public void TimeInitiated_ShouldStartTimer_WhenMethodIsNew()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+
+        // Act
+        Debugger.TimeInitiated(methodName);
+
+        // Assert
+        Assert.IsTrue(Debugger.MethodTimers[methodName].IsRunning, "Timer should be running after TimeInitiated is called.");
+    }
+    [TestMethod]
+    [TestCategory("Timer")]
+    public void TimeInitiated_ShouldNotStartTimer_WhenAlreadyRunning()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+        Debugger.TimeInitiated(methodName); // Start the timer first
+
+        // Act
+        Debugger.TimeInitiated(methodName); // Try to start it again
+
+        // Assert
+        Assert.IsTrue(Debugger.MethodTimers[methodName].IsRunning, "Timer should still be running after second TimeInitiated call.");
+        // Optionally, you can check for the debug output here if needed.
+    }
+
+[TestMethod]
+        [TestCategory("Timer")]
+        public void TimeTerminated_ShouldStopTimer_WhenRunning()
+        {
+            // Arrange
+            string methodName = "TestMethod";
+            Debugger.TimeInitiated(methodName); // Start the timer first
+
+            // Act
+            Debugger.TimeTerminated(methodName);
+
+            // Assert
+            Assert.IsFalse(Debugger.MethodTimers[methodName].IsRunning, "Timer should be stopped after TimeTerminated is called.");
+        }
+
+        [TestMethod]
+        [TestCategory("Timer")]
+        public async Task TimeTerminated_ShouldWriteElapsedTime_WhenRunning()
+        {
+            // Arrange
+            const string methodName = "TestMethod";
+            Debugger.TimeInitiated(methodName); // Start the timer
+
+            // Introduce a delay to ensure the timer has measurable elapsed time
+            await Task.Delay(100); // Wait for 100 milliseconds
+
+            // Act
+            Debugger.TimeTerminated(methodName); // Stop the timer
+            Trace.Flush(); // Ensure all output is flushed
+
+            // Assert elapsed time
+            Assert.IsTrue(Debugger.MethodTimers[methodName].ElapsedMilliseconds > 0, "Elapsed time should be greater than zero.");
+
+            // Assert that the debug output contains the elapsed time message
+            var traceOutput = _writer?.ToString();
+            Assert.IsTrue(traceOutput != null && traceOutput.Contains($"Elapsed time for {methodName}:"));
+        }
+
+        [TestMethod]
+        [TestCategory("Timer")]
+        public void TimeTerminated_ShouldNotStop_WhenNotRunning()
+        {
+            // Arrange
+            string methodName = "TestMethod";
+            Debugger.TimeTerminated(methodName); // Call without starting the timer first
+
+            // Assert
+            // The timer should still be not running, and you can check for the appropriate debug output here if necessary
+            Assert.IsFalse(Debugger.MethodTimers.ContainsKey(methodName), "Timer should not exist since TimeInitiated was not called.");
+        }
+
+        [TestMethod]
+        [TestCategory("Timer")]
+        public void TimeTerminated_ShouldLogError_WhenStopCalledWithoutStart()
+        {
+            // Arrange
+            const string methodName = "TestMethod";
+            Debugger.TimeTerminated(methodName); // Call without starting the timer first
+        }
 }

@@ -76,11 +76,10 @@ public static class Debugger
     /// <summary>
     /// Dictionary to store Stopwatch instances for tracking elapsed time of methods.
     /// </summary>
-    private static readonly Dictionary<string, Stopwatch> MethodTimers = [];
+    public static readonly Dictionary<string, Stopwatch> MethodTimers = [];
 
     #endregion
 
-    #region Method Initated
 
     /// <summary>
     /// Indicates that a method has started and initiated.
@@ -116,9 +115,7 @@ public static class Debugger
         Debug.WriteLine($"{(char)26} initiated");
     }
 
-    #endregion
 
-    #region Method Terminated
 
     /// <summary>
     /// Indicates the end of a method's execution.
@@ -135,9 +132,7 @@ public static class Debugger
         Debug.WriteLine($"[/{methodName}]\n");
     }
 
-    #endregion
 
-    #region Time Initiated
 
     /// <summary>
     /// This method is used to start the stopwatch and write the elapsed time to the debug window.
@@ -146,15 +141,16 @@ public static class Debugger
     [Conditional("DEBUG")]
     public static void TimeInitiated(string methodName)
     {
-        if (!MethodTimers.ContainsKey(methodName))
+        if (!MethodTimers.TryGetValue(methodName, out var value))
         {
-            MethodTimers[methodName] = new Stopwatch();
+            value = new Stopwatch();
+            MethodTimers[methodName] = value;
         }
 
         // Check if the stopwatch is running; if not, start it
-        if (!MethodTimers[methodName].IsRunning)
+        if (!value.IsRunning)
         {
-            MethodTimers[methodName].Start();
+            value.Start();
         }
         else
         {
@@ -165,9 +161,7 @@ public static class Debugger
         }
     }
 
-    #endregion
 
-    #region Time terminated
 
     /// <summary>
     /// This method is used to stop the stopwatch and write the elapsed time to the debug window.
@@ -201,7 +195,6 @@ public static class Debugger
         }
     }
 
-    #endregion
 
     #region Message
 
