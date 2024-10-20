@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "dotnetctrfjsonreporter": {
+      "version": "0.0.4",
+      "commands": [
+        "DotnetCtrfJsonReporter"
+      ]
+    }
+  }
+}
