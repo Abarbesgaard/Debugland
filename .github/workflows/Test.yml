@@ -54,7 +54,7 @@ jobs:
       run: dotnet tool install DotnetCtrfJsonReporter --local
       
     - name: Test
-      run: dotnet test ./Debugland/TestProject/Testproject.csproj --logger "trx;logfilename=testResults.trx"
+      run: dotnet test ./TestProject/Testproject.csproj --logger "trx;logfilename=testResults.trx"
     
     
     - name: convert Report
