@@ -29,7 +29,7 @@ jobs:
       run: dotnet restore ./Debugland/Debugland.sln
 
     - name: Build
-      run: dotnet build ./Debugland/Debugland.sln --configuration Release --no-restore
+      run: dotnet build ./Debugland.sln --configuration Release --no-restore
     
       
   test:
