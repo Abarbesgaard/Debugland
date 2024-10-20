@@ -26,7 +26,7 @@ jobs:
         dotnet-version: '8.0.x'  # Angiv din .NET-version her
     
     - name: Restore dependencies
-      run: dotnet restore ./Debugland/Debugland.sln
+      run: dotnet restore ./Debugland.sln
 
     - name: Build
       run: dotnet build ./Debugland.sln --configuration Release --no-restore
