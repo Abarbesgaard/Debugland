@@ -792,6 +792,7 @@ public static class Debugger
                 stackTrace.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var line in stackLines)
             {
+                //Test line to test workflow
                 Debug.WriteLine($"\t{line}");
             }
         }
