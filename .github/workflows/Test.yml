@@ -58,7 +58,8 @@ jobs:
     
     
     - name: convert Report
-      run: dotnet tool run DotnetCtrfJsonReporter -p "/home/runner/work/Debugland/TestProject/TestResults/testResults.trx"
+      run: dotnet tool run DotnetCtrfJsonReporter -p "./TestProject/TestResults/testResults.trx"
+
     
     - name: Publish Test Summary Results
       run: npx github-actions-ctrf ./ctrf/ctrf-report.json --pr-comment
