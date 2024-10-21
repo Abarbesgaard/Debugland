@@ -723,16 +723,16 @@ public static class Debugger
         Debug.IndentLevel += 0;
 
         // Writes the messages to the debug window.
-        Debug.WriteLine($"\n1 |\t \tException Occurred in ---> [{methodName}]");
-        Debug.WriteLine($"2 |\t \tTime Stamp: {DateTime.Now}");
-        Debug.WriteLine("3 |\t \t");
-        Debug.WriteLine($"4 |\t \tMessage: {ex.Message}");
-        Debug.WriteLine($"5 |\t \tSource: {ex.Source ?? "N/A"}");
-        Debug.WriteLine($"6 |\t \tTarget Site: {ex.TargetSite}");
+        Debug.WriteLine($"\n |\t \tException Occurred in ---> [{methodName}]");
+        Debug.WriteLine($" |\t \tTime Stamp: {DateTime.Now}");
+        Debug.WriteLine(" |\t \t");
+        Debug.WriteLine($" |\t \tMessage: {ex.Message}");
+        Debug.WriteLine($" |\t \tSource: {ex.Source ?? "N/A"}");
+        Debug.WriteLine($" |\t \tTarget Site: {ex.TargetSite}");
         // Check if the exception is an AggregateException
         if (ex is AggregateException aggregateEx)
         {
-            Debug.WriteLine("9 |\t \tAggregate Exception Details:");
+            Debug.WriteLine(" |\t \tAggregate Exception Details:");
             foreach (var innerEx in aggregateEx.InnerExceptions)
             {
                 LogInnerException(innerEx);
@@ -740,21 +740,18 @@ public static class Debugger
         }
         else if (ex.InnerException != null)
         {
-            Debug.WriteLine("9 |\t \tInner Exception:");
+            Debug.WriteLine(" |\t \tInner Exception:");
             LogInnerException(ex.InnerException);
         }
         else if (ex is NullReferenceException nullRefEx)
         {
-            Debug.WriteLine("9 |\t \tInner Exception:");
-            Debug.WriteLine("10|\t \tMessage: A NullReferenceException occurred.");
-            Debug.WriteLine("11|\t \tPossible Causes: This usually happens when you try to access a member on a null object.");
-            Debug.WriteLine("12|\t \tSuggested Resolution: Ensure that all objects are properly initialized before use. " +
-                            "Check for any >>variables<< that could be null at this point in the code.");
-            Debug.WriteLine($"13|\t \tStack Trace: {nullRefEx.StackTrace}");
+            Debug.WriteLine(" |\t \tInner Exception:");
+            Debug.WriteLine(" |\t \tMessage: A NullReferenceException occurred.");
+            Debug.WriteLine($" |\t \tStack Trace: {nullRefEx.StackTrace}");
         }
         else
         {
-            Debug.WriteLine("9 |\t \tInner Exception: N/A");
+            Debug.WriteLine(" |\t \tInner Exception: N/A");
         }
 
         // Log the stack trace
@@ -764,28 +761,72 @@ public static class Debugger
         }
     }
 
-// Helper method to log inner exceptions
     private static void LogInnerException(Exception innerEx)
     {
-        Debug.WriteLine($"- |\t \tMessage: {innerEx.Message}");
-        Debug.WriteLine($"- |\t \tSource: {innerEx.Source}");
-        Debug.WriteLine($"- |\t \tTarget Site: {innerEx.TargetSite}");
+        Debug.WriteLine($" |\t \tMessage: {innerEx.Message}");
+        Debug.WriteLine($" |\t \tSource: {innerEx.Source}");
+        Debug.WriteLine($" |\t \tTarget Site: {innerEx.TargetSite}");
+        Debug.WriteLine(" |\t \t"); 
     }
 
-// Helper method to log the stack trace
     private static void LogStackTrace(string? stackTrace)
     {
-        Debug.WriteLine("Stack Trace:");
-        if (stackTrace != null)
+        if (string.IsNullOrEmpty(stackTrace)) return;
+
+        var stackTraceLines = stackTrace.Split([Environment.NewLine], StringSplitOptions.None);
+        foreach (var line in stackTraceLines)
         {
-            // Format stack trace
-            string[] stackLines =
-                stackTrace.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var line in stackLines)
+            if (line.Contains(":line"))
             {
-                //Test line to test workflow
-                Debug.WriteLine($"\t{line}");
+                var parts = line.Split([":line"], StringSplitOptions.None);
+                if (parts.Length > 1)
+                {
+                    var methodAndPath = parts[0].Split([" in "], StringSplitOptions.None);
+                    if (methodAndPath.Length > 1)
+                    {
+                        Debug.WriteLine($" |\t \tMethod: {methodAndPath[0].Trim()}"); // Method signature
+                        Debug.WriteLine($" |\t \tFile Path: {methodAndPath[1].Trim()}"); // File path
+                        Debug.WriteLine(" |");
+                        Debug.WriteLine($" |\t \tLine Number: {parts[1].Trim()}"); // Line number
+                        DisplaySourceCodeLine(methodAndPath[1].Trim(), int.Parse(parts[1].Trim())); 
+                    }
+                    else
+                    {
+                        Debug.WriteLine($" |\t \tMethod and Path: {parts[0].Trim()}");
+                        Debug.WriteLine(" |");
+                        Debug.WriteLine($" |\t \tLine Number: {parts[1].Trim()}");
+                    }
+                }
+                else
+                {
+                    Debug.WriteLine(line); // If split fails, log the entire line
+                }
             }
+            else
+            {
+                Debug.WriteLine(line); // If no ":line" found, write the line as is
+            }
+        }
+    }
+    private static void DisplaySourceCodeLine(string filePath, int lineNumber)
+    {
+        try
+        {
+            var sourceLines = File.ReadAllLines(filePath);
+            if (lineNumber > 0 && lineNumber <= sourceLines.Length)
+            {
+                var actualCodeLine = sourceLines[lineNumber - 1].Trim(); // -1 because array is zero-based
+                Debug.WriteLine(" |\t \t \t|");
+                Debug.WriteLine($" |\t \t \t---> {actualCodeLine}");
+            }
+            else
+            {
+                Debug.WriteLine($" |\t \tSource Code: Unable to retrieve line {lineNumber}.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($" |\t \tSource Code: Error retrieving source code: {ex.Message}");
         }
     }
 }
