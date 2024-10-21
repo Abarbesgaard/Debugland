@@ -775,17 +775,63 @@ public static class Debugger
 // Helper method to log the stack trace
     private static void LogStackTrace(string? stackTrace)
     {
-        Debug.WriteLine("Stack Trace:");
-        if (stackTrace != null)
+        if (string.IsNullOrEmpty(stackTrace)) return;
+
+        var stackTraceLines = stackTrace.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+        foreach (var line in stackTraceLines)
         {
-            // Format stack trace
-            string[] stackLines =
-                stackTrace.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var line in stackLines)
+            if (line.Contains(":line"))
             {
-                //Test line to test workflow
-                Debug.WriteLine($"\t{line}");
+                // Split at the ":line" part to separate method signature, file path, and line number
+                var parts = line.Split(new[] { ":line" }, StringSplitOptions.None);
+                if (parts.Length > 1)
+                {
+                    // Further split the method signature and file path part by " in "
+                    var methodAndPath = parts[0].Split(new[] { " in " }, StringSplitOptions.None);
+                    if (methodAndPath.Length > 1)
+                    {
+                        Debug.WriteLine($"14|\t \tMethod: {methodAndPath[0].Trim()}"); // Method signature
+                        Debug.WriteLine($"15|\t \tFile Path: {methodAndPath[1].Trim()}"); // File path
+                        Debug.WriteLine($"16|\t \tLine Number: {parts[1].Trim()}"); // Line number
+                        DisplaySourceCodeLine(methodAndPath[1].Trim(), int.Parse(parts[1].Trim())); 
+                    }
+                    else
+                    {
+                        // If the methodAndPath split fails, log the entire part
+                        Debug.WriteLine($"14|\t \tMethod and Path: {parts[0].Trim()}");
+                        Debug.WriteLine($"15|\t \tLine Number: {parts[1].Trim()}");
+                    }
+                }
+                else
+                {
+                    Debug.WriteLine(line); // If split fails, log the entire line
+                }
             }
+            else
+            {
+                Debug.WriteLine(line); // If no ":line" found, write the line as is
+            }
+        }
+    }
+    // Helper method to read the source file and display the line of code
+    private static void DisplaySourceCodeLine(string filePath, int lineNumber)
+    {
+        try
+        {
+            var sourceLines = File.ReadAllLines(filePath);
+            if (lineNumber > 0 && lineNumber <= sourceLines.Length)
+            {
+                var actualCodeLine = sourceLines[lineNumber - 1].Trim(); // -1 because array is zero-based
+                Debug.WriteLine($"17|\t \t \t {actualCodeLine}");
+            }
+            else
+            {
+                Debug.WriteLine($"17|\t \tSource Code: Unable to retrieve line {lineNumber}.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"17|\t \tSource Code: Error retrieving source code: {ex.Message}");
         }
     }
 }
