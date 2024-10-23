@@ -1,6 +1,7 @@
 # Getting Started with Debugland
 
-**Debugland** is a feature-rich debugging library tailored for .NET developers, simplifying the process of tracking code execution. By following these steps, you'll have Debugland integrated and running in no time.
+**Debugland** is a feature-rich debugging library tailored for beginner .NET developers, simplifying the process of tracking code execution and understading the code execution. 
+By following these steps, you'll have Debugland integrated and running in no time.
 
 ## Step 1: Install Debugland
 
@@ -9,8 +10,7 @@
 1. Open your project in Visual Studio or Rider.
 2. Navigate to the NuGet Package Manager.
 3. Search for "Debugland."
-4. Select the appropriate version for your project (supports .NET Framework, .NET Core, .NET 5+).
-5. Click "Install" to add Debugland to your project.
+4. Click "Install" to add Debugland to your project.
 
 ### Alternatively, use the NuGet CLI:
 
