@@ -8,7 +8,8 @@
 ![GitHub stars](https://img.shields.io/github/stars/Abarbesgaard/Debugland)
 ![GitHub forks](https://img.shields.io/github/forks/Abarbesgaard/Debugland)
 
-Debugland is a powerful and lightweight .NET debugging library designed to make tracking your code execution effortless. Available on GitHub, it offers intuitive methods for monitoring method execution, timing, SQL commands, variable declarations, and control flow—helping developers gain deeper insights into their application's runtime behavior. Whether you're building with .NET Framework, .NET Core, or .NET 5+, Debugland ensures that debugging is not only effective but enjoyable.
+Debugland is a powerful and lightweight .NET debugging library designed to make tracking your code execution effortless. Available on GitHub, it offers intuitive methods for monitoring method execution, timing, SQL commands, variable declarations, and control flow—helping developers gain deeper insights into their application's runtime behavior. 
+
 Why Debugland?
 
 With Debugland, you can:
@@ -16,7 +17,6 @@ With Debugland, you can:
     🔍 Track method execution with clear start and end points.
     ⏱ Monitor performance by capturing execution time for methods and SQL commands.
     🛠 Debug variables by inspecting their values and changes in real time.
-    ⚡ Simplify setup: Just install, add a reference, and you're good to go!
 
 How to Get Started with Debugland
 1. Install the Debugland NuGet Package:
