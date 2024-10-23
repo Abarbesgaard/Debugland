@@ -14,19 +14,18 @@ Why Debugland?
 
 With Debugland, you can:
 
-    🔍 Track method execution with clear start and end points.
-    ⏱ Monitor performance by capturing execution time for methods and SQL commands.
-    🛠 Debug variables by inspecting their values and changes in real time.
+🔍 Track method execution with clear start and end points.
+⏱ Monitor performance by capturing execution time for methods and SQL commands.
+🛠 Debug variables by inspecting their values and changes in real time.
 
 How to Get Started with Debugland
 1. Install the Debugland NuGet Package:
 
 Install Debugland via NuGet Package Manager:
-
-    Open your project's NuGet Package Manager.
-    Search for "Debugland."
-    Select the version compatible with your project's framework (.NET Framework, .NET Core, etc.).
-    Click "Install" to add Debugland to your project.
+- Open your project's NuGet Package Manager.
+- Search for "Debugland."
+- Select the version compatible with your project's framework (.NET Framework, .NET Core, etc.).
+- Click "Install" to add Debugland to your project.
 
 Alternatively, install it via the NuGet CLI:
 ```bash
