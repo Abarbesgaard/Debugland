@@ -4,6 +4,8 @@ Debugland is a powerful and lightweight .NET debugging library designed to make 
 With Debugland, you can:
 
 🔍 Track method execution with clear start and end points.
+
 ⏱ Monitor performance by capturing execution time for methods and SQL commands.
+
 🛠 Debug variables by inspecting their values and changes in real time.
 
