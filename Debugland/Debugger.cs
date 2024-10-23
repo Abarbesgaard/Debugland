@@ -703,7 +703,6 @@ public static class Debugger
     /// </summary>
     /// <param name="parameter">The value to be logged to the debug window.</param>
 
-    #region Metod Parameter
 
     [Conditional("DEBUG")]
     public static void MethodParameter(string parameter)
@@ -714,7 +713,6 @@ public static class Debugger
         Debug.WriteLine($"{(char)15} Parameter value was: {parameter}");
     }
 
-    #endregion
 
     [Conditional("DEBUG")]
     public static void LogException(Exception ex, string methodName)
@@ -755,7 +753,7 @@ public static class Debugger
         }
 
         // Log the stack trace
-        if(ex.StackTrace != null)
+        if (ex.StackTrace != null)
         {
             LogStackTrace(ex.StackTrace);
         }
@@ -766,7 +764,7 @@ public static class Debugger
         Debug.WriteLine($" |\t \tMessage: {innerEx.Message}");
         Debug.WriteLine($" |\t \tSource: {innerEx.Source}");
         Debug.WriteLine($" |\t \tTarget Site: {innerEx.TargetSite}");
-        Debug.WriteLine(" |\t \t"); 
+        Debug.WriteLine(" |\t \t");
     }
 
     private static void LogStackTrace(string? stackTrace)
@@ -784,11 +782,11 @@ public static class Debugger
                     var methodAndPath = parts[0].Split([" in "], StringSplitOptions.None);
                     if (methodAndPath.Length > 1)
                     {
-                        Debug.WriteLine($" |\t \tMethod: {methodAndPath[0].Trim()}"); // Method signature
-                        Debug.WriteLine($" |\t \tFile Path: {methodAndPath[1].Trim()}"); // File path
+                        Debug.WriteLine($" |\t \tMethod: {methodAndPath[0].Trim()}");
+                        Debug.WriteLine($" |\t \tFile Path: {methodAndPath[1].Trim()}");
                         Debug.WriteLine(" |");
-                        Debug.WriteLine($" |\t \tLine Number: {parts[1].Trim()}"); // Line number
-                        DisplaySourceCodeLine(methodAndPath[1].Trim(), int.Parse(parts[1].Trim())); 
+                        Debug.WriteLine($" |\t \tLine Number: {parts[1].Trim()}");
+                        DisplaySourceCodeLine(methodAndPath[1].Trim(), int.Parse(parts[1].Trim()));
                     }
                     else
                     {
@@ -799,12 +797,12 @@ public static class Debugger
                 }
                 else
                 {
-                    Debug.WriteLine(line); // If split fails, log the entire line
+                    Debug.WriteLine(line);
                 }
             }
             else
             {
-                Debug.WriteLine(line); // If no ":line" found, write the line as is
+                Debug.WriteLine(line);
             }
         }
     }
@@ -815,7 +813,7 @@ public static class Debugger
             var sourceLines = File.ReadAllLines(filePath);
             if (lineNumber > 0 && lineNumber <= sourceLines.Length)
             {
-                var actualCodeLine = sourceLines[lineNumber - 1].Trim(); // -1 because array is zero-based
+                var actualCodeLine = sourceLines[lineNumber - 1].Trim();
                 Debug.WriteLine(" |\t \t \t|");
                 Debug.WriteLine($" |\t \t \t---> {actualCodeLine}");
             }
