@@ -8,9 +8,9 @@
             "**/*.csproj"
           ],
           "exclude": [
-            "**/Tests/**", 
-            "**/*Test.cs", 
-            "**/*Tests.cs"  
+            "**/TestProject/**", 
+            "**/*TestProject.cs", 
+            "**/*TestProject.cs"  
           ]
         }
       ],
