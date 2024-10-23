@@ -32,7 +32,7 @@ How It Works:
 - It prints the method name inside square brackets ([ ]), followed by an arrow (→ initiated).
 - The indentation level increases so that nested methods can be visually distinguished in the debug console.
 
-## 2. MethodTerminated: Track When a Method Ends
+## 2. `MethodTerminated`: Track When a Method Ends
 
 Once a method finishes execution, you can call MethodTerminated to log that the method has ended.
 Syntax:
