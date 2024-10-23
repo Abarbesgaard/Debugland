@@ -16,9 +16,9 @@ public class DebuggerTests
         _writer = new StringWriter();
         _listener = new TextWriterTraceListener(_writer);
         Trace.Listeners.Add(_listener);
-        Debugger.MethodTimers.Clear(); 
+        Debugger.MethodTimers.Clear();
     }
- 
+
     [TestCleanup]
     public void TearDown()
     {
@@ -26,7 +26,7 @@ public class DebuggerTests
         Trace.Listeners.Remove(_listener);
         _listener?.Dispose();
         _writer?.Dispose();
-    } 
+    }
 
     [TestMethod]
     [TestCategory("Debug")]
@@ -74,7 +74,7 @@ public class DebuggerTests
         var innerException1 = new Exception("Inner exception 1 occurred.");
         var innerException2 = new Exception("Inner exception 2 occurred.");
         var aggregateException = new AggregateException(innerException1, innerException2);
-        
+
         // Act
         Debugger.LogException(aggregateException, methodName);
         Trace.Flush(); // Ensure all output is flushed
@@ -85,7 +85,7 @@ public class DebuggerTests
         StringAssert.Contains(traceOutput, "Aggregate Exception Details:");
         StringAssert.Contains(traceOutput, "Inner exception 1 occurred.");
         StringAssert.Contains(traceOutput, "Inner exception 2 occurred.");
-    } 
+    }
     [TestMethod]
     public void LogException_Should_Handle_NullReferenceException()
     {
@@ -103,12 +103,12 @@ public class DebuggerTests
         StringAssert.Contains(traceOutput, "Time Stamp:");
         StringAssert.Contains(traceOutput, "Message: This is a test null reference exception.");
         StringAssert.Contains(traceOutput, "Source: N/A");
-        StringAssert.Contains(traceOutput, "Target Site:"); // Ensure it's empty for NullReferenceException
+        StringAssert.Contains(traceOutput, "Target Site:"); 
         StringAssert.Contains(traceOutput, "Inner Exception:");
         StringAssert.Contains(traceOutput, "A NullReferenceException occurred.");
-        StringAssert.Contains(traceOutput, "Stack Trace:"); // Optional: Check for stack trace presence
+        StringAssert.Contains(traceOutput, "Stack Trace:"); 
     }
-    [TestMethod] 
+    [TestMethod]
     [TestCategory("Debug")]
     public void MethodInitiated_ShouldIncreaseIndentLevelAndWriteToDebug()
     {
@@ -166,85 +166,156 @@ public class DebuggerTests
         // Optionally, you can check for the debug output here if needed.
     }
 
-[TestMethod]
-        [TestCategory("Timer")]
-        public void TimeTerminated_ShouldStopTimer_WhenRunning()
-        {
-            // Arrange
-            string methodName = "TestMethod";
-            Debugger.TimeInitiated(methodName); // Start the timer first
+    [TestMethod]
+    [TestCategory("Timer")]
+    public void TimeTerminated_ShouldStopTimer_WhenRunning()
+    {
+        // Arrange
+        string methodName = "TestMethod";
+        Debugger.TimeInitiated(methodName); // Start the timer first
 
-            // Act
-            Debugger.TimeTerminated(methodName);
+        // Act
+        Debugger.TimeTerminated(methodName);
 
-            // Assert
-            Assert.IsFalse(Debugger.MethodTimers[methodName].IsRunning, "Timer should be stopped after TimeTerminated is called.");
-        }
+        // Assert
+        Assert.IsFalse(Debugger.MethodTimers[methodName].IsRunning, "Timer should be stopped after TimeTerminated is called.");
+    }
 
-        [TestMethod]
-        [TestCategory("Timer")]
-        public async Task TimeTerminated_ShouldWriteElapsedTime_WhenRunning()
-        {
-            // Arrange
-            const string methodName = "TestMethod";
-            Debugger.TimeInitiated(methodName); // Start the timer
+    [TestMethod]
+    [TestCategory("Timer")]
+    public async Task TimeTerminated_ShouldWriteElapsedTime_WhenRunning()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+        Debugger.TimeInitiated(methodName); // Start the timer
 
-            // Introduce a delay to ensure the timer has measurable elapsed time
-            await Task.Delay(100); // Wait for 100 milliseconds
+        // Introduce a delay to ensure the timer has measurable elapsed time
+        await Task.Delay(100); // Wait for 100 milliseconds
 
-            // Act
-            Debugger.TimeTerminated(methodName); // Stop the timer
-            Trace.Flush(); // Ensure all output is flushed
+        // Act
+        Debugger.TimeTerminated(methodName); // Stop the timer
+        Trace.Flush(); // Ensure all output is flushed
 
-            // Assert elapsed time
-            Assert.IsTrue(Debugger.MethodTimers[methodName].ElapsedMilliseconds > 0, "Elapsed time should be greater than zero.");
+        // Assert elapsed time
+        Assert.IsTrue(Debugger.MethodTimers[methodName].ElapsedMilliseconds > 0, "Elapsed time should be greater than zero.");
 
-            // Assert that the debug output contains the elapsed time message
-            var traceOutput = _writer?.ToString();
-            Assert.IsTrue(traceOutput != null && traceOutput.Contains($"Elapsed time for {methodName}:"));
-        }
+        // Assert that the debug output contains the elapsed time message
+        var traceOutput = _writer?.ToString();
+        Assert.IsTrue(traceOutput != null && traceOutput.Contains($"Elapsed time for {methodName}:"));
+    }
 
-        [TestMethod]
-        [TestCategory("Timer")]
-        public void TimeTerminated_ShouldNotStop_WhenNotRunning()
-        {
-            // Arrange
-            string methodName = "TestMethod";
-            Debugger.TimeTerminated(methodName); // Call without starting the timer first
+    [TestMethod]
+    [TestCategory("Timer")]
+    public void TimeTerminated_ShouldNotStop_WhenNotRunning()
+    {
+        // Arrange
+        string methodName = "TestMethod";
+        Debugger.TimeTerminated(methodName); // Call without starting the timer first
 
-            // Assert
-            // The timer should still be not running, and you can check for the appropriate debug output here if necessary
-            Assert.IsFalse(Debugger.MethodTimers.ContainsKey(methodName), "Timer should not exist since TimeInitiated was not called.");
-        }
+        // Assert
+        // The timer should still be not running, and you can check for the appropriate debug output here if necessary
+        Assert.IsFalse(Debugger.MethodTimers.ContainsKey(methodName), "Timer should not exist since TimeInitiated was not called.");
+    }
 
-        [TestMethod]
-        [TestCategory("Timer")]
-        public void TimeTerminated_ShouldLogError_WhenStopCalledWithoutStart()
-        {
-            // Arrange
-            const string methodName = "TestMethod";
-            Debugger.TimeTerminated(methodName); // Call without starting the timer first
-        }
-        [TestMethod]
-        [TestCategory("Debug")]
-        public void Message_ShouldWriteCorrectMessageToDebug()
-        {
-            // Arrange
-            const string expectedMessage = "This is a test message.";
+    [TestMethod]
+    [TestCategory("Timer")]
+    public void TimeTerminated_ShouldLogError_WhenStopCalledWithoutStart()
+    {
+        // Arrange
+        const string methodName = "TestMethod";
+        Debugger.TimeTerminated(methodName); // Call without starting the timer first
+    }
+    [TestMethod]
+    [TestCategory("Debug")]
+    public void Message_ShouldWriteCorrectMessageToDebug()
+    {
+        // Arrange
+        const string expectedMessage = "This is a test message.";
 
-            // Act
-            Debugger.Message(expectedMessage); // Call the method under test
-            Trace.Flush(); // Ensure all output is flushed
+        // Act
+        Debugger.Message(expectedMessage); // Call the method under test
+        Trace.Flush(); // Ensure all output is flushed
 
-            // Assert
-            var traceOutput = _writer?.ToString();
+        // Assert
+        var traceOutput = _writer?.ToString();
 
-            // Debugging output
-            Console.WriteLine("Trace Output:");
-            Console.WriteLine(traceOutput);
+        // Debugging output
+        Console.WriteLine("Trace Output:");
+        Console.WriteLine(traceOutput);
 
-            // Assertions - check for the correct output
-            Assert.IsNotNull(traceOutput, "Trace output should not be null.");
-            Assert.IsTrue(traceOutput.Contains($"!{expectedMessage}"), "The message logged should match the expected message.");
-        } 
-}
+        // Assertions - check for the correct output
+        Assert.IsNotNull(traceOutput, "Trace output should not be null.");
+        Assert.IsTrue(traceOutput.Contains($"!{expectedMessage}"), "The message logged should match the expected message.");
+    }
+    [TestMethod]
+    [TestCategory("Debug")]
+    public void MethodParameter_ShouldWriteCorrectMessageToDebug()
+    {
+        // Arrange
+        const string expectedMessage = "testParameter";
+        var expectedDebugOutput = $"{(char)15} Parameter value was: {expectedMessage}";
+
+        // Act
+        Debugger.MethodParameter(expectedMessage); 
+        Debug.Flush(); 
+
+        // Assert
+        var traceOutput = _writer?.ToString();
+
+        Console.WriteLine("Trace Output:");
+        Console.WriteLine(traceOutput);
+
+        Assert.IsNotNull(traceOutput, "Trace output should not be null.");
+        Assert.IsTrue(traceOutput.Contains(expectedDebugOutput), $"The message logged should contain: {expectedDebugOutput}");
+    } 
+    [TestMethod]
+    [TestCategory("Debug")]
+    public void MessageIf_ShouldWriteMessage_WhenConditionIsTrue()
+    {
+        // Arrange
+        const bool condition = true;
+        const string message = "Test message";
+        const string category = "Test category";
+        var expectedDebugOutput = $"{(char)20} {message}";
+
+        // Act
+        Debugger.MessageIf(condition, message, category);
+        Debug.Flush();
+
+        // Assert
+        var traceOutput = _writer?.ToString();
+
+        // Debugging output
+        Console.WriteLine("Trace Output:");
+        Console.WriteLine(traceOutput);
+
+        // Assertions - check for the correct output
+        Assert.IsNotNull(traceOutput, "Trace output should not be null.");
+        Assert.IsTrue(traceOutput.Contains(expectedDebugOutput), $"The message logged should contain: {expectedDebugOutput}");
+        Assert.IsTrue(traceOutput.Contains($"{(char)15} {category}"), $"The category logged should contain: {(char)15} {category}");
+    }
+
+    [TestMethod]
+    [TestCategory("Debug")]
+    public void MessageIf_ShouldNotWriteMessage_WhenConditionIsFalse()
+    {
+        // Arrange
+        const bool condition = false;
+        const string message = "Test message";
+        const string category = "Test category";
+
+        // Act
+        Debugger.MessageIf(condition, message, category);
+        Debug.Flush(); // Ensure all output is flushed
+
+        // Assert
+        var traceOutput = _writer?.ToString();
+
+        // Debugging output
+        Console.WriteLine("Trace Output:");
+        Console.WriteLine(traceOutput);
+
+        // Assertions - check for no output
+        Assert.IsTrue(string.IsNullOrEmpty(traceOutput), "Trace output should be empty when condition is false.");
+    }
+} 
