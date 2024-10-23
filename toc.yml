@@ -1,4 +1,4 @@
-- name: Docs
+- name: How to
   href: docs/
-- name: API documentation
+- name: Available methods
   href: api/
