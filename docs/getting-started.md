@@ -33,20 +33,20 @@ Now you can use Debugland’s intuitive methods for tracking method execution, v
 public void MyMethod()
 {
 
-    Debugger.MethodInitiated(nameof(MyMethod)); <--
+    Debugger.MethodInitiated(nameof(MyMethod)); //<--
 
     string myVariable = "Some value";
 
-    Debugger.Variable(nameof(myVariable), $"{myVariable}"); <--
+    Debugger.Variable(nameof(myVariable), $"{myVariable}"); //<--
     
     using (var reader = ...)
     {
-        Debugger.ReaderInitiated(); <--
+        Debugger.ReaderInitiated(); //<--
         
-        Debugger.ReaderTerminated(); <--
+        Debugger.ReaderTerminated(); //<--
     }
 
-    Debugger.MethodTerminated(nameof(MyMethod)); <--
+    Debugger.MethodTerminated(nameof(MyMethod)); //<--
 }
 ```
 This basic setup gives you immediate insight into your method execution and variable states, making it much easier to identify potential issues.
