@@ -6,6 +6,11 @@
           "src": "../Debugland",
           "files": [
             "**/*.csproj"
+          ],
+          "exclude": [
+            "**/Tests/**", // Exclude all files in the 'Tests' folder
+            "**/*Test.cs",  // Exclude all files ending with 'Test.cs'
+            "**/*Tests.cs"  // Exclude all files ending with 'Tests.cs'
           ]
         }
       ],
